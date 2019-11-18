@@ -1,0 +1,26 @@
+.header__panel{
+    width: 100%;
+    background-color: #6e716e;
+    display: flex;
+    justify-content: center;
+}
+
+.header__panelContainer{
+    height: 42px;
+    width: 1250px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    color: white;
+    background-color: #6e716e;
+}
+
+.header__panelContainer--item{
+    margin-left: 15px;
+    color:white;
+    text-decoration: none;
+    
+}
