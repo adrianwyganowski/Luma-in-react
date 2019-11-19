@@ -1,27 +1,26 @@
 import React from "react"
 import "./Panel.css"
+import {ReactComponent as Arrow} from "./img/arrowMenu.svg"
 
 function Panel() {
     
     return (
         <div className="header__panel">
-            <div className="header__panelContainer">
-                <a href="#" className="header__panelContainer--item"> PL 
-                    <svg height="7" width="14">
-                        <polyline points="0,0 7,7 14,0 " style={{fill:"none",stroke:"white",strokeWidth:"2"}} />
-                        Sorry, your browser does not support inline SVG.
-                    </svg>
+            <div className="panelContainer">
+                <a href="#" className="panelContainer__item"> 
+                    <span>PL</span> 
+                    <Arrow />
                 </a>
-                <a  href="#" className="header__panelContainer--item">
+                <a  href="#" className="panelContainer__item">
                     Utwórz konto
                 </a>
-                <span className="header__panelContainer--item">
+                <span className="panelContainer__item">
                     lub
                 </span>
-                <a href="#" className="header__panelContainer--item">
+                <a href="#" className="panelContainer__item">
                     Zaloguj się
                 </a>
-                <span className="header__panelContainer--item">
+                <span className="panelContainer__item">
                     Domyślna wiadomość powitalna!
                 </span>
             </div>

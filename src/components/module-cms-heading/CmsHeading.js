@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContentHeading() {
+function CmsHeading() {
     
     return(
         <div>
@@ -9,4 +9,4 @@ function ContentHeading() {
     )
 }
 
-export default ContentHeading
+export default CmsHeading

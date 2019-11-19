@@ -1,0 +1,33 @@
+.header__headerContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContentContainer{
+    width: 1250px;
+    height: 60px;
+    padding: 30px 20px 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContentContainer__formAndCart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerContentContainer__formAndCart--form{
+    height: 30px;
+    width: 204px;
+    padding: 0 35px 0 9px;
+}
+
+.headerContentContainer__formAndCart--cartIcon
+{
+    margin-left: 13px;
+}

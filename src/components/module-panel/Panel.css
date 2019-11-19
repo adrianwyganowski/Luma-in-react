@@ -1,14 +1,17 @@
 .header__panel{
     width: 100%;
-    background-color: #6e716e;
+    
     display: flex;
     justify-content: center;
+
+    background-color: #6e716e;
 }
 
-.header__panelContainer{
-    height: 42px;
-    width: 1250px;
+.panelContainer{
+    height: 22px;
+    width: 1240px;
     margin: 0;
+    padding: 10px 20px 10px 20px;
 
     display: flex;
     flex-direction: row-reverse;
@@ -18,9 +21,15 @@
     background-color: #6e716e;
 }
 
-.header__panelContainer--item{
+.panelContainer__item{
     margin-left: 15px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     color:white;
     text-decoration: none;
+    
     
 }
