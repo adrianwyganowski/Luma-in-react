@@ -1,0 +1,29 @@
+.secondBlock{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    grid-area: secondBlock;
+}
+
+.secondBlock_content{
+    position: absolute;
+    top:0;
+    left:0;
+
+    padding: 25px 35px 35px 35px
+}
+
+.secondBlock_content--title{
+    margin: 0px;
+    
+    font-size: 44px;
+}
+
+.secondBlock_content--info{
+    width: 250px;
+    margin: 0 0 20px 0;
+
+    font-size:  22px;
+    font-weight: 300;
+}
