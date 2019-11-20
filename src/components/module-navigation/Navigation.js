@@ -1,141 +1,77 @@
 import React from "react"
 import "./Navigation.css"
+import { ReactComponent as Arrow  } from "./img/arrow.svg";
 
 function Navigation() {
 
     return (
         <div className="header__navigation">
-            <nav className="navigationContainer">  
-                <ul className="navigationList">
-                    <li className="navigationList__firstLevel">
-                        <a >What's New</a>
-                    </li>
+            <div className="navigationContainer">
+                <nav>
+                    <ul className="navigation">
+                        <li><a href="#">What's new</a></li>
 
-                    <li  className="navigationList__firstLevel">
-                        <a>Woman</a>
-                        
-                        <ul>
-                            <li className="navigationList__secondLevel">
-                                <a>Tops</a>
-                                <ul>
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Jackets</a>
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Hoodies & Sweatshirts</a> 
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Tees</a> 
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Bras & Tanks</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul> 
+                        <li><a href="#">Women</a>
+                            <ul>
+                                <li><a href="#">Tops</a>
+                                    <ul>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#">Tess</a></li>
+                                        <li><a href="#">Bras & Tanks</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Bottoms</a>
+                                    <ul>
+                                        <li><a href="#">Pants</a></li>
+                                        <li><a href="#">Shorts</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
 
-                        <ul>
-                            <li className="navigationList__secondLevel">
-                                <a>Bottoms</a>
-                                <ul>
-                                    <li className="navigationList__thirdLevel"> 
-                                        <a>Pants</a>
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Shorts</a> 
-                                    </li>
+                        <li><a href="#">Men</a>
+                            <ul>
+                                <li><a href="#">Tops</a>
+                                    <ul>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#">Tess</a></li>
+                                        <li><a href="#">Tanks</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Bottoms</a>
+                                    <ul>
+                                        <li><a href="#">Pants</a></li>
+                                        <li><a href="#">Shorts</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
 
-                                </ul>
-                            </li>
-                        </ul> 
-                    </li>
+                        <li><a href="#">Gear</a>
+                            <ul>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Fitness Equipment</a></li>
+                                <li><a href="#">Watches</a></li>
+                            </ul>
+                        </li>
 
-                    <li className="navigationList__firstLevel">
-                        <a>Mam</a>
-                        
-                        <ul>
-                            <li className="navigationList__secondLevel">
-                                <a>Tops</a>
-                                <ul>
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Jackets</a>
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Hoodies & Sweatshirts</a> 
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Tees</a> 
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Tanks</a> 
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul> 
+                        <li><a href="#">Trening</a>
+                            <ul>
+                                <li><a href="#">Video Download</a></li>
+                            </ul>
+                        </li>
 
-                        <ul>
-                            <li className="navigationList__secondLevel">
-                                <a>Bottoms</a>
-                                <ul>
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Pants</a>
-                                    </li>
-                                    
-                                    <li className="navigationList__thirdLevel">
-                                        <a>Shorts</a> 
-                                    </li>
+                        <li><a href="#"> Sale</a></li>
 
-                                </ul>
-                            </li>
-                        </ul> 
-                    </li>
-
-                    <li className="navigationList__firstLevel">
-                       <a>Gear</a>
-                        <ul>
-                            <li className="navigationList__secondLevel">
-                              <a>Bags</a>
-                            </li>
-
-                            <li className="navigationList__secondLevel">
-                                <a>Fitness Equipment</a>
-                            </li>
-
-                            <li className="navigationList__secondLevel">
-                                <a>Watches</a>
-                            </li>  
-                        </ul>
-                    </li>
-
-                    <li className="navigationList__firstLevel"> 
-                        <a>Trening</a>
-
-                        <ul>
-                            <li className="navigationList__secondLevel">
-                                <a>Video Download</a>   
-                            </li>
-                           
-                        </ul> 
-                    </li>
-
-                    <li className="navigationList__firstLevel">
-                        <ul>
-                            <li className="navigationList__secondLevel">
-                                <a>Sale</a>     
-                            </li>
-                        </ul>
-                               
-                    </li>
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
+            </div>  
         </div>
+
+        
     )
 }
 export default Navigation 
+

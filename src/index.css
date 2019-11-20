@@ -4,8 +4,11 @@ body{
     align-items: center;
     width: 100%;
     margin: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #root{
     width: 100%
 }
+
+/* font-family: 'Heebo', sans-serif; */

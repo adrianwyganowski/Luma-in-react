@@ -7,7 +7,7 @@
 .headerContentContainer{
     width: 1250px;
     height: 60px;
-    padding: 30px 20px 0 20px;
+    padding: 15px 20px 15px 20px;
 
     display: flex;
     flex-direction: row;
