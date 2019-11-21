@@ -6,21 +6,21 @@
     grid-area: secondBlock;
 }
 
-.secondBlock_content{
+.secondBlock__content{
+    padding: 25px 35px 35px 35px;
+    
     position: absolute;
     top:0;
     left:0;
-
-    padding: 25px 35px 35px 35px
 }
 
-.secondBlock_content--title{
+.secondBlock__content--title{
     margin: 0px;
     
     font-size: 44px;
 }
 
-.secondBlock_content--info{
+.secondBlock__content--info{
     width: 250px;
     margin: 0 0 20px 0;
 

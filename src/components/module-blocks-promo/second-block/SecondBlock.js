@@ -8,12 +8,11 @@ function SecondBlock(){
     return(
     <div className="secondBlock">
         <img src={secondBlock} className="img" alt="man standing"/>
-        <div className="secondBlock_content">  
-            <p className="secondBlock_content--title"> <b>20% OFF</b> </p>
-            <p className="secondBlock_content--info">Luma pants when you shop today*</p>
+        <div className="secondBlock__content">  
+            <p className="secondBlock__content--title"> <b>20% OFF</b> </p>
+            <p className="secondBlock__content--info">Luma pants when you shop today*</p>
             <p>Shop Pants ></p>
             {/*Change arrow above  */}
-
         </div>
     </div>
     )
