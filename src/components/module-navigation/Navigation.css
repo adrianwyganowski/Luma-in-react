@@ -19,8 +19,6 @@ ul {
     margin:0;
 
     list-style:none;
-    
-    
 }
   
 ul li{
@@ -29,9 +27,7 @@ ul li{
     display:block;
     position:relative;
     float:left;
-    
-    
-   
+
 }
   
 li ul {
@@ -39,32 +35,33 @@ li ul {
 }
   
 ul li a {
-    display: block;
     padding: 1em; 
+   
+    display: block;
+
     text-decoration: none;
     white-space: nowrap;
-    color: #333;
-    
+    color: #333; 
 }
   
 li:hover > ul {
+    margin-left:-12px;
+
     display: block;
     position: absolute;
+    
     background: #ffffff;
     border: 1px solid #ccc;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.19);
-    margin-left:-12px
-
-    
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19); 
 }
   
 li:hover li {
     height: 34px;
     width: 204px;
+    
     display: flex;
     align-items: center;
-    
-   
+
 }
 
 ul li:hover{
@@ -76,12 +73,8 @@ ul ul ul {
     top: 0;
 }
 
-
-
-  
 ul ul ul li:hover{
     background-color: #e8e8e8; 
-
 }
   
   

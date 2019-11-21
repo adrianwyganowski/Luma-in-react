@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.productNonClothPreview{
+    border: 1px solid #FFFFFF;
+}
+
+.productNonClothPreview:hover{
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19); 
+}
+
+.productNonClothPreview__name{
+    display: inline;
+
+    font-size: 14px;
+
+}
+
+.productNonClothPreview__name:hover{
+    color: #000000
+}
+
+.productNonClothPreview__price{
+    margin: 10px 0 25px 0;
+    
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.productNonClothPreview__price--label{
+    font-size: 12px;
+    color: #666;
+}

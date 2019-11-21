@@ -1,11 +1,12 @@
 import React from "react"
+import "./Footer.css"
 
 import FooterContent from "../module-footer-content/FooterContent"
 import Copyright from "../module-copyright/Copyright"
 
 function Footer() {
     return(
-        <footer>
+        <footer className="footer">
             <FooterContent />
             <Copyright />
         </footer>

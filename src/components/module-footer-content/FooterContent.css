@@ -1,0 +1,23 @@
+.footerContent{
+    width: 1250px;
+    padding-bottom: 25px;
+
+    display: flex;
+
+    background-color: #f4f4f4;
+}
+
+ol{
+    
+    padding: 0 100px 0 0;
+    
+    list-style: none;
+    
+    color: #575757;
+    font-size: 14px;
+}
+
+ol li{
+    margin: 10px 0 10px 0;
+}
+

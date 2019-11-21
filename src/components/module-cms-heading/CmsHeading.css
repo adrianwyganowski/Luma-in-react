@@ -1,0 +1,37 @@
+.cmsHeading{
+    margin-top: 100px;
+    width: 1250px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cmsHeading::before{
+    height: 1px;
+    width: 100%;
+
+    position: relative;
+    top: 70px;
+    display: block;
+    content: '';
+    background: radial-gradient(ellipse at center, #fff 25%, #cecece 100%);
+}
+
+.cmsHeading__header{
+    margin-bottom: 5px;
+    
+    z-index: 20;
+
+    font-size: 38px;
+    font-weight: 300;
+}
+
+
+
+.cmsHeading__paragraph{
+    margin:0;
+
+    font-size: 18px;
+}

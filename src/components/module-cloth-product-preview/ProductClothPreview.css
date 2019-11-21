@@ -1,0 +1,87 @@
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.productClothPreview{
+    border: 1px solid #FFFFFF;
+}
+
+.productClothPreview:hover{
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19); 
+}
+
+.productClothPreview__name{
+    display: inline;
+
+    font-size: 14px;
+
+}
+
+.productClothPreview__name:hover{
+    color: #000000
+}
+
+.productClothPreview__price{
+    margin: 10px 0 25px 0;
+    
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.productClothPreview__price--label{
+    font-size: 12px;
+    color: #666;
+}
+
+.productClothPreview__size{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(2, 40px);
+}
+
+.productClothPreview__size--block{
+    width: 22px;
+    height: 20px;
+    margin: 0px 8px 5px 0px;
+    padding:4px 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #dadada;
+    font-size: 12px;
+    color: #949494;
+    background: #f0f0f0;
+}
+
+.productClothPreview__size--block:hover{
+    /* TODO  */
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.productClothPreview__color{
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+}
+
+.productClothPreview__color--block{
+    width: 30px;
+    height: 20px;
+    padding: 1px 2px;
+    margin: 0 10px 5px 0;
+
+    border: 1px solid #dadada;
+}
+
+.productClothPreview__color--block:hover{
+    /* TODO */
+}
+
