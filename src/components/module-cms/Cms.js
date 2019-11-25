@@ -1,17 +1,34 @@
-import React from "react"
+import React , {useState} from "react"
 import "./Cms.css"
 
-import BlocksPromo from "../module-blocks-promo/BlocksPromo"
-import CmsHeading from "../module-cms-heading/CmsHeading";
-import BlockProductList from "../module-block-product-list/BlockProductList"
+import MainPage from "../module-main-page/MainPage"
+import ProductPage from "../module-product-page/ProductPage"
 
 function Cms() {
+    const [dispalyedPage , setDisplayedPage] = useState("ProductPage") 
+    // up in normal state should be  "MainPage"
+
+    //const [breadCrumbs , setBreadCrumbs] = useState("");
+
+    const changeToProductPage = event => setDisplayedPage (dispalyedPage = "ProductPage")
+
+    const dispaly = x => {
+        switch (x) {
+            case "MainPage":
+                return  <MainPage />
+                break;
+                
+            case "ProductPage":
+                return <ProductPage />;
+                break;
+            default:   console.log("smth went wrong in cms moudle");;
+                
+        }
+    }
     
     return(
         <main className="cms">
-            <BlocksPromo />
-            <CmsHeading/>
-            <BlockProductList />
+            {dispaly(dispalyedPage)}
         </main>
     )
 }

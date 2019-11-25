@@ -21,7 +21,6 @@ function ProductClothPreview(props) {
                 {props.colors.map((color) => {
                     return <div className="productClothPreview__color--block" style={{backgroundColor: color[1] }}></div>})
                     }
-
             </div>
           
 
