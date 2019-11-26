@@ -17,23 +17,21 @@ function ProductPageMain({imgsPath}){
     // const nextImg = event => setCurrentImgNumber (currentImgNumber -= 1);
     // imgDisplayed={ images.firstImg } previousImg={previousImg} nextImg={nextImg}
 
-    let photos ={
-        first : require ("../web/images/1-bg-img-id-1.jpg"),
-        second : require ("../web/images/2-bg-img-id-1.jpg")
+    let imgsPaths ={
+        0 : require ("../web/images/1-bg-img-id-1.jpg"),
+        1   : require ("../web/images/2-bg-img-id-1.jpg")
     }
 
-    const [currentPhoto , setCurrentPhoto] = useState(photos.first);
-
-    const firstPhoto = event => setCurrentPhoto (currentPhoto = photos.first)
-    const secondPhoto = event => setCurrentPhoto (currentPhoto = photos.second)
-
-
+    let navImgsPaths ={
+        0 : require ("../web/images/1-sm-img-id-1.jpg"),
+        1   : require ("../web/images/2-sm-img-id-1.jpg")
+    }
 
     return(
-        <main className="productPageMain">
-            <ProductMedia imgPath={currentPhoto} firstPhoto={firstPhoto} secondPhoto={secondPhoto} />
+        <div className="productPageMain">
+            <ProductMedia imgsPaths={imgsPaths} navImgsPaths={navImgsPaths} />
             <ProductInfoMain />
-        </main>
+        </div>
     )
 }
 

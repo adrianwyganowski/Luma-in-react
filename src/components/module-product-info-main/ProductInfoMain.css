@@ -1,0 +1,8 @@
+productInfoMain{
+    widows: 500px;
+}
+
+.productInfoMain__title{
+    font-size: 40px;
+    font-weight: 300;
+}
