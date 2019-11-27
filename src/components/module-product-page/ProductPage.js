@@ -4,10 +4,12 @@ import "./ProductPage.css"
 import BreadCrumbs from "../module-breadcrumbs/BreadCrumbs"
 import ProductPageMain from "../module-product-page-main/ProductPageMain"
 
-function ProductPage() {
+function ProductPage({breadCrumbs ,changeToMainPage}) {
     return(
         <div className="productPage">
-            <BreadCrumbs path={["Home", "Woman" , "Product"]}/>
+            <BreadCrumbs 
+                breadCrumbs={breadCrumbs}
+                changeToMainPage={changeToMainPage}/>
             <ProductPageMain />
         </div>
     )

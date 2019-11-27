@@ -5,30 +5,53 @@ import MainPage from "../module-main-page/MainPage"
 import ProductPage from "../module-product-page/ProductPage"
 
 function Cms() {
-    const [dispalyedPage , setDisplayedPage] = useState("MainPage") 
-    // up in normal state should be  "MainPage"
+    let [displayedPage , setDisplayedPage] = useState("MainPage")
+    const [breadCrumbs , setBreadCrumbs] = useState(["Home"]);
 
-    //const [breadCrumbs , setBreadCrumbs] = useState("");
+    //Product Properties to dispaly them in ProductPage
+    let [itemName , setItemName]= useState("");
+    let [itemRanking , setItemRanking]= useState();
+    let [itemReviews , setItemReviews]= useState([]);
+    let [itemSizes , setItemSizes]= useState([]);
+    let [itemColours , setItemColours]= useState([]);
 
-    const changeToProductPage = event => setDisplayedPage (dispalyedPage = "ProductPage")
+    const changeToProductPage = event => setDisplayedPage (displayedPage = "ProductPage")
+    const changeToMainPage = event => setDisplayedPage (displayedPage = "MainPage")
+
+
+   
+
+    
 
     const dispaly = x => {
         switch (x) {
             case "MainPage":
-                return  <MainPage />
+                return  <MainPage 
+                    changeToProductPage={changeToProductPage}
+                    setItemName={setItemName}
+                    setItemRanking={setItemRanking}  
+                    setItemReviews={setItemReviews} 
+                    setItemSizes={setItemSizes}  
+                    setItemColours={setItemColours}             
+                />;
                 break;
                 
             case "ProductPage":
-                return <ProductPage />;
+                return <ProductPage 
+                    changeToMainPage={changeToMainPage}
+                    breadCrumbs={breadCrumbs}
+                />;
                 break;
-            default:   console.log("smth went wrong in cms moudle");;
+            default:  
+                return  <MainPage />
+                break;
                 
         }
     }
     
     return(
         <main className="cms">
-            {dispaly(dispalyedPage)}
+            {dispaly(displayedPage)}
         </main>
     )
 }
