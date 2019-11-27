@@ -1,16 +1,22 @@
 .header__navigation{
-    height: 54px;
+    height: 47px;
     width: 100%;
     margin-bottom: 25px;
-    
     display: flex;
     justify-content: center;
     
     color: #575757;
     background-color: #f0f0f0;
+
+    font-size: 14px;
+    font-weight: 700
 }
 
 .navigationContainer{
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
     width: 1250px;
 }
 
@@ -22,50 +28,73 @@ ul {
 }
   
 ul li{
-    padding: 0px 12px;
-    
-    display:block;
     position:relative;
+    
+    height: 100%;
+    padding:  12px ;
+    display:block;
     float:left;
-
 }
-  
+.firstLevelNav:hover{
+    border-bottom: 3px solid #ff5501;
+    padding-bottom: 9px;
+}
+
 li ul {
     display:none;
 }
+
+.secondLevelNav:hover{
+    display: flex;
+
+    align-items: center;
+    border-left: 3px solid #ff5501;
+    padding-left: 9px;
+}
+.navigation__arrowRight{
+    position: absolute;
+    right:5px;
+    
+    margin: 2px;
+}
   
 ul li a {
-    padding: 1em; 
-   
     display: block;
+
+    color: #333; 
 
     text-decoration: none;
     white-space: nowrap;
-    color: #333; 
+}
+
+.navigation__arrowDown{
+    margin: 0px 5px ;
 }
   
 li:hover > ul {
-    margin-left:-12px;
-
-    display: block;
     position: absolute;
     
-    background: #ffffff;
+    margin-left:-12px;
+    display: block;
     border: 1px solid #ccc;
     box-shadow: 0 5px 5px rgba(0,0,0,0.19); 
+    
+    background: #ffffff;
 }
   
 li:hover li {
-    height: 34px;
-    width: 204px;
-    
+    height: 12px;
+    width: 206px;
     display: flex;
     align-items: center;
-
 }
 
 ul li:hover{
-    background-color: #e8e8e8;
+    background-color: #e8e8e8; 
+}
+ul li ul{
+    position: absolute;
+    top:43px;
 }
   
 ul ul ul {
@@ -76,5 +105,4 @@ ul ul ul {
 ul ul ul li:hover{
     background-color: #e8e8e8; 
 }
-  
   

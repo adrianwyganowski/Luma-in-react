@@ -1,6 +1,5 @@
 .header__panel{
     width: 100%;
-    
     display: flex;
     justify-content: center;
 
@@ -12,7 +11,6 @@
     width: 1240px;
     margin: 0;
     padding: 10px 20px 10px 20px;
-
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -23,13 +21,11 @@
 
 .panelContainer__item{
     margin-left: 15px;
-    
     display: flex;
     flex-direction: row;
     align-items: center;
 
     color:white;
+
     text-decoration: none;
-    
-    
 }

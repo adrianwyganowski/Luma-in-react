@@ -2,13 +2,12 @@
     width: 700px; 
     margin-right: 40px;
     margin-bottom: 130px;
-    
 }
 
 .mediaContainer{
     position: relative;
-    margin-bottom: 10px;
     
+    margin-bottom: 10px;
 }
 .imgsContainer{
     position: relative;
@@ -19,23 +18,25 @@
 
 .imgsContainer__carousel{
     position: absolute;
-    display: flex; 
-    transition: 0.3s;
     left:0px;
+   
+    display: flex; 
+
+    transition: 0.3s;
 }
 
 .nextImg{
     left: -700px;
 }
 
-
-
 .mediaContainer__firstButton{
     position: absolute;
     left: 0;
     top:350px;
-    opacity: 0;
+
     font-size: 80px;
+
+    opacity: 0;
     transition:  0.3s;
 }
 
@@ -43,27 +44,31 @@
     position: absolute;
     right: 0;
     top:350px;
-    opacity: 0;
+
     font-size: 80px;
+
+    opacity: 0;
     transition:  0.3s;
 }
 
 .mediaContainer:hover .mediaContainer__firstButton{
-    opacity: 1;
     left:40px;
+
+    opacity: 1;
     cursor: pointer;  
 }
 
 .mediaContainer:hover .mediaContainer__secondButton{
-    opacity: 1;
     right:40px;
+
+    opacity: 1;
     cursor: pointer;  
 }
 
 .productMedia__navigation{
     position: absolute;
+   
     display: flex;
-    
 }
 
 .productMedia__navigation--imgs{
@@ -71,14 +76,15 @@
 }
 
 .productMedia__navigation--border{
+    position: absolute;
+    left:0px;
+
     height: 110px;
     width: 88px;
-    position: absolute;
     border: 2px solid #ff5501;
     margin: 0px;
-    left:0px;
+    
     transition:  0.3s;
-
 }
 
 .nextNavImg{

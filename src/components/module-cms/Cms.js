@@ -5,7 +5,7 @@ import MainPage from "../module-main-page/MainPage"
 import ProductPage from "../module-product-page/ProductPage"
 
 function Cms() {
-    const [dispalyedPage , setDisplayedPage] = useState("ProductPage") 
+    const [dispalyedPage , setDisplayedPage] = useState("MainPage") 
     // up in normal state should be  "MainPage"
 
     //const [breadCrumbs , setBreadCrumbs] = useState("");

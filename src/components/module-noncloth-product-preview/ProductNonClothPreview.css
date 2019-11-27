@@ -1,6 +1,7 @@
 a{
-    text-decoration: none;
     color: #000000;
+
+    text-decoration: none;
 }
 .productNonClothPreview{
     border: 1px solid #FFFFFF;
@@ -15,7 +16,6 @@ a{
     display: inline;
 
     font-size: 14px;
-
 }
 
 .productNonClothPreview__name:hover{
@@ -24,13 +24,15 @@ a{
 
 .productNonClothPreview__price{
     margin: 10px 0 25px 0;
+
+    color: #000000;
     
     font-size: 14px;
     font-weight: 700;
-    color: #000000;
 }
 
 .productNonClothPreview__price--label{
-    font-size: 12px;
     color: #666;
+
+    font-size: 12px;
 }
