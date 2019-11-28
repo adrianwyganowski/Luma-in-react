@@ -10,7 +10,7 @@ function ProductNonClothPreview(props) {
                 {props.name}
                 </p>
                 <p className="productNonClothPreview__price">
-                    <span className="productNonClothPreview__price--label">As low as </span>PLN{props.price}   
+                    <span className="productNonClothPreview__price--label">As low as </span>${props.price}   
                 </p>
             </div>
         </div>

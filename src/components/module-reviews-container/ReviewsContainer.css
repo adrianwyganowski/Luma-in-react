@@ -1,0 +1,31 @@
+.reviewsContainer{
+    width: 330px;
+    height: 23px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+.reviewsContainer__noReviews{
+    font-size: 14px;
+}
+
+.reviewsContainer__stars{
+    margin-right: 30px;
+}
+
+
+.reviewsContainer__reviews {
+    margin-right: 30px;
+
+    white-space: nowrap;
+}
+
+.reviewsContainer__addReview{
+    margin-top: 3px;
+    
+    white-space: nowrap;
+}

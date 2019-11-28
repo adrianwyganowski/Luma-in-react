@@ -1,16 +1,21 @@
 import React from "react"
 import "./ProductClothPreview.css";
 
+import SizeBoxes from "../module-size-boxes/SizeBoxes"
+import ColorBoxes from "../module-color-boxes/ColorBoxes"
+
 function ProductClothPreview({ 
     changeToProductPage,
     setItemName,
-    //TO DO RANKING AND REVIEWS
     setItemRanking,
     setItemReviews,
+    setItemPrice,
     setItemSizes,
     setItemColours,
     imgSrc,
     name,
+    rating,
+    reviews,
     price,
     sizes,
     colors
@@ -19,6 +24,9 @@ function ProductClothPreview({
     function onClick(){
         changeToProductPage();
         setItemName(name);
+        setItemRanking(rating)
+        setItemReviews(reviews)
+        setItemPrice(price)
         setItemSizes(sizes)
         setItemColours(colors)
     
@@ -32,16 +40,14 @@ function ProductClothPreview({
                 {name}
                 </p>
                 <p className="productClothPreview__price">
-                    <span className="productClothPreview__price--label">As low as </span>PLN{price}   
+                    <span className="productClothPreview__price--label">As low as </span>${price}   
                 </p>
             </div>
             <div className="productClothPreview__size">
-                {sizes.map((size) => {return <div className="productClothPreview__size--block">{size}</div>})}
+                <SizeBoxes  sizes={sizes}/>
             </div>
             <div className="productClothPreview__color">
-                {colors.map((color) => {
-                    return <div className="productClothPreview__color--block" style={{backgroundColor: color[1] }}></div>})
-                    }
+                <ColorBoxes colors={colors} />
             </div>
           
 

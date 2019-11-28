@@ -3,6 +3,70 @@
 }
 
 .productInfoMain__title{
+    margin-bottom: 15px;
+
     font-size: 40px;
     font-weight: 300;
+}
+
+.priceContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 15px;
+
+    font-size: 14px; 
+
+    color: #575757;
+}
+.priceContainer__priceContainer{
+    padding-bottom: 10px;  
+}
+
+.priceContainer__priceContainer-label{
+    margin-bottom: 5px; 
+    
+    font-size: 21px;
+}
+
+.priceContainer__inStockContainer{
+    padding-bottom: 10px;
+
+    text-align: right;
+}
+
+.priceContainer__priceContainer-price{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.priceContainer__inStockContainer-inStock{
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.productFormContainer{
+    padding-top:20px;
+}
+
+.productFormContainer__sizesContainer--label{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.productFormContainer__sizesContainer--avelibleSizes{
+    display: flex;
+    margin: 10px 0px;
+}
+
+.productFormContainer__colourContainer--label{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.productFormContainer__colourContainer--avelibleColours{
+    display: flex;
+    margin:10px 0px;
 }

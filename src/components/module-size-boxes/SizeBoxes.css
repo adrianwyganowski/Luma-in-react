@@ -1,0 +1,21 @@
+.sizeBox{
+    width: 22px;
+    height: 20px;
+    margin: 0px 8px 5px 0px;
+    padding:4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dadada;
+
+    color: #949494;
+    background: #f0f0f0;
+
+    font-size: 12px;
+}
+
+.sizeBox:hover{
+    /* TODO   change style after click*/
+    color: #000000;
+    border: 1px solid #000000;
+}

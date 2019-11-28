@@ -45,28 +45,6 @@ a{
     grid-template-rows: repeat(2, 40px);
 }
 
-.productClothPreview__size--block{
-    width: 22px;
-    height: 20px;
-    margin: 0px 8px 5px 0px;
-    padding:4px 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #dadada;
-
-    color: #949494;
-    background: #f0f0f0;
-
-    font-size: 12px;
-}
-
-.productClothPreview__size--block:hover{
-    /* TODO   change style after click*/
-    color: #000000;
-    border: 1px solid #000000;
-}
-
 .productClothPreview__color{
     width: 100%;
     
@@ -74,13 +52,7 @@ a{
     justify-content: flex-start;
 }
 
-.productClothPreview__color--block{
-    width: 30px;
-    height: 20px;
-    padding: 1px 2px;
-    margin: 0 10px 5px 0;
-    border: 1px solid #dadada;
-}
+
 
 .productClothPreview__color--block:hover{
     /* TODO */

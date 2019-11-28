@@ -9,6 +9,7 @@ function BlockProductList({
     setItemName,
     setItemRanking,
     setItemReviews,
+    setItemPrice,
     setItemSizes,
     setItemColours}) {
 
@@ -21,10 +22,17 @@ function BlockProductList({
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
+            setItemPrice={setItemPrice}
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}  
+            setItemColours={setItemColours} 
+
             imgSrc={require ("../web/images/product-id-1.jpg")} 
             name ="Breathe-Easy Tank"
+            rating = "70"
+            reviews= {[
+                    ["Great fit - love the v-neck design!",80,"Great fit - love the v-neck design!", "Thalia 10/30/19"],
+                    ["The seams bother me",60,"Some of the seams bother me during certain workouts but otherwise very comfortable","Carma 10/30/19"]
+                    ]}
             price ="34.00"
             sizes = {["XS","S","M","L" ,"XL"]}
             colors = {[["Purple" , "#ef3dff"] , ["White" , "#ffffff"] , ["Yellow" , "#ffd500"]]}
@@ -35,8 +43,10 @@ function BlockProductList({
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
+            setItemPrice={setItemPrice}
             setItemSizes={setItemSizes}  
             setItemColours={setItemColours}  
+
             imgSrc={require ("../web/images/product-id-2.jpg")} 
             name ="Radiant Tee"
             price ="22.00"
@@ -49,8 +59,10 @@ function BlockProductList({
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
+            setItemPrice={setItemPrice}
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}  
+            setItemColours={setItemColours} 
+             
             imgSrc={require ("../web/images/product-id-3.jpg")} 
             name ="Argus All-Weather Tank"
             price ="22.00"
@@ -62,9 +74,11 @@ function BlockProductList({
             changeToProductPage={changeToProductPage}
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews} 
+            setItemReviews={setItemReviews}
+            setItemPrice={setItemPrice} 
             setItemSizes={setItemSizes}  
             setItemColours={setItemColours}  
+
             imgSrc={require ("../web/images/product-id-4.jpg")} 
             name ="Hero Hoodie"
             price ="54.00"
@@ -73,20 +87,24 @@ function BlockProductList({
             />
 
             <ProductNonClothPreview  
+            changeToProductPage={changeToProductPage}
             setItemName={setItemName}
+            setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
-            changeToProductPage={changeToProductPage}
+            
             imgSrc={require ("../web/images/product-id-5.jpg")} 
             name ="LifeLong Fitness IV"
             price ="14.00"
            />
 
             <ProductNonClothPreview 
+            changeToProductPage={changeToProductPage}
             setItemName={setItemName}
+            setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
-            changeToProductPage={changeToProductPage}
+            
             imgSrc={require ("../web/images/product-id-6.jpg")} 
             name ="LifeLong Fitness IV"
             price ="59.00"
@@ -94,6 +112,11 @@ function BlockProductList({
 
             <ProductNonClothPreview 
             changeToProductPage={changeToProductPage}
+            setItemName={setItemName}
+            setItemPrice={setItemPrice} 
+            setItemRanking={setItemRanking}  
+            setItemReviews={setItemReviews} 
+
             imgSrc={require ("../web/images/product-id-7.jpg")} 
             name ="LifeLong Fitness IV"
             price ="45.00"

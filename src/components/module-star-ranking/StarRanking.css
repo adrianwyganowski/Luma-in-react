@@ -1,0 +1,36 @@
+.starRanking{
+    position: relative;
+    
+    margin: 0 auto;  
+    padding: 0;
+
+    color: #c7c7c7;
+
+    font-size: 22px;
+}
+
+.starRanking span{
+    margin:0px;
+}
+
+.starRanking__top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    padding: 0;
+    display: block;
+   
+    color: #ff5501;
+
+    overflow: hidden;
+}
+
+.starRanking__bottom{
+    z-index: 0;
+
+    width: 100%;
+    padding: 0;
+    display: block;
+}

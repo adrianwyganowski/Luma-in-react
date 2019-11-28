@@ -9,6 +9,7 @@ function MainPage({
     setItemName,
     setItemRanking,
     setItemReviews,
+    setItemPrice,
     setItemSizes,
     setItemColours}){
     
@@ -22,6 +23,7 @@ function MainPage({
                 setItemName={setItemName}
                 setItemRanking={setItemRanking}
                 setItemReviews={setItemReviews}
+                setItemPrice={setItemPrice}
                 setItemSizes={setItemSizes}
                 setItemColours={setItemColours}
             />

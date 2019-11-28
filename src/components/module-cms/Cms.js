@@ -5,23 +5,19 @@ import MainPage from "../module-main-page/MainPage"
 import ProductPage from "../module-product-page/ProductPage"
 
 function Cms() {
-    let [displayedPage , setDisplayedPage] = useState("MainPage")
+    let [displayedPage , setDisplayedPage] = useState("ProductPage")
     const [breadCrumbs , setBreadCrumbs] = useState(["Home"]);
 
     //Product Properties to dispaly them in ProductPage
     let [itemName , setItemName]= useState("");
     let [itemRanking , setItemRanking]= useState();
     let [itemReviews , setItemReviews]= useState([]);
+    let [itemPrice , setItemPrice]= useState("");
     let [itemSizes , setItemSizes]= useState([]);
     let [itemColours , setItemColours]= useState([]);
 
     const changeToProductPage = event => setDisplayedPage (displayedPage = "ProductPage")
     const changeToMainPage = event => setDisplayedPage (displayedPage = "MainPage")
-
-
-   
-
-    
 
     const dispaly = x => {
         switch (x) {
@@ -30,7 +26,8 @@ function Cms() {
                     changeToProductPage={changeToProductPage}
                     setItemName={setItemName}
                     setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
+                    setItemReviews={setItemReviews}
+                    setItemPrice={setItemPrice} 
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours}             
                 />;
@@ -40,6 +37,12 @@ function Cms() {
                 return <ProductPage 
                     changeToMainPage={changeToMainPage}
                     breadCrumbs={breadCrumbs}
+                    itemName={itemName}
+                    itemRanking={itemRanking}
+                    itemReviews={itemReviews}
+                    itemPrice={itemPrice}
+                    itemSizes={itemSizes}
+                    itemColours={itemColours}
                 />;
                 break;
             default:  
