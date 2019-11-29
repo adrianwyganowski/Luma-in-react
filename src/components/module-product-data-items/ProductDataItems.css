@@ -1,0 +1,29 @@
+.productDataItems{
+    margin-bottom: 20px;
+}
+
+.productDataItems__labels{
+    display: flex;
+
+    font-size: 14px;
+}
+
+.productDataItems__labels--label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 1px 35px;
+    border: 1px solid #cccccc;
+    margin: 0px;
+
+    color: #6d6d6d;
+    background: #f6f6f6;
+}
+
+.productDataItems__content{
+    width: 1250px;
+    padding: 35px;
+    
+    border: 1px solid #cccccc;
+}

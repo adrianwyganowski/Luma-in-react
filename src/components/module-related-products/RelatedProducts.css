@@ -1,0 +1,12 @@
+.relatedProducts{
+    margin-bottom: 70px;
+}
+
+.relatedProducts_heading{
+    /* TO DO */
+    margin: 30px 0 10px;
+}
+
+.relatedProductPreviewContainer{
+    display: flex;
+}

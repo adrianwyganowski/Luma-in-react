@@ -3,8 +3,9 @@ import "./ProductPageMain.css"
 
 import ProductMedia from "../module-product-media/ProductMedia"
 import ProductInfoMain from "../module-product-info-main/ProductInfoMain";
+import ProductDataItems from "../module-product-data-items/ProductDataItems"
+import RelatedProducts from "../module-related-products/RelatedProducts"
 
-// TODO TRY TO DO IT NOT HARDCODED !!!!!
 
 function ProductPageMain({
     itemName,
@@ -27,15 +28,19 @@ function ProductPageMain({
 
     return(
         <div className="productPageMain">
-            <ProductMedia imgsPaths={imgsPaths} navImgsPaths={navImgsPaths} />
-            <ProductInfoMain 
-                itemName={itemName}
-                itemRanking={itemRanking}
-                itemReviews={itemReviews}
-                itemPrice={itemPrice}
-                itemSizes={itemSizes}
-                itemColours={itemColours} 
-            />
+            <div className="productPageMain__mainColumn">
+                <ProductMedia imgsPaths={imgsPaths} navImgsPaths={navImgsPaths} />
+                <ProductInfoMain 
+                    itemName={itemName}
+                    itemRanking={itemRanking}
+                    itemReviews={itemReviews}
+                    itemPrice={itemPrice}
+                    itemSizes={itemSizes}
+                    itemColours={itemColours} 
+                />
+            </div>
+            <ProductDataItems />
+            <RelatedProducts />
         </div>
     )
 }

@@ -5,6 +5,7 @@ import ReviewsContainer from "../module-reviews-container/ReviewsContainer"
 import SizeBoxes from "../module-size-boxes/SizeBoxes"
 import ColorBoxes from "../module-color-boxes/ColorBoxes"
 
+import chart from "../web/images/chart.png"
 
 function ProductInfoMain({
     itemName,
@@ -34,15 +35,30 @@ function ProductInfoMain({
                 <form className="productFormContainer">
                     <div className="productFormContainer__sizesContainer">
                         <p className="productFormContainer__sizesContainer--label">Size</p> 
-                        {/* TODO crate state depending on click block size and displaying next to size paragraph choosen size */}
+                        {/* TODO crate state depending on click block size and displaying paragraph with choosen size next to size  */}
                         <div className="productFormContainer__sizesContainer--avelibleSizes">
                             <SizeBoxes sizes={itemSizes} />
                         </div>
                     </div>
-                    <div className="productFormContainer__colourContaine">
+                    <div className="productFormContainer__colourContainer">
                         <p className="productFormContainer__colourContainer--label">Color</p>
                         <div className="productFormContainer__colourContainer--avelibleColours">
                             <ColorBoxes colors={itemColours} />
+                        </div>
+                    </div>
+                    <div className="productFormContainer__quantityContainer">
+                        <p className="productFormContainer__quantityContainer--label">Qty</p> 
+                        <input type="number" className="productFormContainer__quantityContainer--input" defaultValue="1"></input>
+                    </div>
+                    <button className="productFormContainer__button">
+                        Add to Cart
+                    </button>
+                    <div className="productFormContainer__socialLinksContainer">
+                        <div className="productFormContainer__socialLinksContainer--wishList">
+                            <span>&#10084; </span> ADD TO WISH LIST
+                        </div>
+                        <div className="productFormContainer__socialLinksContainer--compare">
+                            <span> <img src={chart}  alt="chart icon"/> </span>  ADD TO COMPERE
                         </div>
                     </div>
                 </form>
