@@ -47,8 +47,6 @@ function Cms() {
                 break;
             default:  
                 return  <MainPage />
-                break;
-                
         }
     }
     

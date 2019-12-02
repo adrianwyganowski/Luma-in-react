@@ -1,0 +1,53 @@
+.addReviewContainer{
+    color: #333333;
+}
+
+.addReviewContainer__headerLabel{
+    font-size: 18px;
+}
+
+.addReviewContainer__header{
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.addReviewContainer__form{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.addReviewContainer__form--label{
+    margin-bottom: 10px;
+}
+
+.addReviewContainer__form--label{
+    margin-bottom: 20px;
+}
+
+.addReviewContainer__form--input{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 32px;
+}
+
+.addReviewContainer__form--button{
+    width:140px;
+    padding: 7px 15px;
+    border: 1px solid #cccccc;
+    margin-top:40px;
+
+    background: #eeeeee;
+    color:#333333;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.addReviewContainer__form--button:hover{
+    background: #e1e1e1;
+}

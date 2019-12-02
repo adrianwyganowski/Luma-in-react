@@ -1,0 +1,35 @@
+.reviewContainer{
+    padding:30px 0;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 30px;
+
+    color: #333333;
+}
+
+.reviewContainer__header{
+    margin-bottom: 30px;
+
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.rewiewContent{
+    display: flex;
+}
+
+.rewiewContent__rating{
+    display: flex;
+    align-items: center;
+    margin-right: 135px;
+    width: 155px;
+    height: 26px;
+}
+
+.rewiewContent__rating--label{
+    margin: 0px;
+    padding-right: 25px;
+}
+
+.rewiewContent__commentary--content{
+    margin-bottom: 20px;
+}

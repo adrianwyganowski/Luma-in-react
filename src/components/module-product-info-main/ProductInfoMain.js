@@ -58,7 +58,7 @@ function ProductInfoMain({
                             <span>&#10084; </span> ADD TO WISH LIST
                         </div>
                         <div className="productFormContainer__socialLinksContainer--compare">
-                            <span> <img src={chart}  alt="chart icon"/> </span>  ADD TO COMPERE
+                            <span> <img src={chart}  alt="chart icon"/> </span>  ADD TO COMPARE
                         </div>
                     </div>
                 </form>

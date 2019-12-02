@@ -21,7 +21,7 @@ function ProductClothPreview({
     colors
 }) {
     
-    function onClick(){
+    function sendDataToState(){
         changeToProductPage();
         setItemName(name);
         setItemRanking(rating)
@@ -34,7 +34,7 @@ function ProductClothPreview({
 
     return(
         <div className="productClothPreview" >
-            <div className="productClothPreview_img" onClick={onClick}>
+            <div className="productClothPreview_img" onClick={sendDataToState}>
                 <img src={imgSrc} alt="product"/>
                 <p className="productClothPreview__name">
                 {name}

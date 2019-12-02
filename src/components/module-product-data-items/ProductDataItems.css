@@ -23,7 +23,33 @@
 
 .productDataItems__content{
     width: 1250px;
+    height: auto;
     padding: 35px;
-    
     border: 1px solid #cccccc;
+
+    font-size: 14px;
+}
+
+.moreInformationContainer{
+    display: flex;
+}
+
+.moreInformationContainer__categories{
+    width: 80px;
+
+    font-weight: 700;
+}
+
+.moreInformationContainer__categories--item{
+    padding: 5px 0 10px;
+}
+
+.reviewsInfoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewsInfoContainer__header{
+    font-size: 26px;
+    font-weight: 300;
 }

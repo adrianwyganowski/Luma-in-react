@@ -39,7 +39,7 @@ function ProductPageMain({
                     itemColours={itemColours} 
                 />
             </div>
-            <ProductDataItems />
+            <ProductDataItems itemReviews={itemReviews}  itemName={itemName}/>
             <RelatedProducts />
         </div>
     )
