@@ -15,6 +15,13 @@ function ProductPageMain({
     itemSizes,
     itemColours,
 
+    setItemName,
+    setItemRanking,
+    setItemReviews,
+    setItemPrice,
+    setItemSizes,
+    setItemColours
+
 }){
     let imgsPaths ={
         0 : require ("../web/images/1-bg-img-id-1.jpg"),
@@ -40,7 +47,14 @@ function ProductPageMain({
                 />
             </div>
             <ProductDataItems itemReviews={itemReviews}  itemName={itemName}/>
-            <RelatedProducts />
+            <RelatedProducts 
+                    setItemName={setItemName}
+                    setItemRanking={setItemRanking}  
+                    setItemReviews={setItemReviews}
+                    setItemPrice={setItemPrice} 
+                    setItemSizes={setItemSizes}  
+                    setItemColours={setItemColours}          
+            />
         </div>
     )
 }

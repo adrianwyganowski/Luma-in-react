@@ -12,7 +12,15 @@ function ProductPage({
         itemReviews,
         itemPrice,
         itemSizes,
-        itemColours
+        itemColours,
+
+        setItemName,
+        setItemRanking,
+        setItemReviews,
+        setItemPrice,
+        setItemSizes,
+        setItemColours
+
     }) {
     return(
         <div className="productPage">
@@ -26,6 +34,13 @@ function ProductPage({
                 itemPrice={itemPrice}
                 itemSizes={itemSizes}
                 itemColours={itemColours} 
+
+                setItemName={setItemName}
+                setItemRanking={setItemRanking}  
+                setItemReviews={setItemReviews}
+                setItemPrice={setItemPrice} 
+                setItemSizes={setItemSizes}  
+                setItemColours={setItemColours}          
             />
         </div>
     )

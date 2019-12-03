@@ -43,6 +43,13 @@ function Cms() {
                     itemPrice={itemPrice}
                     itemSizes={itemSizes}
                     itemColours={itemColours}
+                    
+                    setItemName={setItemName}
+                    setItemRanking={setItemRanking}  
+                    setItemReviews={setItemReviews}
+                    setItemPrice={setItemPrice} 
+                    setItemSizes={setItemSizes}  
+                    setItemColours={setItemColours}          
                 />;
                 break;
             default:  
