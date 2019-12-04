@@ -1,7 +1,7 @@
 import React from "react"
 import "./DataItemReview.css"
 
-import StarRanking from "../module-star-ranking/StarRanking"
+import StarRating from "../module-star-rating/StarRating"
 
 function DataItemReview ({header, rating, comment, author}){
     return (
@@ -12,7 +12,7 @@ function DataItemReview ({header, rating, comment, author}){
 
             <div className="rewiewContent">
                 <div className="rewiewContent__rating">
-                    <span className="rewiewContent__rating--label">Rating</span> <StarRanking itemRanking={rating}/>
+                    <span className="rewiewContent__rating--label">Rating</span> <StarRating itemRating={rating}/>
                 </div>
                 <div className="rewiewContent__commentary">
                     <div className="rewiewContent__commentary--content">

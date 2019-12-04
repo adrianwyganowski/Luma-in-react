@@ -6,11 +6,15 @@ a{
 
 .productClothPreview{
     border: 1px solid #FFFFFF;
+    margin-bottom: 30px;
+    
 }
 
 .productClothPreview:hover{
     border: 1px solid #ccc;
+    height: 100%;
     box-shadow: 0 5px 5px rgba(0,0,0,0.19); 
+
 }
 
 .productClothPreview__name{
@@ -23,6 +27,13 @@ a{
     color: #000000
 }
 
+.productClothPreview__ratingAndReviews{
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+}
+
 .productClothPreview__price{
     margin: 10px 0 25px 0;
 
@@ -33,6 +44,8 @@ a{
 }
 
 .productClothPreview__price--label{
+    margin: 0px;
+    
     font-size: 12px;
 
     color: #666;
@@ -42,19 +55,52 @@ a{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,50px);
-    grid-template-rows: repeat(2, 40px);
+    grid-template-rows: repeat(2, auto);
 }
 
 .productClothPreview__color{
     width: 100%;
-    
     display: flex;
     justify-content: flex-start;
 }
 
-
-
-.productClothPreview__color--block:hover{
-    /* TODO */
+.productClothPreview__onHover{
+    display: none;
 }
 
+.productClothPreview:hover .productClothPreview__onHover{
+    display: unset;
+}
+
+.productActionsContainer{
+    display: flex;
+    align-items: center;
+    margin:10px;
+}
+
+.productActionsContainer__button{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 13px;
+    padding: 10px 15px;
+    border: 1px solid #006bb4;
+
+    background: #1979c3;
+    color: #ffffff;
+    
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.productActionsContainer__button:hover{
+    background: #006bb4;
+}
+
+.productActionsContainer__wishList{
+    color: #666666;
+}
+
+.productActionsContainer__wishList:hover{
+    color: #333333;
+}

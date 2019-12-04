@@ -2,7 +2,7 @@ import React from 'react'
 import "./BlockProductList.css"
 
 import ProductClothPreview from "../module-cloth-product-preview/ProductClothPreview"
-import ProductNonClothPreview from "../module-noncloth-product-preview/ProductNonClothPreview"
+
 
 function BlockProductList({
     changeToProductPage,
@@ -86,40 +86,52 @@ function BlockProductList({
             colors = {[["Black" , "#000000"] , ["Gray" , "#8f8f8f"] , ["Green" , "##53a828"]]}
             />
 
-            <ProductNonClothPreview  
+            <ProductClothPreview  
             changeToProductPage={changeToProductPage}
             setItemName={setItemName}
             setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
+            setItemSizes={setItemSizes}  
+            setItemColours={setItemColours} 
             
             imgSrc={require ("../web/images/product-id-5.jpg")} 
-            name ="LifeLong Fitness IV"
+            name ="Push It Messenger Bag"
             price ="14.00"
+            sizes = {[]}
+            colors = {[]}
            />
 
-            <ProductNonClothPreview 
+            <ProductClothPreview 
             changeToProductPage={changeToProductPage}
             setItemName={setItemName}
             setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
+            setItemSizes={setItemSizes}  
+            setItemColours={setItemColours} 
             
             imgSrc={require ("../web/images/product-id-6.jpg")} 
-            name ="LifeLong Fitness IV"
+            name ="Fusion Backpack"
             price ="59.00"
+            sizes = {[]}
+            colors = {[]}
             />
 
-            <ProductNonClothPreview 
+            <ProductClothPreview 
             changeToProductPage={changeToProductPage}
             setItemName={setItemName}
             setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
+            setItemSizes={setItemSizes}  
+            setItemColours={setItemColours} 
 
             imgSrc={require ("../web/images/product-id-7.jpg")} 
             name ="LifeLong Fitness IV"
             price ="45.00"
+            sizes = {[]}
+            colors = {[]}
             />
 
         </div>

@@ -5,7 +5,7 @@ import MainPage from "../module-main-page/MainPage"
 import ProductPage from "../module-product-page/ProductPage"
 
 function Cms() {
-    let [displayedPage , setDisplayedPage] = useState("ProductPage")
+    let [displayedPage , setDisplayedPage] = useState("MainPage")
     const [breadCrumbs , setBreadCrumbs] = useState(["Home"]);
 
     //Product Properties to dispaly them in ProductPage

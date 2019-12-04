@@ -5,3 +5,9 @@
     margin: 0 10px 5px 0;
     border: 1px solid #dadada;
 }
+
+.colorBox:hover{
+    border: 1px solid #ffffff;
+    outline: 2px solid #c34000;
+}
+

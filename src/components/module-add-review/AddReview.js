@@ -1,7 +1,7 @@
 import React , {useState} from "react"
 import "./AddReview.css"
 
-import StarRanking from "../module-star-ranking/StarRanking"
+import StarRating from "../module-star-rating/StarRating"
 
 function AddReview({itemName}){
     return(
@@ -11,7 +11,7 @@ function AddReview({itemName}){
             <form className="addReviewContainer__form">
                 <p className="addReviewContainer__form--label">Your Rating *</p>
                 <p>Rating</p>
-                <StarRanking itemRanking="0" />
+                <StarRating itemRating="0" />
            
                 <label className="addReviewContainer__form--label" for="NickNameInput">Nickname *</label>
                 <input className="addReviewContainer__form--input" id="itemRanking"></input>

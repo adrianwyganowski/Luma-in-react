@@ -4,7 +4,10 @@ import "./Reviews.css"
 function Reviews({itemReviews}) {
 
     function lengthOfArray() {
-        return <a>{itemReviews.length} Reviews </a>
+        if(itemReviews !== undefined)
+          return <a>{itemReviews.length} Reviews </a>
+        else
+            return 
     }
     return(
         <div className="reviews">

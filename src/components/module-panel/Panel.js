@@ -8,20 +8,20 @@ function Panel() {
         <div className="header__panel">
             <div className="panelContainer">
                 <a href="#" className="panelContainer__item"> 
-                    <span>PL</span> 
+                    <span>EN</span> 
                     <Arrow />
                 </a>
                 <a  href="#" className="panelContainer__item">
-                    Utwórz konto
+                    Create an Account
                 </a>
                 <span className="panelContainer__item">
-                    lub
+                    or
                 </span>
                 <a href="#" className="panelContainer__item">
-                    Zaloguj się
+                    Sign
                 </a>
                 <span className="panelContainer__item">
-                    Domyślna wiadomość powitalna!
+                    Default welcome msg!
                 </span>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react"
 import "./ReviewsContainer.css"
 
-import StarRanking from "../module-star-ranking/StarRanking"
+import StarRating from "../module-star-rating/StarRating"
 import Reviews from "../module-reviews/Reviews"
 
 function ReviewsContainer({itemRanking,itemReviews}) {
@@ -18,7 +18,7 @@ function ReviewsContainer({itemRanking,itemReviews}) {
             return(
                 <div className="reviewsContainer">
                     <div className="reviewsContainer__stars">
-                        <StarRanking itemRanking={itemRanking}/>
+                        <StarRating itemRating={itemRanking}/>
                     </div>
                     <div className="reviewsContainer__reviews">
                         <Reviews itemReviews={itemReviews}/>

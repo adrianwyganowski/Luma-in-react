@@ -1,4 +1,4 @@
-.starRanking{
+.starRating{
     position: relative;
     
     margin: 0 auto;  
@@ -9,11 +9,11 @@
     font-size: 22px;
 }
 
-.starRanking span{
+.starRating span{
     margin:0px;
 }
 
-.starRanking__top{
+.starRating__top{
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@
     overflow: hidden;
 }
 
-.starRanking__bottom{
+.starRating__bottom{
     z-index: 0;
 
     width: 100%;

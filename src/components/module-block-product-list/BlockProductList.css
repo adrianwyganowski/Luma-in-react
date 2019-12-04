@@ -1,7 +1,9 @@
 .blockProductList{
     width: 1250px;
     margin-top:20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(5, 250px);
-    grid-template-rows: repeat(2, 485px);
+    grid-template-rows: 570px 440px;
+    grid-row-gap: 10px;
 }

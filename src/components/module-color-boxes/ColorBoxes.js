@@ -2,8 +2,17 @@ import React from "react";
 import "./ColorBoxes.css"
 
 function ColorBoxes({colors}) {
+    let arrOfColors=[]
+    function checkIfUndefined(){
+        if (colors !== undefined){
+            arrOfColors = colors;
+        }
+    }
+
+    checkIfUndefined();
+    
     return(
-        colors.map((color) => {
+        arrOfColors.map((color) => {
             return <div className="colorBox" style={{backgroundColor: color[1] }}></div>}
         )
     )
