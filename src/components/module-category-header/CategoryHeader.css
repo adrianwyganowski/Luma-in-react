@@ -1,0 +1,10 @@
+.CategoryHeader{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+
+    color: #333333;
+
+    font-size: 40px;
+    font-weight: 300;
+}

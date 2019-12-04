@@ -17,7 +17,10 @@ function MainPage({
     return(
         <div>
             <BlocksPromo />
-            <CmsHeading/>
+            <CmsHeading 
+                header="Hot Sellers" 
+                paragraph="Here is what`s trending on Luma right now"
+            />
             <BlockProductList 
                 changeToProductPage={changeToProductPage}
                 setItemName={setItemName}

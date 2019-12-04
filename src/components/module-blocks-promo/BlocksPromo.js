@@ -23,10 +23,6 @@ function BlocksPromo() {
                 <FifthBlock />
                 <SixthBlock />
 
-
-                
-
-
             </div> 
         </div>
     )

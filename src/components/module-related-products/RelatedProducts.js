@@ -24,7 +24,7 @@ function RelatedProducts({
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
 
-                imgSrc={require ("../web/images/1-sm-img-id-8.jpg")}
+                imgSrc={require ("../web/images/product-id-8.jpg")}
                 name ="Mimi All-Purpose Short"
                 rating= "67"
                 reviews={[
@@ -46,7 +46,7 @@ function RelatedProducts({
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
 
-                imgSrc={require ("../web/images/1-sm-img-id-9.jpg")}
+                imgSrc={require ("../web/images/product-id-9.jpg")}
                 name= "Gabrielle Micro Sleeve Top"
                 rating= "73"
                 reviews={[
@@ -69,7 +69,7 @@ function RelatedProducts({
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
 
-                imgSrc={require ("../web/images/1-sm-img-id-10.jpg")}
+                imgSrc={require ("../web/images/product-id-10.jpg")}
                 name="Ana Running Short"
                 rating="80"
                 reviews={[
@@ -92,7 +92,7 @@ function RelatedProducts({
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
 
-                imgSrc={require ("../web/images/1-sm-img-id-11.jpg")}
+                imgSrc={require ("../web/images/product-id-11.jpg")}
                 name="Juliana Short-Sleeve Tee"
                 rating="60"
                 reviews={[

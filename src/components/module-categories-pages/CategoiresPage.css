@@ -1,0 +1,95 @@
+.category{
+    width: 1250px;
+
+    color:#333333;
+
+    font-size: 14px;
+}
+
+.categoryContainer{
+    display: flex;
+}
+
+.categoryMenu{
+    width: 250px;
+    margin-right: 25px;
+}
+
+.categoryMenuContainer{
+    margin-bottom: 40px;
+}
+
+.categoryMenuContainer__title{
+    margin-bottom: 10px;
+
+    font-weight: 700;
+}
+
+.categoryMenuContainer__link{
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.categoryMain{
+    width: 1000px;
+}
+
+.categoryBlocks{
+    display: grid;
+    margin-bottom: 15px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 450px auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+      "firstCategoryBlock firstCategoryBlock"
+      "secondCategoryBlock thirdCategoryBlock"
+}
+
+.categoryFirstBlock{
+    position: relative;
+    
+    grid-area: firstCategoryBlock;
+}
+
+.categorySecondBlock{
+    position: relative;
+
+    grid-area: secondCategoryBlock;
+}
+.categoryThirdBlock{
+    position: relative;
+    
+    grid-area: thirdCategoryBlock;
+}
+
+.categoryBlocks--images{
+    width: 100%;
+    height: 100%;
+}
+
+.categoryBlock--info{
+    margin-bottom:  20px;
+
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.categoryBlock--title{
+    margin-bottom: 15px;
+    
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.categoryBlock--span{
+    font-size: 16px;
+}
+
+.categoryProductsPreview{
+    width: 1000px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 570px;
+}

@@ -1,0 +1,42 @@
+
+.whatsNewFirstBlock__content{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 36%;
+    padding: 25px 35px 35px;
+
+    background-color: rgba(255,255,255,0.9);
+}
+.whatsNewFirstBlock__content--button{
+    width: 105px;
+    height: 20px;
+    margin-top:10px;
+    padding: 10px 15px;
+    border: 1px solid #1979c3;
+    
+    background: #1979c3;
+    color: #fff;
+    
+    cursor: pointer;
+}
+.whatsNewSecondBlock__content{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 55%;
+    padding: 15px 25px 20px;
+}
+
+.whatsNewThirdBlock__content{
+    position: absolute;
+    left:20px;
+    bottom: 20px;
+    padding: 20px 25px;
+    
+    width: 60%;
+
+    background-color: rgba(255,255,255,0.9)
+}
+

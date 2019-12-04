@@ -3,10 +3,11 @@ import "./Cms.css"
 
 import MainPage from "../module-main-page/MainPage"
 import ProductPage from "../module-product-page/ProductPage"
+import CategoriesPage from "../module-categories-pages/CategoriesPage"
 
 function Cms() {
-    let [displayedPage , setDisplayedPage] = useState("MainPage")
-    const [breadCrumbs , setBreadCrumbs] = useState(["Home"]);
+    let [displayedPage , setDisplayedPage] = useState(["CategoriesPage","whatsNew"])
+    const [breadCrumbs , setBreadCrumbs] = useState("Home");
 
     //Product Properties to dispaly them in ProductPage
     let [itemName , setItemName]= useState("");
@@ -16,11 +17,11 @@ function Cms() {
     let [itemSizes , setItemSizes]= useState([]);
     let [itemColours , setItemColours]= useState([]);
 
-    const changeToProductPage = event => setDisplayedPage (displayedPage = "ProductPage")
-    const changeToMainPage = event => setDisplayedPage (displayedPage = "MainPage")
+    const changeToProductPage = event => setDisplayedPage (displayedPage = ["ProductPage"])
+    const changeToMainPage = event => setDisplayedPage (displayedPage = ["MainPage"])
 
     const dispaly = x => {
-        switch (x) {
+        switch (x[0]) {
             case "MainPage":
                 return  <MainPage 
                     changeToProductPage={changeToProductPage}
@@ -51,6 +52,18 @@ function Cms() {
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours}          
                 />;
+                break;
+            case "CategoriesPage":
+                return <CategoriesPage 
+                    subPage={x[1]}
+                    changeToProductPage={changeToProductPage}
+                    setItemName={setItemName}
+                    setItemRanking={setItemRanking}  
+                    setItemReviews={setItemReviews}
+                    setItemPrice={setItemPrice} 
+                    setItemSizes={setItemSizes}  
+                    setItemColours={setItemColours}  
+                />
                 break;
             default:  
                 return  <MainPage />

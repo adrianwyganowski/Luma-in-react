@@ -1,12 +1,12 @@
 import React from "react";
 import "./CmsHeading.css"
 
-function CmsHeading() {
+function CmsHeading({header , paragraph}) {
     
     return(
         <div className="cmsHeading">
-           <h2 className="cmsHeading__header">Hot Sellers</h2>
-           <p className="cmsHeading__paragraph">Here is what`s trending on Luma right now</p>
+           <h2 className="cmsHeading__header">{header}</h2>
+           <p className="cmsHeading__paragraph">{paragraph}</p>
         </div>
     )
 }

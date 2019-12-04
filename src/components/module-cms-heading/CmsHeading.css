@@ -1,6 +1,5 @@
 .cmsHeading{
-    margin-top: 100px;
-    width: 1250px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
