@@ -60,7 +60,7 @@ function WhatsNew({
                         <div className="whatsNewFirstBlock__content">
                             <p className="categoryBlock--info">New Luma Yoga Collection</p>
                             <p className="categoryBlock--title">The very latest yoga styles  plus twists on timeless classics</p>
-                            <div className="whatsNewFirstBlock__content--button">
+                            <div className="categoryBlock--button">
                                 <b>Shop New Yoga</b>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ function WhatsNew({
                         <div className="whatsNewSecondBlock__content">
                             <p className="categoryBlock--title">Whatever day brings</p>
                             <p className="categoryBlock--info"> Luma Cocona <sup>™</sup> for breathability, CoolTech <sup>™</sup>  for wicking, or a blend of both.</p>
-                            <span className="whatsNewBlock--span">Performance Fabrics ></span>
+                            <span className="categoryBlock--span">Performance Fabrics ></span>
                             
                         </div>
                     </div>

@@ -14,16 +14,16 @@ function BreadCrumbs({breadCrumbs, changeToMainPage}) {
         }
     } 
 
-    const displayPath = breadCrumbs.map((links) =>
-        <div className="breadCrumbs__item" > 
-            <div> {links} </div> 
-            <span> > </span> 
-        </div>
-        )
+    // const displayPath = breadCrumbs.map((links) =>
+    //     <div className="breadCrumbs__item" > 
+    //         <div> {links} </div> 
+    //         <span> > </span> 
+    //     </div>
+    //     )
 
     return(
         <div className="breadCrumbs">
-            {displayPath}
+            {/* {displayPath} */}
             <div onClick={changeToMainPage}> HOME BUTTON </div>
         </div>
     )

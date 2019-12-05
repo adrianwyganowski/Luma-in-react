@@ -6,7 +6,7 @@ import ProductPage from "../module-product-page/ProductPage"
 import CategoriesPage from "../module-categories-pages/CategoriesPage"
 
 function Cms() {
-    let [displayedPage , setDisplayedPage] = useState(["CategoriesPage","whatsNew"])
+    let [displayedPage , setDisplayedPage] = useState(["CategoriesPage","MenCategory"])
     const [breadCrumbs , setBreadCrumbs] = useState("Home");
 
     //Product Properties to dispaly them in ProductPage

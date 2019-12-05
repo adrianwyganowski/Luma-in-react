@@ -37,9 +37,9 @@
 .categoryBlocks{
     display: grid;
     margin-bottom: 15px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 493px 493px;
     grid-template-rows: 450px auto;
-    grid-gap: 15px;
+    grid-gap: 14px;
     grid-template-areas: 
       "firstCategoryBlock firstCategoryBlock"
       "secondCategoryBlock thirdCategoryBlock"
@@ -79,6 +79,23 @@
     
     font-size: 32px;
     font-weight: 300;
+}
+
+.categoryBlock--button{
+    width: 105px;
+    height: 20px;
+    margin-top:10px;
+    padding: 10px 15px;
+    border: 1px solid #1979c3;
+    
+    background: #1979c3;
+    color: #fff;
+    
+    cursor: pointer;
+}
+
+.categoryBlock--button:hover{
+    background: #006bb4
 }
 
 .categoryBlock--span{
