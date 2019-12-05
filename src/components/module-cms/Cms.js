@@ -5,8 +5,9 @@ import MainPage from "../module-main-page/MainPage"
 import ProductPage from "../module-product-page/ProductPage"
 import CategoriesPage from "../module-categories-pages/CategoriesPage"
 
+
 function Cms() {
-    let [displayedPage , setDisplayedPage] = useState(["CategoriesPage","MenCategory"])
+    let [displayedPage , setDisplayedPage] = useState(["CategoriesPage","SaleCategory"])
     const [breadCrumbs , setBreadCrumbs] = useState("Home");
 
     //Product Properties to dispaly them in ProductPage
@@ -53,6 +54,7 @@ function Cms() {
                     setItemColours={setItemColours}          
                 />;
                 break;
+
             case "CategoriesPage":
                 return <CategoriesPage 
                     subPage={x[1]}
@@ -65,6 +67,8 @@ function Cms() {
                     setItemColours={setItemColours}  
                 />
                 break;
+
+
             default:  
                 return  <MainPage />
         }

@@ -97,7 +97,7 @@ function BlockProductList({
             
             imgSrc={require ("../web/images/product-id-5.jpg")} 
             name ="Push It Messenger Bag"
-            price ="14.00"
+            price ="45.00"
             sizes = {[]}
             colors = {[]}
            />

@@ -1,0 +1,164 @@
+.saleCategoryFirstBlock__content{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 32%;
+    padding: 25px 35px 35px;
+
+    background-color: rgba(255,255,255,0.9);
+}
+
+.saleCategoryFirstBlock__button{
+    width: 140px;
+    height: 20px;
+    margin-top:10px;
+    padding: 10px 15px;
+    border: 1px solid #1979c3;
+    
+    background: #1979c3;
+    color: #fff;
+    
+    cursor: pointer;
+}
+.saleCategoryFirstBlock__button:hover{
+    background: #006bb4
+}
+
+.saleCategorySecondBlock__content{
+    position: absolute;
+    right:  0;
+    top: 15px;
+
+    width: 45%;
+    padding: 0 25px 20px;
+}
+
+.saleThirdBlock__content{
+    position: absolute;
+    left:15px;
+    bottom: 15px;
+    padding: 15px 20px;
+    
+    width: 40%;
+
+    background-color: rgba(255,255,255,0.9)
+}
+
+.saleCategoryThreeBlocks{
+    width: 100%;
+    height: 205px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.saleCategoryThreeBlocks__block{
+    width: 323px;
+}
+
+.firstSmallSaleBlock{
+    position: relative;
+
+    height: 100%;
+
+    background: #f4f4f4;
+}
+
+.firstSmallSaleBlock__title{
+    position: absolute;
+    top:15px;
+    left: 20px;
+
+    margin-bottom: 15px;
+
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.firstSmallSaleBlock__info{
+    position: absolute;
+    top:80px;
+    left:20px;
+
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.firstSmallSaleBlock__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.secondSmallSaleBlock{
+    position: relative;
+
+    height: 100%;
+
+    background: #71b54e;
+    color: #ffffff;
+}
+
+.secondSmallSaleBlock__title{
+    position: absolute;
+    left:15px;
+    top:20px;
+
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.secondSmallSaleBlock__img{
+    position: absolute;
+    left: 20px;
+    top:100px;
+}
+
+.secondSmallSaleBlock__info{
+    position: absolute;
+    top:160px;
+    left: 15px;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.thirdSmallSaleBlock{
+    position: relative;
+
+    overflow: hidden;
+    height: 100%;
+
+    background: #fedd16;
+    color: #333333;
+}
+
+.thirdSmallSaleBlock__title{
+    margin: 15px 20px 5px 15px;
+
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.thirdSmallSaleBlock__info{
+    margin: 0 20px 5px 15px;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.thirdSmallSaleBlock__span{
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.thirdSmallSaleBlock__img{
+    position: absolute;
+    top: 100px;
+    left:0;
+    
+    width: 100%;
+}
+
+
+

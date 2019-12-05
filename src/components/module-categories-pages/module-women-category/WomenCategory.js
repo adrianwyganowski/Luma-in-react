@@ -1,6 +1,5 @@
 import React from "react"
 import "./WomenCategory.css"
-import "../CategoiresPage.css"
 
 import firstblock from "./img/women-block-1.jpg"
 import secondblock from "./img/women-block-2.png"

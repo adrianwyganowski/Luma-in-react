@@ -76,7 +76,7 @@ function MenCategory({
                         <img className="categoryBlocks--images" src={thirdblock}  alt="woman streching"/>
                         <div className="menThirdBlock__content">
                             <p className="categoryBlock--title">Last chance <br /> for pants</p>
-                            <span className="!!!!!!!!!!!!!!!!!!!!!!!!!">Take</span> <br />
+                            <span>Take</span> <br />
                             <span className="menThirdBlock--span">20% OFF</span>
                             <p className="categoryBlock--info">and save bigtime*</p>
                             <span className="categoryBlock--span">Shop Pants ></span>

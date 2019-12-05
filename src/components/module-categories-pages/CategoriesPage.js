@@ -4,6 +4,9 @@ import "./CategoiresPage.css"
 import WhatsNew from "./module-whats-new/WhatsNew"
 import WomenCategory from "./module-women-category/WomenCategory"
 import MenCategory from "./module-men-category/MenCategory"
+import GearCategory from "./module-gear-category/GearCategory"
+import TrainingCategory from "./module-training-category/TrainingCategory"
+import SaleCategory from "./module-sale-category/SaleCategory"
 
 function CategoriesPage({
     subPage,
@@ -45,7 +48,20 @@ function CategoriesPage({
             break;
 
             case "MenCategory":
-                return <MenCategory  
+            return <MenCategory  
+                changeToProductPage={changeToProductPage}
+                setItemName={setItemName}
+                setItemRanking={setItemRanking}  
+                setItemReviews={setItemReviews}
+                setItemPrice={setItemPrice} 
+                setItemSizes={setItemSizes}  
+                setItemColours={setItemColours}  
+            
+            />
+            break;
+
+            case "GearCategory":
+            return <GearCategory 
                     changeToProductPage={changeToProductPage}
                     setItemName={setItemName}
                     setItemRanking={setItemRanking}  
@@ -53,8 +69,23 @@ function CategoriesPage({
                     setItemPrice={setItemPrice} 
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours}  
-                
                 />
+            break;
+
+            case "TrainingCategory":
+            return <TrainingCategory 
+                    changeToProductPage={changeToProductPage}
+                    setItemName={setItemName}
+                    setItemRanking={setItemRanking}  
+                    setItemReviews={setItemReviews}
+                    setItemPrice={setItemPrice} 
+                    setItemSizes={setItemSizes}  
+                    setItemColours={setItemColours}  
+                />
+            break;
+
+            case "SaleCategory":
+                return <SaleCategory />
                 break;
 
             default:

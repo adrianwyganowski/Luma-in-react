@@ -1,0 +1,62 @@
+.gearCategoryFirstBlock__content{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 35%;
+    padding: 25px 35px 35px;
+
+    background-color: rgba(255,255,255,0.9);
+}
+
+.gearCategoryFirstBlock__button{
+    width: 125px;
+    height: 20px;
+    margin-top:10px;
+    padding: 10px 15px;
+    border: 1px solid #1979c3;
+    
+    background: #1979c3;
+    color: #fff;
+    
+    cursor: pointer;
+}
+.gearCategoryFirstBlock__button:hover{
+    background: #006bb4
+}
+
+.gearCategorySecondBlock__content{
+    position: absolute;
+    right:  0;
+    top: 0;
+
+    width: 60%;
+    padding: 0 25px 20px;
+}
+
+.gearCategorySecondBlock__content--info{
+    position: relative;
+    top: 170px;
+
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.gearThirdBlock__content{
+    position: absolute;
+    left:15px;
+    bottom: 15px;
+    padding: 15px 20px;
+    
+    width: 50%;
+
+    background-color: rgba(255,255,255,0.9)
+}
+
+.gearThirdBlock--span{
+    margin:0px;
+
+    font-size: 14px;
+}
+
+
+
