@@ -5,7 +5,6 @@ import ProductClothPreview from "../module-cloth-product-preview/ProductClothPre
 
 
 function BlockProductList({
-    changeToProductPage,
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -18,7 +17,6 @@ function BlockProductList({
             
             <ProductClothPreview 
             
-            changeToProductPage={changeToProductPage}
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
@@ -39,7 +37,7 @@ function BlockProductList({
             />
             
             <ProductClothPreview  
-            changeToProductPage={changeToProductPage}
+
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
@@ -55,7 +53,7 @@ function BlockProductList({
             />
 
             <ProductClothPreview  
-            changeToProductPage={changeToProductPage}
+
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
@@ -71,7 +69,7 @@ function BlockProductList({
             />
             
             <ProductClothPreview  
-            changeToProductPage={changeToProductPage}
+
             setItemName={setItemName}
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews}
@@ -87,7 +85,7 @@ function BlockProductList({
             />
 
             <ProductClothPreview  
-            changeToProductPage={changeToProductPage}
+
             setItemName={setItemName}
             setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  
@@ -103,7 +101,7 @@ function BlockProductList({
            />
 
             <ProductClothPreview 
-            changeToProductPage={changeToProductPage}
+
             setItemName={setItemName}
             setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  
@@ -119,7 +117,7 @@ function BlockProductList({
             />
 
             <ProductClothPreview 
-            changeToProductPage={changeToProductPage}
+            
             setItemName={setItemName}
             setItemPrice={setItemPrice} 
             setItemRanking={setItemRanking}  

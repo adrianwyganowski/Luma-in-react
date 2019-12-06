@@ -1,5 +1,6 @@
 import React from "react"
 import "./GearCategory.css"
+import "../CategoiresPage.css"
 
 import firstblock from "./img/gear-block-1.jpg"
 import secondblock from "./img/gear-block-2.jpg"
@@ -13,7 +14,7 @@ import ProductClothPreview from "../../module-cloth-product-preview/ProductCloth
 import CategoryThreePromoBlocks from"../../module-category-three-promo-blocks/CategoryThreePromoBlocks"
 
 function GearCategory({
-    changeToProductPage,
+    
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -76,7 +77,7 @@ function GearCategory({
                 />
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -91,7 +92,7 @@ function GearCategory({
                         colors = {[]}
                     />
                     <ProductClothPreview  
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemPrice={setItemPrice} 
                         setItemRanking={setItemRanking}  
@@ -106,7 +107,7 @@ function GearCategory({
                         colors = {[]}
                     />
                     <ProductClothPreview  
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -122,7 +123,7 @@ function GearCategory({
                     />
                         
                     <ProductClothPreview 
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemPrice={setItemPrice} 
                         setItemRanking={setItemRanking}  

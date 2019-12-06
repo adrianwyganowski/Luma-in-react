@@ -6,7 +6,6 @@ import ProductPageMain from "../module-product-page-main/ProductPageMain"
 
 function ProductPage({
         breadCrumbs,
-        changeToMainPage,
         itemName,
         itemRanking,
         itemReviews,
@@ -24,9 +23,7 @@ function ProductPage({
     }) {
     return(
         <div className="productPage">
-            <BreadCrumbs 
-                breadCrumbs={breadCrumbs}
-                changeToMainPage={changeToMainPage}/>
+            <BreadCrumbs breadCrumbs={breadCrumbs}/>
             <ProductPageMain
                 itemName={itemName}
                 itemRanking={itemRanking}

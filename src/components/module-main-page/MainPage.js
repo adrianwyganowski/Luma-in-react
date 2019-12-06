@@ -5,7 +5,6 @@ import CmsHeading from "../module-cms-heading/CmsHeading";
 import BlockProductList from "../module-block-product-list/BlockProductList"
 
 function MainPage({
-    changeToProductPage,
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -22,7 +21,6 @@ function MainPage({
                 paragraph="Here is what`s trending on Luma right now"
             />
             <BlockProductList 
-                changeToProductPage={changeToProductPage}
                 setItemName={setItemName}
                 setItemRanking={setItemRanking}
                 setItemReviews={setItemReviews}

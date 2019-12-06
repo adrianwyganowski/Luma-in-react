@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import "./Navigation.css"
 
 import { ReactComponent as Arrow  } from "../web/images/down-arrow-menu.svg";
@@ -12,9 +13,9 @@ function Navigation() {
             <div className="navigationContainer">
                 <nav>
                     <ul className="navigation">
-                        <li className="firstLevelNav"><a href="#">What's new</a></li>
+                        <li className="firstLevelNav"><Link to="/what-is-new">What's new</Link></li>
 
-                        <li className="firstLevelNav"><a href="#">Women <span className='navigation__arrowDown'><Arrow /></span></a>
+                        <li className="firstLevelNav"><Link to="/women">Women <span className='navigation__arrowDown'><Arrow /></span></Link>
                         
                             <ul>
                                 <li className="secondLevelNav"><a href="#">Tops <span className='navigation__arrowRight'> <RightArrow /> </span></a>
@@ -34,7 +35,7 @@ function Navigation() {
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><a href="#">Men <span className='navigation__arrowDown'><Arrow /></span></a>
+                        <li className="firstLevelNav"><Link to="/men">Men <span className='navigation__arrowDown'><Arrow /></span></Link>
                             <ul>
                                 <li className="secondLevelNav"><a href="#">Tops <span className='navigation__arrowRight'> <RightArrow /> </span></a>
                                     <ul>
@@ -53,7 +54,7 @@ function Navigation() {
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><a href="#">Gear <span className='navigation__arrowDown'><Arrow /></span></a>
+                        <li className="firstLevelNav"><Link to="/gear">Gear <span className='navigation__arrowDown'><Arrow /></span></Link>
                             <ul>
                                 <li><a href="#">Bags</a></li>
                                 <li><a href="#">Fitness Equipment</a></li>
@@ -61,13 +62,13 @@ function Navigation() {
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><a href="#">Trening <span className='navigation__arrowDown'><Arrow /></span></a>
+                        <li className="firstLevelNav"><Link to="/training">Training <span className='navigation__arrowDown'><Arrow /></span></Link>
                             <ul>
                                 <li><a href="#">Video Download</a></li>
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><a href="#"> Sale</a></li>
+                        <li className="firstLevelNav"><Link to="/sale"> Sale</Link></li>
 
                     </ul>
                 </nav>

@@ -1,5 +1,6 @@
 import React from "react"
 import "./WomenCategory.css"
+import "../CategoiresPage.css"
 
 import firstblock from "./img/women-block-1.jpg"
 import secondblock from "./img/women-block-2.png"
@@ -14,7 +15,6 @@ import ProductClothPreview from "../../module-cloth-product-preview/ProductCloth
 import CategoryThreePromoBlocks from"../../module-category-three-promo-blocks/CategoryThreePromoBlocks"
 
 function WomenCategory({
-    changeToProductPage,
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -109,7 +109,6 @@ function WomenCategory({
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
 
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -125,7 +124,6 @@ function WomenCategory({
                     />
                     <ProductClothPreview 
                     
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -146,7 +144,6 @@ function WomenCategory({
                     />
                     <ProductClothPreview 
 
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -162,7 +159,6 @@ function WomenCategory({
                     />
                     <ProductClothPreview 
 
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 

@@ -13,7 +13,6 @@ import CmsHeading from "../../module-cms-heading/CmsHeading";
 import ProductClothPreview from "../../module-cloth-product-preview/ProductClothPreview"
 
 function WhatsNew({
-    changeToProductPage,
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -90,7 +89,6 @@ function WhatsNew({
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
 
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -110,7 +108,6 @@ function WhatsNew({
                     />
                     <ProductClothPreview 
                     
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -130,7 +127,6 @@ function WhatsNew({
                     />
                     <ProductClothPreview 
 
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -150,7 +146,6 @@ function WhatsNew({
                     />
                     <ProductClothPreview 
 
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 

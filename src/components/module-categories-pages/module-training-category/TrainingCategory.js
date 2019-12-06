@@ -1,5 +1,6 @@
 import React from "react"
 import "./TrainingCategory.css"
+import "../CategoiresPage.css"
 
 import firstblock from "./img/training-block-1.jpg"
 import secondblock from "./img/training-block-2.jpg"
@@ -12,7 +13,7 @@ import CmsHeading from "../../module-cms-heading/CmsHeading";
 import ProductClothPreview from "../../module-cloth-product-preview/ProductClothPreview"
 
 function TrainingCategory({
-    changeToProductPage,
+    
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -63,7 +64,7 @@ function TrainingCategory({
 
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -78,7 +79,7 @@ function TrainingCategory({
                         colors = {[]}
                     />
                     <ProductClothPreview  
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemPrice={setItemPrice} 
                         setItemRanking={setItemRanking}  
@@ -93,7 +94,7 @@ function TrainingCategory({
                         colors = {[]}
                     />
                     <ProductClothPreview  
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 

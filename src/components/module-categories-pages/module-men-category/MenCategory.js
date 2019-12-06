@@ -1,5 +1,6 @@
 import React from "react"
 import "./MenCategory.css"
+import "../CategoiresPage.css"
 
 import firstblock from "./img/men-block-1.jpg"
 import secondblock from "./img/men-block-2.png"
@@ -13,7 +14,6 @@ import ProductClothPreview from "../../module-cloth-product-preview/ProductCloth
 import CategoryThreePromoBlocks from"../../module-category-three-promo-blocks/CategoryThreePromoBlocks"
 
 function MenCategory({
-    changeToProductPage,
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -97,7 +97,6 @@ function MenCategory({
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
 
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -117,7 +116,6 @@ function MenCategory({
                     />
                     <ProductClothPreview 
                     
-                        changeToProductPage={changeToProductPage}
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -136,7 +134,7 @@ function MenCategory({
                         colors = {[["Blue" , "#1857f7"] , ["Green" , "#53a828"] , ["Red" , "#ff0000"]]}
                     />
                     <ProductClothPreview  
-                        changeToProductPage={changeToProductPage}
+                    
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
@@ -152,7 +150,7 @@ function MenCategory({
                         />
                         
                         <ProductClothPreview  
-                        changeToProductPage={changeToProductPage}
+                        
                         setItemName={setItemName}
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews}

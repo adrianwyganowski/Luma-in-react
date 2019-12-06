@@ -1,5 +1,7 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import "./HeaderContent.css"
+
 import { ReactComponent as Logo } from "./img/logo.svg";
 import cart from "./img/cart.png"
 
@@ -8,9 +10,11 @@ function HeaderContent(){
     return(
         <div className="header__headerContent">
             <div className="headerContentContainer">
-                <div className="headerContentContainer__logo">
-                    <Logo />
-                </div>
+                <Link to="/">
+                    <div className="headerContentContainer__logo">
+                        <Logo />
+                    </div>
+                </Link>
 
                 <div className="headerContentContainer__formAndCart">
                     {/* TODO add lupe to form */}

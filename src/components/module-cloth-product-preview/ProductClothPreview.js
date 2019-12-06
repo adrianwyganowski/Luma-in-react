@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import "./ProductClothPreview.css";
 
 import SizeBoxes from "../module-size-boxes/SizeBoxes"
@@ -9,7 +10,7 @@ import Reviews from "../module-reviews/Reviews"
 import chart from "../web/images/chart.png"
 
 function ProductClothPreview({ 
-    changeToProductPage,
+ 
     setItemName,
     setItemRanking,
     setItemReviews,
@@ -26,7 +27,7 @@ function ProductClothPreview({
 }) {
     
     function sendDataToState(){
-        changeToProductPage();
+
         setItemName(name);
         setItemRanking(rating)
         setItemReviews(reviews)
@@ -38,19 +39,21 @@ function ProductClothPreview({
 
     return(
         <div className="productClothPreview" >
-            <div className="productClothPreview_img" onClick={sendDataToState}>
-                <img src={imgSrc} alt="product"/>
-                <p className="productClothPreview__name">
-                {name}
-                </p>
-                <div className="productClothPreview__ratingAndReviews">
-                    <StarRating itemRating={rating} />
-                    <Reviews itemReviews={reviews}/>
+            <Link to="/product">
+                <div className="productClothPreview_img" onClick={sendDataToState}>
+                    <img src={imgSrc} alt="product"/>
+                    <p className="productClothPreview__name">
+                    {name}
+                    </p>
+                    <div className="productClothPreview__ratingAndReviews">
+                        <StarRating itemRating={rating} />
+                        <Reviews itemReviews={reviews}/>
+                    </div>
+                    <p className="productClothPreview__price">
+                        <span className="productClothPreview__price--label">As low as </span>${price}   
+                    </p>
                 </div>
-                <p className="productClothPreview__price">
-                    <span className="productClothPreview__price--label">As low as </span>${price}   
-                </p>
-            </div>
+            </Link>
             <div className="productClothPreview__size">
                 <SizeBoxes  sizes={sizes}/>
             </div>

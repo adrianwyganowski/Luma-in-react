@@ -1,5 +1,6 @@
 import React from "react"
 import "./SaleCategory.css"
+import "../CategoiresPage.css"
 
 import firstblock from "./img/sale-block-1.jpg"
 import secondblock from "./img/sale-block-2.jpg"
