@@ -22,7 +22,7 @@ function TrainingCategory({
     setItemColours
 }) { 
     return(
-    <div className="category"> 
+    <main className="category"> 
         {/* <BreadCrumbs />   */}
         <CategoryHeader headerText="Training"/>
         <div className="categoryContainer">
@@ -112,7 +112,7 @@ function TrainingCategory({
         
             </div>
         </div>
-    </div>
+    </main>
     )
 }
 

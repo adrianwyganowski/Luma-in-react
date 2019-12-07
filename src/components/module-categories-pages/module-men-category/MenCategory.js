@@ -22,7 +22,7 @@ function MenCategory({
     setItemColours
 }) {
     return(
-        <div className="category"> 
+        <main className="category"> 
         {/* <BreadCrumbs />   */}
         <CategoryHeader headerText="Men"/>
         <div className="categoryContainer">
@@ -171,7 +171,7 @@ function MenCategory({
         </div>
 
 
-    </div>
+    </main>
     )
 }
 

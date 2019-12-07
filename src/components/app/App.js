@@ -12,6 +12,7 @@ import MenCategory from "../module-categories-pages/module-men-category/MenCateg
 import GearCategory from "../module-categories-pages/module-gear-category/GearCategory"
 import TrainingCategory from "../module-categories-pages/module-training-category/TrainingCategory"
 import SaleCategory from "../module-categories-pages/module-sale-category/SaleCategory"
+import CategoryProducts from "../module-category-products/CategoryProducts"
 import Footer from "../module-footer/Footer"
 
 
@@ -118,6 +119,10 @@ function App() {
                     />
                     <Route path="/sale" exact component={() =>
                         <SaleCategory />} 
+                    />
+                    <Route path="/category" component={() =>
+                        <CategoryProducts />
+                        }
                     />
                 </Switch>
                 <Footer />

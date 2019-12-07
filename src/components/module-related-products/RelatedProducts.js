@@ -12,7 +12,7 @@ function RelatedProducts({
     setItemColours
 }) {
     return(
-        <div className="relatedProducts">
+        <main className="relatedProducts">
             <p className="relatedProducts_heading">Related Products</p>
             <div className="relatedProductPreviewContainer">
                 <RelatedProductPreview 
@@ -106,7 +106,7 @@ function RelatedProducts({
                 />
             </div>
 
-        </div>
+        </main>
     )
 }
 

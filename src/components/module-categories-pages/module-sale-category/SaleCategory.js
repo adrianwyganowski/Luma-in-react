@@ -17,7 +17,7 @@ function SaleCategory({
 
 }) {
     return(
-        <div className="category"> 
+        <main className="category"> 
         {/* <BreadCrumbs />   */}
         <CategoryHeader headerText="Sale"/>
         <div className="categoryContainer">
@@ -110,7 +110,7 @@ function SaleCategory({
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     )
 }
 

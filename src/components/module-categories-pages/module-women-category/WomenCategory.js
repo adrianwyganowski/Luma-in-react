@@ -24,7 +24,7 @@ function WomenCategory({
 }){
 
     return(
-    <div className="category"> 
+    <main className="category"> 
         {/* <BreadCrumbs />   */}
         <CategoryHeader headerText="Women"/>
         <div className="categoryContainer">
@@ -183,7 +183,7 @@ function WomenCategory({
         </div>
 
 
-    </div>
+    </main>
     )
     
 }

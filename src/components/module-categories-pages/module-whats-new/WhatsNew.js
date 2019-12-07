@@ -22,7 +22,7 @@ function WhatsNew({
 }){
 
     return(
-    <div className="category"> 
+    <main className="category"> 
         {/* <BreadCrumbs /> */}
         <CategoryHeader headerText="What's New"/>
         <div className="categoryContainer">
@@ -87,25 +87,7 @@ function WhatsNew({
                     paragraph="Just in time for the new season!"
                 />
                 <div className="categoryProductsPreview">
-                    <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-
-                        imgSrc={require ("../../web/images/product-id-12.jpg")} 
-                        name ="Gwen Drawstring Bike Short"
-                        rating = "90"
-                        reviews= {[
-                               {/* TO DO 2 rev */}
-                                ]}
-                        price ="50.00"
-                        sizes = {["28","29","30","31" ,"32"]}
-                        colors = {[["Blue" , "#1857f7"] , ["Gray" , "#8f8f8f"] , ["Orange" , "#eb6703"]]}
-                    />
                     <ProductClothPreview 
                     
                         setItemName={setItemName}
@@ -119,11 +101,33 @@ function WhatsNew({
                         name ="Echo Fit Compression Short"
                         rating = "67"
                         reviews= {[
-                               {/* TO DO 3 rev */}
-                                ]}
+                            ["I love these for when I walk the boardwa",100," love these for when I walk the boardwalk with my grandaughter. They seem pretty hip and I got lots of compliments on them from the ladies at the bingo night", "Lita 0/30/19"],
+                            ["These looked really ugly on my feet when",40,"These looked really ugly on my feet when I got them. The picture online is much more flattering than the reality. I'm bummed.","Joyce 10/30/19"],
+                            ["I can appreciate the concept, but I thin",60,"I can appreciate the concept, but I think I'll be going back to regular laced sneakers from now on, they just didn't seem to fit my feet as well I guess because my feet are so narrow. People with narrow feet shouldn't buy these!"," Gertrud 10/30/19"]
+                        ]}
                         price ="24.00"
                         sizes = {["28","29","30","31" ,"32"]}
                         colors = {[["Black" , "#000000"] , ["Blue" , "#1857f7"] , ["Purple" , "#ef3dff"]]}
+                    />
+                    <ProductClothPreview 
+
+                        setItemName={setItemName}
+                        setItemRanking={setItemRanking}  
+                        setItemReviews={setItemReviews} 
+                        setItemPrice={setItemPrice}
+                        setItemSizes={setItemSizes}  
+                        setItemColours={setItemColours} 
+
+                        imgSrc={require ("../../web/images/product-id-12.jpg")} 
+                        name ="Gwen Drawstring Bike Short"
+                        rating = "90"
+                        reviews= {[
+                            ["Love a preppy sneaker! These are still a",100,"Love a preppy sneaker! These are still adorable but not as casual as running shoes! Love them!", "Shellie 10/30/19"],
+                            ["These looked really ugly on my feet when",80,"These are my favorite new pair of sneakers! I just hate that they get dirty really fast.","Dena 10/30/19"]
+                                ]}
+                        price ="50.00"
+                        sizes = {["28","29","30","31" ,"32"]}
+                        colors = {[["Blue" , "#1857f7"] , ["Gray" , "#8f8f8f"] , ["Orange" , "#eb6703"]]}
                     />
                     <ProductClothPreview 
 
@@ -138,7 +142,9 @@ function WhatsNew({
                         name ="Fiona Fitness Short"
                         rating = "60"
                         reviews= {[
-                               {/* TO DO 3 rev */}
+                            ["So comfortable I almost feel barefoot. T",100,"So comfortable I almost feel barefoot. The treads on these is so intricate and deep, so they can be hard to clean.", "Karisa 10/30/19"],
+                            ["On the plus side, the perforated cushion",60,"On the plus side, the perforated cushioning is really soft and reduces friction. However, they seem to absorb sweat and don't dry very quickly, which causes a lot of odor.","Evelyn 10/30/19"],
+                            ["I threw them out when the mushy lining s",40,"I threw them out when the mushy lining started to ooze.","Markita 10/30/19"]
                                 ]}
                         price ="29.00"
                         sizes = {["28","29","30","31" ,"32"]}
@@ -157,8 +163,10 @@ function WhatsNew({
                         name ="Ida Workout Parachute Pant"
                         rating = "67"
                         reviews= {[
-                               {/* TO DO 3 rev */}
-                                ]}
+                            ["I have 5 pairs",100,"I literally have about 5 pairs of these in my drawer. I don't just wear them to yoga though. Oh no! I wear them on a normal Saturday around town. Love them!", " Dannielle 10/30/19"],
+                            ["These pants move so well!",80,"These pants move so well! They provide nice coverage so when I'm in Downward Dog, I don't have to worry. I don't know about this Cooltech technology though. I sweat in them, so they definitely don't keep me dry. They're pretty warm!","Deloise 0/30/19"],
+                            ["Seams separated righth away",20,"I wear them once and the seams started to separate! Not constructed well at all. With the kazillion other yoga pants out there, there's no excuse for this!","Rosann 10/30/19"]
+                        ]}
                         price ="248.00"
                         sizes = {["28","29","30","31" ,"32"]}
                         colors = {[["Black" , "#000000"] , ["Blue" , "#1857f7"] , ["Purple" , "#ef3dff"]]}
@@ -170,7 +178,7 @@ function WhatsNew({
         </div>
 
 
-    </div>
+    </main>
     )
     
 }

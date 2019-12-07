@@ -14,7 +14,7 @@ function MainPage({
     
 
     return(
-        <div>
+        <main>
             <BlocksPromo />
             <CmsHeading 
                 header="Hot Sellers" 
@@ -28,7 +28,7 @@ function MainPage({
                 setItemSizes={setItemSizes}
                 setItemColours={setItemColours}
             />
-        </div>
+        </main>
     )
 }
 
