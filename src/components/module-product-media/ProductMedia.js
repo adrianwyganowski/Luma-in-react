@@ -30,7 +30,7 @@ function ProductMedia({imgsPaths, navImgsPaths}) {
             <div className="mediaContainer">
                 <div className="imgsContainer">
                     <div className="imgsContainer__carousel">
-                    {imgArr.map((path) => <img src={path}   alt="img of product"/>)}
+                    {imgArr.map((path) => <img src={path} key={`img ${path}`}   alt="img of product"/>)}
                     </div>
                 </div>
                 
@@ -42,7 +42,7 @@ function ProductMedia({imgsPaths, navImgsPaths}) {
                 </div>
             </div>
             <div className="productMedia__navigation">
-                {navImgArr.map((path) => <img src={path}   alt="img of navigation product"/>)}
+                {navImgArr.map((path) => <img src={path} key={`img ${path}`}   alt="img of navigation product"/>)}
                 <span className="productMedia__navigation--border">  </span>
             </div>
             

@@ -24,7 +24,7 @@
     font-weight: 600;
 }
 
-.sidebarMenu{
+.sidebarFilter{
     margin-bottom: 40px;
 }
 
@@ -49,4 +49,13 @@
     color: #757575;
 
     font-weight: 300;
+}
+
+.categoryProducts__products{
+    display: grid;
+    height: 1200px;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 570px;
+    grid-row-gap: 10px;
 }

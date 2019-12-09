@@ -1,0 +1,32 @@
+.sidebarFilterNotCollapsed{
+    height: 40px;
+    overflow: hidden;
+}
+
+.sidebarFilter__firstLevelItem{
+    margin: 0;
+    padding: 10px 40px 10px 10px;
+    border-bottom: 1px solid #cccccc;
+    
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.sidebarFilter__secondLevelItem{
+    margin: 10px 0;
+    padding-left: 10px;
+
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.sidebarMenu__span{
+    padding: 0 5px 0 5px;
+    margin: 0;
+   
+    color: #757575;
+
+    font-weight: 300;
+}

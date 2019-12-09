@@ -2,7 +2,7 @@ import React from "react"
 
 import "./StarRating.css"
 
-function StarRating({itemRating: itemRating}){
+function StarRating({itemRating}){
     
     function checkIfundefined(){
         if (itemRating !== undefined)

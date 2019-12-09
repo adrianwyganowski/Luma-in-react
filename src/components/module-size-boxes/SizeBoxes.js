@@ -12,7 +12,7 @@ function SizeBoxes({sizes}){
     checkIfUndefined();
 
     return(
-            arrOfSizes.map((size) => {return <div className="sizeBox">{size}</div>})
+            arrOfSizes.map((size) => {return <div className="sizeBox" key={size}>{size}</div>})
         
     )
 }

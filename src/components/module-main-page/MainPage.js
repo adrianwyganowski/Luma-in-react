@@ -1,4 +1,4 @@
-import React , {useState} from "react"
+import React  from "react"
 
 import BlocksPromo from "../module-blocks-promo/BlocksPromo"
 import CmsHeading from "../module-cms-heading/CmsHeading";

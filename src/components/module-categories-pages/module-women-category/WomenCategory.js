@@ -7,7 +7,7 @@ import secondblock from "./img/women-block-2.png"
 import thirdblock from "./img/women-block-3.jpg"
 import womenpromobig from "./img/women-promo-big.jpg"
 
-import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
+//import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
 import CategoryHeader from "../../module-category-header/CategoryHeader"
 import CategoriesCompareAndWhishlist from "../../module-categories-compare-and-wishlist/CategoriesCompareAndWhishlist"
 import CmsHeading from "../../module-cms-heading/CmsHeading";
@@ -93,7 +93,7 @@ function WomenCategory({
                     </div>
 
                     <div>
-                        <img src={womenpromobig} alt="photo of Erin Renny's" />
+                        <img src={womenpromobig} alt="Erin Renny" />
                     </div>
                 </div>
                 <CategoryThreePromoBlocks categoryPromoBlock={[

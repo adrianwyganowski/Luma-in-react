@@ -1,4 +1,4 @@
-import React , {useState} from "react"
+import React  from "react"
 import "./AddReview.css"
 
 import StarRating from "../module-star-rating/StarRating"

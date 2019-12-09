@@ -20,7 +20,7 @@ function CategoryThreePromoBlocks({categoryPromoBlock}){
                     </div>
                 </div>
                 <div className="categoryBlockPromo__img">
-                    <img src={categoryPromoBlock[0][3]} alt="photo of product"/>
+                    <img src={categoryPromoBlock[0][3]} alt="product"/>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@ function CategoryThreePromoBlocks({categoryPromoBlock}){
     
                 </div>
                 <div className="categoryBlockPromo__img">
-                    <img src={categoryPromoBlock[1][3]} alt="photo of product"/>
+                    <img src={categoryPromoBlock[1][3]} alt="product"/>
                 </div>
             </div>
 
@@ -56,7 +56,7 @@ function CategoryThreePromoBlocks({categoryPromoBlock}){
     
                 </div>
                 <div className="categoryBlockPromo__img">
-                    <img src={categoryPromoBlock[2][3]} alt="photo of product"/>
+                    <img src={categoryPromoBlock[2][3]} alt="product"/>
                 </div>
             </div>
         </div>

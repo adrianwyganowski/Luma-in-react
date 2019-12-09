@@ -13,62 +13,62 @@ function Navigation() {
             <div className="navigationContainer">
                 <nav>
                     <ul className="navigation">
-                        <li className="firstLevelNav"><Link to="/what-is-new">What's new</Link></li>
+                        <Link to="/what-is-new"> <li className="firstLevelNav"><p>What's new</p></li> </Link>
 
-                        <li className="firstLevelNav"><Link to="/women">Women <span className='navigation__arrowDown'><Arrow /></span></Link>
+                        <li className="firstLevelNav"><Link to="/women"><p>Women <span className='navigation__arrowDown'><Arrow /></span> </p> </Link>
                         
                             <ul>
-                                <li className="secondLevelNav"><a href="#">Tops <span className='navigation__arrowRight'> <RightArrow /> </span></a>
+                                <li className="secondLevelNav"><Link to="/category"> <p>Tops <span className='navigation__arrowRight'> <RightArrow /> </span></p> </Link>
                                     <ul>
-                                        <li><a href="#">Jackets</a></li>
-                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                        <li><a href="#">Tees</a></li>
-                                        <li><a href="#">Bras & Tanks</a></li>
+                                        <Link to="/category"><li><p>Jackets</p> </li> </Link>
+                                        <Link to="/category"><li><p>Hoodies & Sweatshirts</p></li> </Link>
+                                        <Link to="/category"><li><p>Tees</p></li> </Link>
+                                        <Link to="/category"><li><p>Bras & Tanks</p></li> </Link>
                                     </ul>
                                 </li>
-                                <li className="secondLevelNav"><a href="#">Bottoms <span className='navigation__arrowRight'> <RightArrow /> </span></a>
+                                <li className="secondLevelNav"><Link to="/category"> <p>Bottoms <span className='navigation__arrowRight'> <RightArrow /> </span></p>  </Link>
                                     <ul>
-                                        <li><a href="#">Pants</a></li>
-                                        <li><a href="#">Shorts</a> </li>
+                                        <Link to="/category"><li><p>Pants</p></li> </Link>
+                                        <Link to="/category"><li><p>Shorts</p> </li> </Link>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><Link to="/men">Men <span className='navigation__arrowDown'><Arrow /></span></Link>
+                        <li className="firstLevelNav"><Link to="/men"> <p>Men <span className='navigation__arrowDown'><Arrow /></span> </p> </Link>
                             <ul>
-                                <li className="secondLevelNav"><a href="#">Tops <span className='navigation__arrowRight'> <RightArrow /> </span></a>
+                                <li className="secondLevelNav"><Link to="/category"><p>Tops <span className='navigation__arrowRight'> <RightArrow /> </span></p> </Link>
                                     <ul>
-                                        <li><a href="#">Jackets</a></li>
-                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                        <li><a href="#">Tees</a></li>
-                                        <li><a href="#">Tanks</a></li>
+                                        <Link to="/category"><li><p>Jackets</p></li> </Link>
+                                        <Link to="/category"><li><p>Hoodies & Sweatshirts</p></li> </Link>
+                                        <Link to="/category"><li><p>Tees</p></li> </Link>
+                                        <Link to="/category"><li><p>Tanks</p></li> </Link>
                                     </ul>
                                 </li>
-                                <li className="secondLevelNav"><a href="#">Bottoms <span className='navigation__arrowRight'> <RightArrow /> </span></a>
+                                <li className="secondLevelNav"><Link to="/category"> <p>Bottoms <span className='navigation__arrowRight'> <RightArrow /> </span></p> </Link>
                                     <ul>
-                                        <li><a href="#">Pants</a></li>
-                                        <li><a href="#">Shorts</a> </li>
+                                        <Link to="/category"><li><p>Pants</p></li> </Link>
+                                        <Link to="/category"><li><p>Shorts</p> </li> </Link>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><Link to="/gear">Gear <span className='navigation__arrowDown'><Arrow /></span></Link>
+                        <li className="firstLevelNav"> <Link to="/gear"> <p>Gear <span className='navigation__arrowDown'><Arrow /></span></p> </Link>
                             <ul>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Fitness Equipment</a></li>
-                                <li><a href="#">Watches</a></li>
+                                <Link to="/category"><li><p>Bags</p></li> </Link>
+                                <Link to="/category"><li><p>Fitness Equipment</p></li> </Link>
+                                <Link to="/category"><li><p>Watches</p></li> </Link>
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><Link to="/training">Training <span className='navigation__arrowDown'><Arrow /></span></Link>
+                        <li className="firstLevelNav"><Link to="/training"><p>Training <span className='navigation__arrowDown'><Arrow /></span></p> </Link>
                             <ul>
-                                <li><a href="#">Video Download</a></li>
+                                <Link to="/category"><li><p>Video Download</p></li></Link>
                             </ul>
                         </li>
 
-                        <li className="firstLevelNav"><Link to="/sale"> Sale</Link></li>
+                        <Link to="/sale"><li className="firstLevelNav"><p>Sale</p></li></Link> 
 
                     </ul>
                 </nav>

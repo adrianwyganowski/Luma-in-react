@@ -25,7 +25,6 @@ function ProductDataItems({itemReviews , itemName}) {
                         • Cocona® fabric.
                     </div>
                 )
-                break;
 
             case "More Information":
                 return (
@@ -44,7 +43,6 @@ function ProductDataItems({itemReviews , itemName}) {
                         </div>
                     </div>
                 )
-                break;
             case "Reviews":
                 return (  
                     

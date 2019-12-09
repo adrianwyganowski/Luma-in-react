@@ -6,7 +6,7 @@ import firstblock from "./img/gear-block-1.jpg"
 import secondblock from "./img/gear-block-2.jpg"
 import thirdblock from "./img/gear-block-3.jpg"
 
-import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
+//import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
 import CategoryHeader from "../../module-category-header/CategoryHeader"
 import CategoriesCompareAndWhishlist from "../../module-categories-compare-and-wishlist/CategoriesCompareAndWhishlist"
 import CmsHeading from "../../module-cms-heading/CmsHeading";

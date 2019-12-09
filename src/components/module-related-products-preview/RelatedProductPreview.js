@@ -43,7 +43,7 @@ function RelatedProductPreview({
                 </p>
             </div>
             <div className="relatedProductPreview__social">
-                <span>&#10084; </span> <img src={chart}/>
+                <span>&#10084; </span> <img src={chart} alt="chart icon"/>
             </div>
         </div>
     )

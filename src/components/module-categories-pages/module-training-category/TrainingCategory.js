@@ -6,7 +6,7 @@ import firstblock from "./img/training-block-1.jpg"
 import secondblock from "./img/training-block-2.jpg"
 import arrowdown from "./img/arrow-down.png"
 
-import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
+//import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
 import CategoryHeader from "../../module-category-header/CategoryHeader"
 import CategoriesCompareAndWhishlist from "../../module-categories-compare-and-wishlist/CategoriesCompareAndWhishlist"
 import CmsHeading from "../../module-cms-heading/CmsHeading";
@@ -31,7 +31,7 @@ function TrainingCategory({
             </div>
             <div className="categoryMain">
                 <div className="trainingCategoryFirstBlock">
-                    <img  className="trainingCategoryFirstBlock__img" src={firstblock}/>
+                    <img  className="trainingCategoryFirstBlock__img" src={firstblock} alt="woman practising yoga"/>
                     <div className="trainingCategoryFirstBlock__container">
                         <p><strong>Motivate</strong> yourself.</p>
                         <p><strong>Reach</strong> goals.</p>
@@ -42,7 +42,7 @@ function TrainingCategory({
                 </div>
 
                 <div className="trainingCategorySecondBlock">
-                    <img  className="trainingCategorySecondBlock__img" src={secondblock}/>
+                    <img  className="trainingCategorySecondBlock__img" src={secondblock} alt="Erin Renny in background"/>
                     <div className="trainingCategorySecondBlock__container">
                         <p className="trainingCategorySecondBlock__container--title">Before creating Luma, pro trainer Erin Renny helped world-class athletes reach peak fitness</p>
                         <p className="trainingCategorySecondBlock__container--info">Hand-selected by Erin, our training downloads reflect a commitment to yoga, health and wellness.</p>

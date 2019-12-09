@@ -1,4 +1,4 @@
-import React , {useState} from "react"
+import React from "react"
 import "./ProductPageMain.css"
 
 import ProductMedia from "../module-product-media/ProductMedia"

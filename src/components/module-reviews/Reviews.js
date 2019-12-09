@@ -5,7 +5,7 @@ function Reviews({itemReviews}) {
 
     function lengthOfArray() {
         if(itemReviews !== undefined)
-          return <a>{itemReviews.length} Reviews </a>
+          return <p>{itemReviews.length} Reviews </p>
         else
             return 
     }

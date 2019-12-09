@@ -7,19 +7,19 @@ function Panel() {
     return (
         <div className="header__panel">
             <div className="panelContainer">
-                <a href="#" className="panelContainer__item"> 
+                <p href="#" className="panelContainer__item"> 
                     <span>EN</span> 
                     <Arrow />
-                </a>
-                <a  href="#" className="panelContainer__item">
+                </p>
+                <p  href="#" className="panelContainer__item">
                     Create an Account
-                </a>
+                </p>
                 <span className="panelContainer__item">
                     or
                 </span>
-                <a href="#" className="panelContainer__item">
+                <p href="#" className="panelContainer__item">
                     Sign
-                </a>
+                </p>
                 <span className="panelContainer__item">
                     Default welcome msg!
                 </span>

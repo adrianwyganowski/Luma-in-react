@@ -13,7 +13,7 @@ function ColorBoxes({colors}) {
     
     return(
         arrOfColors.map((color) => {
-            return <div className="colorBox" style={{backgroundColor: color[1] }}></div>}
+            return <div className="colorBox" key={color} style={{backgroundColor: color[1] }}></div>}
         )
     )
 }

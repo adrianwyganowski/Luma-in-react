@@ -19,7 +19,7 @@ import Footer from "../module-footer/Footer"
 
 function App() {
 
-    const [breadCrumbs , setBreadCrumbs] = useState("Home");
+   // const [breadCrumbs , setBreadCrumbs] = useState("Home");
 
     let [itemName , setItemName]= useState("");
     let [itemRanking , setItemRanking]= useState();
@@ -46,7 +46,6 @@ function App() {
                     <Route path="/product" exact component={() =>
                         <ProductPage 
                             
-                            breadCrumbs={breadCrumbs}
                             itemName={itemName}
                             itemRanking={itemRanking}
                             itemReviews={itemReviews}
@@ -121,8 +120,15 @@ function App() {
                         <SaleCategory />} 
                     />
                     <Route path="/category" component={() =>
-                        <CategoryProducts />
-                        }
+                        <CategoryProducts 
+                        
+                            setItemName={setItemName}
+                            setItemRanking={setItemRanking}  
+                            setItemReviews={setItemReviews}
+                            setItemPrice={setItemPrice} 
+                            setItemSizes={setItemSizes}  
+                            setItemColours={setItemColours}  
+                        />}
                     />
                 </Switch>
                 <Footer />

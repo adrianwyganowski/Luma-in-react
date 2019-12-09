@@ -10,7 +10,7 @@ function ReviewsContainer({itemRanking,itemReviews}) {
         if (itemReviews === undefined) {
             return (
             <div className="reviewsContainer">
-                <a className="reviewsContainer__noReviews"> Be the first to review this product </a>
+                <p className="reviewsContainer__noReviews"> Be the first to review this product </p>
             </div>
             )
         }
@@ -24,7 +24,7 @@ function ReviewsContainer({itemRanking,itemReviews}) {
                         <Reviews itemReviews={itemReviews}/>
                     </div>
                     <div className="reviewsContainer__addReview">
-                        <a>Add Your Review</a>
+                        <p>Add Your Review</p>
                     </div>
                 </div>
             )

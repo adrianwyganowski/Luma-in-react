@@ -20,11 +20,15 @@ a{
 .productClothPreview__name{
     display: inline;
 
+    color: #000000;
+
     font-size: 14px;
 }
 
 .productClothPreview__name:hover{
-    color: #000000
+    color: #000000;
+
+    text-decoration: underline;
 }
 
 .productClothPreview__ratingAndReviews{

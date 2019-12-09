@@ -20,6 +20,11 @@
     width: 1250px;
 }
 
+.navigationButton{
+    height: 100%;
+    width: 100%;
+}
+
 ul {
     padding: 0;
     margin:0;
@@ -58,7 +63,7 @@ li ul {
     margin: 2px;
 }
   
-ul li a {
+ul li p {
     display: block;
 
     color: #333; 

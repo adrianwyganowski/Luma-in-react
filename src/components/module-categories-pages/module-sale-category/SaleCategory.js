@@ -9,13 +9,11 @@ import fourthblock from "./img/sale-block-4.png"
 import fifthblock from "./img/sale-block-5.png"
 import sixthblock from "../module-women-category/img/women-block-2.png"
 
-import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
+//import BreadCrumbs from "../../module-breadcrumbs/BreadCrumbs"
 import CategoryHeader from "../../module-category-header/CategoryHeader"
 import CategoriesCompareAndWhishlist from "../../module-categories-compare-and-wishlist/CategoriesCompareAndWhishlist"
 
-function SaleCategory({
-
-}) {
+function SaleCategory() {
     return(
         <main className="category"> 
         {/* <BreadCrumbs />   */}
@@ -55,7 +53,7 @@ function SaleCategory({
             <div className="categoryMain">
                 <div className="categoryBlocks">
                     <div className="categoryFirstBlock">
-                        <img className="categoryBlocks--images" src={firstblock}  alt="woman practicing yoga"/>
+                        <img className="categoryBlocks--images" src={firstblock}  alt="woman runing"/>
                         <div className="saleCategoryFirstBlock__content">
                             <p className="categoryBlock--info">Women’s Deals</p>
                             <p className="categoryBlock--title">Pristine prices on pants, tanks and bras.</p>
@@ -65,7 +63,7 @@ function SaleCategory({
                         </div>
                     </div>
                     <div className="categorySecondBlock">
-                            <img className="categoryBlocks--images" src={secondblock}  alt="shirts"/>
+                            <img className="categoryBlocks--images" src={secondblock}  alt="man streching"/>
                             <div className="saleCategorySecondBlock__content">
                                 <p className="categoryBlock--title">Men’s Bargains</p>
                                 <p className="categoryBlock--info">Stretch your budget with active attire</p>
@@ -73,7 +71,7 @@ function SaleCategory({
                             </div>
                     </div>
                     <div className="categoryThirdBlock">
-                        <img className="categoryBlocks--images" src={thirdblock}  alt="woman streching"/>
+                        <img className="categoryBlocks--images" src={thirdblock}  alt="woman drinking"/>
                         <div className="saleThirdBlock__content">
                             <p className="categoryBlock--title">Luma Gear Steals</p>
                             <p className="categoryBlock--info">Your best efforts deserve a deal</p>
@@ -87,13 +85,13 @@ function SaleCategory({
                         <div className="firstSmallSaleBlock">
                             <p className="firstSmallSaleBlock__title">20% OFF</p>
                             <p className="firstSmallSaleBlock__info">Every $200-plus <br /> purchase!</p>
-                            <img className="firstSmallSaleBlock__img" src={fourthblock}/> 
+                            <img className="firstSmallSaleBlock__img" src={fourthblock} alt=""/> 
                         </div>
                     </div>
                     <div className="saleCategoryThreeBlocks__block">
                         <div className="secondSmallSaleBlock">
                             <p className="secondSmallSaleBlock__title">Spend $50 or more — shipping is free!</p>
-                            <img className="secondSmallSaleBlock__img" src={fifthblock}/>
+                            <img className="secondSmallSaleBlock__img" src={fifthblock} alt=""/>
                             <p className="secondSmallSaleBlock__info">Buy more, save more</p>
 
                         </div>
@@ -103,7 +101,7 @@ function SaleCategory({
                             <p className="thirdSmallSaleBlock__title">You can't have too many tees</p>
                             <p className="thirdSmallSaleBlock__info">4 tees for the price of 3. Right now</p>
                             <span className="thirdSmallSaleBlock__span"> Tees on sale ></span>
-                            <img className="thirdSmallSaleBlock__img" src={sixthblock}/>
+                            <img className="thirdSmallSaleBlock__img" src={sixthblock} alt=""/>
 
                         </div>
                     </div>
