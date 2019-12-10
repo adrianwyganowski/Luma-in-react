@@ -1,24 +1,64 @@
 .blocksPromo{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+    width: 100%;
 }
 
 .blocksPromoContainer{
-    width: 1250px;
-    height: 1360px;
-    display:grid;
-    grid-template-columns: 33% 31% auto;
-    grid-template-rows: 33% 23% 26% auto;
-    grid-gap: 15px;
-    grid-template-areas: 
-      "firstBlock firstBlock firstBlock"
-      "secondBlock thirdBlock thirdBlock"
-      "secondBlock fourthBlock fifthBlock"
-      "sixthBlock sixthBlock fifthBlock"
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .img{
-    width: 100%;
     height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+    .blocksPromo{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    
+    .blocksPromoContainer{
+        width: unset;
+        height: 1360px;
+        display:grid;
+        grid-template-columns: 33% 31% auto;
+        grid-template-rows: 33% 23% 26% auto;
+        grid-gap: 15px;
+        grid-template-areas: 
+          "firstBlock firstBlock firstBlock"
+          "secondBlock thirdBlock thirdBlock"
+          "secondBlock fourthBlock fifthBlock"
+          "sixthBlock sixthBlock fifthBlock"
+    }
+    
+ 
+
+}
+@media screen and (min-width: 1270px) {
+
+    
+    .blocksPromoContainer{
+        width: 1250px;
+        height: 1360px;
+        display:grid;
+        grid-template-columns: 33% 31% auto;
+        grid-template-rows: 33% 23% 26% auto;
+        grid-gap: 15px;
+        grid-template-areas: 
+          "firstBlock firstBlock firstBlock"
+          "secondBlock thirdBlock thirdBlock"
+          "secondBlock fourthBlock fifthBlock"
+          "sixthBlock sixthBlock fifthBlock"
+    }
+    
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+
 }

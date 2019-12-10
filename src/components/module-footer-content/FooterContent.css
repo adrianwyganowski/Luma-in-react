@@ -1,13 +1,15 @@
 .footerContent{
-    width: 1250px;
-    padding-bottom: 25px;
+    width:100%;
+    padding-bottom: 0px;
     display: flex;
+    flex-direction: column;
 
     background-color: #f4f4f4;
 }
 
 ol{
-    padding: 0 100px 0 0;
+    padding: 0; 
+    margin:0;
     
     color: #575757;
 
@@ -17,6 +19,35 @@ ol{
 }
 
 ol li{
-    margin: 10px 0 10px 0;
+    padding: 10px 10px;
+    border-top: 1px solid #cecece;
+
+    font-size: 16px;
 }
 
+@media screen and (min-width: 767px) {
+    .footerContent{
+        width: 100%;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: unset;
+    
+        background-color: #f4f4f4;
+    }
+    
+    ol{
+        padding: 0 100px 0 0;
+        
+        color: #575757;
+    
+        font-size: 14px;
+    
+        list-style: none;
+    }
+    
+    ol li{
+        margin: 10px 0 10px 0;
+        border-top: unset;
+        padding:unset;
+    }
+}

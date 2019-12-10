@@ -1,9 +1,41 @@
 .blockProductList{
-    width: 1250px;
+    width:100%;
     margin-top:20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 250px);
-    grid-template-rows: 570px 480px;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: 570px 570px 480px;
     grid-row-gap: 10px;
+}
+
+@media screen and (min-width: 550px) {
+    .blockProductList{
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: 570px 570px 480px;
+    }
+
+}
+
+@media screen and (min-width: 770px) {
+    .blockProductList{
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: 570px 570px 480px;
+    }
+
+}
+
+@media screen and (min-width: 1010px) {
+    .blockProductList{
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 570px 480px;
+    }
+
+}
+
+@media screen and (min-width: 1270px) {
+    .blockProductList{
+        grid-template-columns: repeat(5, 250px);
+        width: 1250px;
+    }
+
 }

@@ -9,7 +9,7 @@ import { ReactComponent as RightArrow  } from "../web/images/right-arrow-menu.sv
 function Navigation() {
 
     return (
-        <div className="header__navigation">
+        <div className="header__navigation " data-mobilenavigationdisplayed="false">
             <div className="navigationContainer">
                 <nav>
                     <ul className="navigation">
