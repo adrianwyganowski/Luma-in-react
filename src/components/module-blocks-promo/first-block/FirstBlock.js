@@ -9,7 +9,9 @@ function FirstBlock() {
     return(
         
         <div className="firstBlock">
-            <img src={firstBlock} className="img" alt="meditating woman"/>
+            <div className="firstBlock__imgContainer">
+                <img src={firstBlock} className="img firstBlock__imgContainer--img" alt="meditating woman"/>
+            </div>
             <div className="firstBlock__content">
                 <p className="firstBlock__content--info">New Luma Yoga Collection</p>
                 <p className="firstBlock__content--title">Get fit and look fab in new seasonal styles</p>

@@ -7,20 +7,24 @@
 
     color:#333333;
 
-    font-size: 32px;
     font-weight: 300;
 }
 
+.categoryFirstBlockTrainingCategory__img{
+    margin-left: -130px;
+}
 
 .trainingCategoryFirstBlock__container{
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: auto;
+    right: 0;
+    bottom: 20px;
 
-    width: 33%;
+    width: 65%;
     padding: 25px 35px 35px;
 
-    background-color: rgba(255,255,255,0.9)
+    background-color: rgba(255,255,255,0.9);
+    font-size: 20px;
 }
 
 .trainingCategorySecondBlock{
@@ -38,14 +42,14 @@
 
 .trainingCategorySecondBlock__container{
     position: absolute;
-    top: 16px;
-    bottom: 16px;
+    top: auto;
+    bottom: 20px;
     right: 16px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 73%;
+    width: 83%;
     padding: 15px;
 
     background-color: rgba(255,255,255,0.9);
@@ -54,17 +58,12 @@
 }
 
 .trainingCategorySecondBlock__container--title{
-    margin-bottom: 15px;
-    
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 300;
 }
 
 .trainingCategorySecondBlock__container--info{
-    margin: 0px 68px;
-
-    font-size: 16px;
-    font-weight: 300;
+  display: none;
 }
 
 .trainingCategoryThirdBlock{
@@ -86,20 +85,90 @@
 }
 
 .trainingCategoryThirdBlock__title{
-    margin-bottom: 15px;
-    
-    font-size: 32px;
+    margin-bottom: 5px;
+
+    text-align: center;
+    font-size: 25px;
 }
 
 .trainingCategoryThirdBlock__info{
     text-align: center;
     margin-bottom: 5px;
 
-    
     font-size: 16px;
 }
 
 .trainingCategoryThirdBlock__link{
     font-size: 16px;
     font-weight: 400;
+}
+
+.trainingCategoryProductsPreview{
+        width: 100%;
+        margin-top:20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: repeat(3, 580px);
+        grid-gap: 30px;
+}
+
+@media screen and (min-width: 510px) {
+    .trainingCategoryProductsPreview{
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: 570px 570px;
+        grid-gap: unset
+    }
+
+    .trainingCategoryThirdBlock__title{
+        margin-bottom: 15px;
+    
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 1010px) {
+    .trainingCategoryProductsPreview{
+        grid-template-columns: repeat(3, 250px);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .trainingCategoryFirstBlock__container{
+        top: 40px;
+        right: 40px;
+        bottom: unset;
+    
+        width: 33%;
+        padding: 25px 35px 35px;
+
+        font-size: 32px;
+    }
+
+    .trainingCategorySecondBlock__container{
+        position: absolute;
+        top: 16px;
+        bottom: 20px;
+        right: 16px;
+
+        width: 73%;
+    }
+
+    .categoryFirstBlockTrainingCategory__img{
+        margin: 0;
+    }
+
+    .trainingCategorySecondBlock__container--title{
+        margin-bottom: 15px;
+
+        font-size: 32px;
+    }
+
+    .trainingCategorySecondBlock__container--info{
+        margin: 0px 68px;
+        display: unset;
+
+        font-size: 16px;
+        font-weight: 300;
+    }
 }

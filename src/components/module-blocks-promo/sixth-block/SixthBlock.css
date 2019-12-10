@@ -1,16 +1,28 @@
 .sixthBlock{
     position: relative;
 
+    width: 95vw;
     height: 100%;
+}
 
-    border: 1px solid #333;
+.sixthBlock__imgContainer{
+    overflow: hidden;
+    width: 100%;
 }
 
 .sixthBlock__content{
-    padding: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 
+    width: 65%;
+
+    background-color: rgba(255,255,255,0.9);
+}  
+
+.sixthBlock__imgContainer--img{
+    margin-left: -120px
 }
-
 .sixthBlock__content--title{
     margin-top: 10px;
     margin-bottom: 15px;
@@ -27,11 +39,6 @@
 }
 
 @media screen and (min-width: 750px) {
-
-    .sixthBlock{
-        border: unset;
-    }
-    
     .sixthBlock__content{
         position: absolute;
         top: 15px;
@@ -41,6 +48,9 @@
     
         background-color: rgba(255,255,255,0.9);
     }   
+    .sixthBlock__imgContainer--img{
+        margin-left: 0px
+    }
 }
 
 

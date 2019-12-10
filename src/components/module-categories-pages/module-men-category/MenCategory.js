@@ -49,7 +49,7 @@ function MenCategory({
             <div className="categoryMain">
                 <div className="categoryBlocks">
                     <div className="categoryFirstBlock">
-                        <img className="categoryBlocks--images" src={firstblock}  alt="woman practicing yoga"/>
+                        <img className="categoryBlocks--images categoryFirstBlockMenCategory__img" src={firstblock}  alt="woman practicing yoga"/>
                         <div className="menCategoryFirstBlock__content">
                             <p className="categoryBlock--info">Luma’s Performance Fabric collection</p>
                             <p className="categoryBlock--title">Going the extra mile just got extra comfortable</p>
@@ -58,7 +58,7 @@ function MenCategory({
                             </div>
                         </div>
                     </div>
-                    <div className="categorySecondBlock">
+                    <div className="categorySecondBlock categorySecondBlockMenCategoryMobile">
                         <div className="categorySecondBlock__backgorund">
                             <div className="categorySecondBlockImg__container">
                                 <img className="categoryBlocks--images" src={secondblock}  alt="shirts"/>
@@ -73,7 +73,7 @@ function MenCategory({
                         </div>
                     </div>
                     <div className="categoryThirdBlock">
-                        <img className="categoryBlocks--images" src={thirdblock}  alt="woman streching"/>
+                        <img className="categoryBlocks--images categoryThirdBlockMenCategory__img" src={thirdblock}  alt="woman streching"/>
                         <div className="menThirdBlock__content">
                             <p className="categoryBlock--title">Last chance <br /> for pants</p>
                             <span>Take</span> <br />

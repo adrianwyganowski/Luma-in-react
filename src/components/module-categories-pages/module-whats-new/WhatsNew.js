@@ -55,7 +55,7 @@ function WhatsNew({
             <div className="categoryMain">
                 <div className="categoryBlocks">
                     <div className="categoryFirstBlock">
-                        <img className="categoryBlocks--images" src={firstblock}  alt="woman on sandy road"/>
+                        <img className="categoryBlocks--images categoryFirstBlockWhatsNew__img" src={firstblock}  alt="woman on sandy road"/>
                         <div className="whatsNewFirstBlock__content">
                             <p className="categoryBlock--info">New Luma Yoga Collection</p>
                             <p className="categoryBlock--title">The very latest yoga styles  plus twists on timeless classics</p>

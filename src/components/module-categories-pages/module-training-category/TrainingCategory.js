@@ -31,7 +31,7 @@ function TrainingCategory({
             </div>
             <div className="categoryMain">
                 <div className="trainingCategoryFirstBlock">
-                    <img  className="trainingCategoryFirstBlock__img" src={firstblock} alt="woman practising yoga"/>
+                    <img  className="trainingCategoryFirstBlock__img categoryFirstBlockTrainingCategory__img" src={firstblock} alt="woman practising yoga"/>
                     <div className="trainingCategoryFirstBlock__container">
                         <p><strong>Motivate</strong> yourself.</p>
                         <p><strong>Reach</strong> goals.</p>
@@ -62,7 +62,7 @@ function TrainingCategory({
                     paragraph="Stream free with subscription"
                 />
 
-                <div className="categoryProductsPreview">
+                <div className="trainingCategoryProductsPreview">
                     <ProductClothPreview 
                     
                         setItemName={setItemName}

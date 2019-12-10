@@ -51,7 +51,7 @@ function WomenCategory({
             <div className="categoryMain">
                 <div className="categoryBlocks">
                     <div className="categoryFirstBlock">
-                        <img className="categoryBlocks--images" src={firstblock}  alt="woman practicing yoga"/>
+                        <img className="categoryBlocks--images categoryFirstBlockWomenCategory__img" src={firstblock}  alt="woman practicing yoga"/>
                         <div className="womensCategoryFirstBlock__content">
                             <p className="categoryBlock--info">New Luma Yoga Collection</p>
                             <p className="categoryBlock--title">Yoga is ancient <br />Clothing shouldn’t be </p>
@@ -60,11 +60,11 @@ function WomenCategory({
                             </div>
                         </div>
                     </div>
-                    <div className="categorySecondBlock">
+                    <div className="categorySecondBlock categorySecondBlockWomenCategoryMobile">
                         <div className="categorySecondBlock__backgorund">
                             <div className="categorySecondBlockImg__container">
-                                <img className="categoryBlocks--images" src={secondblock}  alt="shirts"/>
-                            </div>
+                                <img className="categoryBlocks--images categorySecondBlockWomenCategory__img" src={secondblock}  alt="shirts"/>
+                            </div> 
                             <div className="womensCategorySecondBlock__content">
                                 <p className="categoryBlock--title">You can’t have too many tees</p>
                                 <div className="womensCategorySecondBlock__content--info">
@@ -75,10 +75,10 @@ function WomenCategory({
                         </div>
                     </div>
                     <div className="categoryThirdBlock">
-                        <img className="categoryBlocks--images" src={thirdblock}  alt="woman streching"/>
+                        <img className="categoryBlocks--images categoryThirdBlockWomenCategory__img" src={thirdblock}  alt="woman streching"/>
                         <div className="womansThirdBlock__content">
                             <p className="categoryBlock--title">Hot pants <br /> Hot deals</p>
-                            <span className="womansThirdBlock--span">20% OFF</span>
+                            <span className="womanThirdBlock--span">20% OFF</span>
                             <p className="categoryBlock--info"> Luma pants when you shop today*</p>
                             <span className="categoryBlock--span">Shop Pants ></span>
                         </div>
@@ -87,9 +87,9 @@ function WomenCategory({
 
                 <div className="womanCategoryPromo">
                     <div className="womanCategoryPromo__content">
-                        <p className="categoryBlock--title">What would Erin wear?</p>
-                        <p className="categoryBlock--info"> It’s no secret: see Luma founder Erin Renny’s wardrobe go-to’s</p>
-                        <span className="categoryBlock--span">Shop Erin Recommends ></span>
+                        <p className="womanCategoryPromo__content--title">What would Erin wear?</p>
+                        <p className="womanCategoryPromo__content--info"> It’s no secret: see Luma founder Erin Renny’s wardrobe go-to’s</p>
+                        <span className="womanCategoryPromo__content--span">Shop Erin Recommends ></span>
                     </div>
 
                     <div>

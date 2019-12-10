@@ -2,10 +2,14 @@
     position: absolute;
     top: 40px;
     right: 40px;
-    width: 35%;
-    padding: 25px 35px 35px;
+    width: 50%;
+    padding: 5px 5px 5px;
 
     background-color: rgba(255,255,255,0.9);
+}
+
+.categoryFirstBlockMenCategory__img{
+    margin-left: -180px;
 }
 
 .menCategoryFirstBlock__button{
@@ -29,7 +33,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 300px;
     
     background: #ffdd17;
 }
@@ -45,12 +49,12 @@
     top: 0;
 
     width: 100%;
-    padding: 15px 25px 20px;
+    padding: 15px 0 20px;
 }
 
 .menCategorySecondBlock__content--info{
     position: relative;
-    top: 170px;
+    top: 180px;
 
     font-weight: 300;
     font-size: 22px;
@@ -58,11 +62,11 @@
 
 .menThirdBlock__content{
     position: absolute;
-    left:15px;
-    top: 15px;
-    padding: 15px 20px;
+    left:0px;
+    top: 0px;
+    padding: 5px 5px;
     
-    width: 40%;
+    width: 60%;
 
     background-color: rgba(255,255,255,0.9)
 }
@@ -73,6 +77,56 @@
     font-size: 44px;
     font-weight: 600;
 }
+.categoryThirdBlockMenCategory__img{
+    margin-left:0;
+}
 
+@media screen and (min-width: 640px) { 
+    .categoryThirdBlockMenCategory__img{
+        margin-left: -100px;
+    }
 
+    .categorySecondBlock__backgorund{
+        height: 100%;
+    }
 
+    .menCategorySecondBlock__content--info{
+        top: 230px;
+    }
+
+    .menCategorySecondBlock__content{
+        position: absolute;
+        left:  0;
+        top: 0;
+    
+        width: 100%;
+        padding: 15px 25px 20px;
+    }
+} 
+
+@media screen and (min-width: 1150px) { 
+    .menCategoryFirstBlock__content{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+
+        width: 35%;
+        padding: 25px 35px 35px;
+    }
+    
+    .categoryFirstBlockMenCategory__img{
+        margin:0;
+    }
+    
+    .categorySecondBlock__backgorund{
+        width: 100%;
+    }
+    
+    .menThirdBlock__content{
+        left:15px;
+        top: 15px;
+        padding: 15px 20px;
+        
+        width: 40%;
+    }
+}

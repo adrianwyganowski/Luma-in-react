@@ -53,7 +53,7 @@ function SaleCategory() {
             <div className="categoryMain">
                 <div className="categoryBlocks">
                     <div className="categoryFirstBlock">
-                        <img className="categoryBlocks--images" src={firstblock}  alt="woman runing"/>
+                        <img className="categoryBlocks--images categoryFirstBlockSaleCategory__img" src={firstblock}  alt="woman runing"/>
                         <div className="saleCategoryFirstBlock__content">
                             <p className="categoryBlock--info">Women’s Deals</p>
                             <p className="categoryBlock--title">Pristine prices on pants, tanks and bras.</p>
@@ -91,7 +91,9 @@ function SaleCategory() {
                     <div className="saleCategoryThreeBlocks__block">
                         <div className="secondSmallSaleBlock">
                             <p className="secondSmallSaleBlock__title">Spend $50 or more — shipping is free!</p>
-                            <img className="secondSmallSaleBlock__img" src={fifthblock} alt=""/>
+                            <div className="secondSmallSaleBlock__imgConatiner">
+                            <img className="secondSmallSaleBlock__imgConatiner--img" src={fifthblock} alt=""/>
+                            </div>
                             <p className="secondSmallSaleBlock__info">Buy more, save more</p>
 
                         </div>

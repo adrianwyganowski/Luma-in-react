@@ -28,3 +28,13 @@
     background-color: rgba(255,255,255,0.9)
 }
 
+.categoryFirstBlockWhatsNew__img{
+    margin-left: -120px;
+}
+
+@media screen and (min-width: 580px) {
+    .categoryFirstBlockWhatsNew__img{
+        margin: 0px;
+    }
+    
+}

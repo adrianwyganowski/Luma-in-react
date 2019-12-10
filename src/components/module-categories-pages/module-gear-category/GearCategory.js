@@ -38,7 +38,7 @@ function GearCategory({
             <div className="categoryMain">
                 <div className="categoryBlocks">
                     <div className="categoryFirstBlock">
-                        <img className="categoryBlocks--images" src={firstblock}  alt="woman practicing yoga"/>
+                        <img className="categoryBlocks--images categoryFirtsBlockGearCategory__img" src={firstblock}  alt="woman practicing yoga"/>
                         <div className="gearCategoryFirstBlock__content">
                             <p className="categoryBlock--title">Sprite Yoga Companion Kit</p>
                             <p className="categoryBlock--info">Save up to 20% on a bundle!</p>

@@ -1,18 +1,18 @@
 .category{
-    width: 1250px;
-
+    width: 100%;
     color:#333333;
-
+    
     font-size: 14px;
 }
-
 .categoryContainer{
     display: flex;
+    flex-direction: column-reverse;
 }
 
 .categoryMenu{
-    width: 250px;
-    margin-right: 25px;
+    width: 20%;
+    margin: 0 25px 0 15px;
+    
 }
 
 .categoryMenuContainer{
@@ -31,65 +31,71 @@
 }
 
 .categoryMain{
-    width: 1000px;
+    width: 95vw;
+    overflow: hidden;
 }
 
 .categoryBlocks{
     display: grid;
     margin-bottom: 15px;
-    grid-template-columns: 493px 493px;
-    grid-template-rows: 450px auto;
     grid-gap: 14px;
     grid-template-areas: 
-      "firstCategoryBlock firstCategoryBlock"
-      "secondCategoryBlock thirdCategoryBlock"
+    "firstCategoryBlock "
+    "secondCategoryBlock" 
+    "thirdCategoryBlock";
+    grid-template-columns: 100%;
+    grid-template-rows:  auto;
 }
 
 .categoryFirstBlock{
     position: relative;
+    overflow: hidden;
     
     grid-area: firstCategoryBlock;
 }
 
 .categorySecondBlock{
     position: relative;
+    overflow: hidden;
 
     grid-area: secondCategoryBlock;
 }
 .categoryThirdBlock{
     position: relative;
+    overflow: hidden;
     
     grid-area: thirdCategoryBlock;
 }
 
 .categoryBlocks--images{
-    width: 100%;
     height: 100%;
 }
 
 .categoryBlock--info{
-    margin-bottom:  20px;
+    margin-bottom:  10px;
 
     font-weight: 300;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .categoryBlock--title{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 300;
 }
 
 .categoryBlock--button{
-    width: 105px;
-    height: 20px;
+    width: 90px;
+    height: 18px;
     margin-top:10px;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border: 1px solid #1979c3;
     
     background: #1979c3;
     color: #fff;
+
+    font-size: 12px;
     
     cursor: pointer;
 }
@@ -101,14 +107,117 @@
 .categoryBlock--span{
     margin-left: 0;
 
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .categoryProductsPreview{
-    width: 1000px;
+    width: 100%;
     margin-top:20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: 570px;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(4, 580px);
+    grid-gap: 30px;
 }
+
+@media screen and (min-width: 510px) {
+    .categoryProductsPreview{
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: 570px 570px;
+        grid-gap: unset
+    }
+}
+
+
+@media screen and (min-width: 640px) {
+    .categoryBlocks{
+        display: grid;
+        margin-bottom: 15px;
+        grid-gap: 14px;
+        grid-template-areas: 
+        "firstCategoryBlock firstCategoryBlock"
+        "secondCategoryBlock thirdCategoryBlock";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 450px auto;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .categoryContainer{
+        flex-direction: row;
+        flex-direction: unset;
+    }
+
+    .categoryMenu{
+        margin: 0 10px 0 5px;
+    }
+
+    .categoryMain{
+        width: 75%;
+    }
+
+    .categoryBlock--info{
+        margin-bottom:  20px;
+    
+        font-size: 22px;
+    }
+    
+    .categoryBlock--title{
+        margin-bottom: 15px;
+        
+        font-size: 32px;
+    }
+    
+    .categoryBlock--button{
+        width: 105px;
+        height: 20px;
+        padding: 10px 15px;
+        
+        font-size: 14px;
+    }
+    
+    .categoryBlock--button:hover{
+        background: #006bb4
+    }
+    
+    .categoryBlock--span{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    .categoryProductsPreview{
+        grid-template-columns: repeat(3, 250px);
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .category{
+        width: 1250px;
+    }
+    
+    .categoryMenu{
+        width: 250px;
+        margin: 0 25px 0 0;
+    }
+      
+    .categoryMain{
+        width: 1000px;
+    }
+    
+    .categoryBlocks{
+        grid-template-columns: 493px 493px;
+        grid-template-rows: 450px auto;
+    }
+    
+    .categoryProductsPreview{
+        width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 570px;
+    }
+
+}
+
+

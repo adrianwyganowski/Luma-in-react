@@ -1,11 +1,19 @@
 .womensCategoryFirstBlock__content{
     position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 36%;
-    padding: 25px 35px 35px;
+    bottom: 0px;
+    right: 0px;
+    width: 70%;
+    padding: 5px 5px 5px;
 
     background-color: rgba(255,255,255,0.9);
+}
+
+.categoryFirstBlockWomenCategory__img{
+    margin-left: -150px;
+}
+
+.categorySecondBlockWomenCategoryMobile{
+    height: 265px;
 }
 
 .categorySecondBlock__backgorund{
@@ -13,9 +21,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
     
-
     background: #ffdd17;
 }
 
@@ -29,37 +35,48 @@
     left:  0;
     top: 0;
 
+    width: 95%;
+    padding: 15px 0px 0px;
+}
+
+.categorySecondBlockWomenCategory__img{
     width: 100%;
-    padding: 15px 25px 20px;
+    height: unset;
 }
 
 .womensCategorySecondBlock__content--info{
     position: relative;
-    top: 170px;
+    top: 130px;
+}
+
+.categoryThirdBlockWomenCategory__img{
+    width: 100%;
 }
 
 .womansThirdBlock__content{
     position: absolute;
-    left:15px;
-    top: 15px;
-    padding: 15px 20px;
+    left:0px;
+    top:0px;
+    padding: 5px 5px;
     
-    width: 40%;
+    width: 60%;
 
     background-color: rgba(255,255,255,0.9)
 }
 
-.womansThirdBlock--span{
+.womanThirdBlock--span{
     margin:0px;
 
-    font-size: 44px;
+    font-size: 35px;
     font-weight: 600;
 }
 
 .womanCategoryPromo{
-    height: 199px;
+    height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
 
@@ -67,5 +84,153 @@
 }
 
 .womanCategoryPromo__content{
-    padding: 20px 35px;
+    padding: 5px 10px;
+}
+
+.womanCategoryPromo__content--title{
+    margin-bottom: 15px;
+        
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.womanCategoryPromo__content--info{
+    margin-bottom:  20px;
+    
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.womanCategoryPromo__content--span{
+    font-size: 15px;
+    margin: 0px;
+}
+
+@media screen and (min-width: 510px) {
+    .womensCategoryFirstBlock__content{
+        top: 40px;
+        right: 40px;
+        bottom: unset;
+
+        width: 36%;
+        padding: 25px 35px 35px;
+    }
+    
+    .womanCategoryPromo{
+        height: 199px;
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    .womensCategorySecondBlock__content{
+        width: 90%;
+        padding: 15px 25px 0px;
+    }
+
+    .categorySecondBlockWomenCategory__img{
+        width: 100%;
+        height: unset;
+    }
+
+    .womensCategorySecondBlock__content--info{
+        position: relative;
+        top: 160px;
+    }
+}
+
+
+@media screen and (min-width: 640px) {
+    .categorySecondBlock__backgorund{
+        height: 100%;
+    }
+
+    .womanCategoryPromo__content{
+        padding: 20px 35px;
+    }
+
+    .categorySecondBlockWomenCategory__img{
+        position: absolute;
+        left:0;
+    }
+    
+    .categorySecondBlockWomenCategoryMobile{
+        height: unset;
+    }
+
+    .categoryThirdBlockWomenCategory__img{
+        width: unset;
+    }
+    .womansThirdBlock__content{
+        position: absolute;
+        left:0px;
+        top:0px;
+        padding: 5px 5px;
+        
+        width: 60%;
+    
+        background-color: rgba(255,255,255,0.9)
+    }
+
+    .womansThirdBlock__content{
+        left:15px;
+        top: 15px;
+        padding: 15px 20px;
+        
+        width: 50%;
+    
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .categoryFirstBlockWomenCategory__img{
+        margin-left: 0;
+    }
+
+    .categorySecondBlockWomenCategory__img{
+        top:25%;
+    }
+    
+    .womanCategoryPromo{
+        height: 199px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    
+        background: #f4f4f4;
+    }
+
+    .womanCategoryPromo__content--title{
+        margin-bottom: 15px;
+            
+        font-size: 32px;
+    }
+    
+    .womanCategoryPromo__content--info{
+        margin-bottom:  20px;
+        
+        font-size: 22px;
+    }
+    
+    .womanCategoryPromo__content--span{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 1140px) {
+    .womensCategorySecondBlock__content--info{
+        top: 160px;
+    }
+
+    .categorySecondBlockWomenCategory__img{
+        top:18%;
+    }
+}
+
+@media screen and (min-width: 1264px) {
+    .womensCategorySecondBlock__content--info{
+    
+        top: 220px;
+    }
 }

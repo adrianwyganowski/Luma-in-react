@@ -1,11 +1,15 @@
 .gearCategoryFirstBlock__content{
     position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 35%;
-    padding: 25px 35px 35px;
+    top: 250px;
+    right: 0px;
+    width: 65%;
+    padding: 15px 0px 20px 10px;
 
     background-color: rgba(255,255,255,0.9);
+}
+
+.categoryFirtsBlockGearCategory__img{
+    margin-left: -220px;
 }
 
 .gearCategoryFirstBlock__button{
@@ -58,5 +62,20 @@
     font-size: 14px;
 }
 
+
+@media screen and (min-width: 740px) { 
+    .gearCategoryFirstBlock__content{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 35%;
+        padding: 25px 35px 35px;
+    
+        background-color: rgba(255,255,255,0.9);
+    }
+    .categoryFirtsBlockGearCategory__img{
+        margin: 0;
+    }
+}
 
 

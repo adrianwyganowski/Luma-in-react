@@ -3,6 +3,7 @@
     
     overflow: hidden;
     height: 100%;
+    width: 95vw;
 }
 
 .fourthBlock__content{
@@ -20,7 +21,7 @@
 .fourthBlock__content--title{
     margin:0 0 14px 0;
     
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 300;
 }
 
@@ -30,6 +31,23 @@
     font-size: 22px;
     font-weight: 300;
 }
+
+
+@media screen and (min-width: 440px) {
+    .fourthBlock{
+        width: unset;
+    }
+
+    .fourthBlock__content--title{
+        font-size: 32px;
+    }
+    
+    .fourthBlock__content--info{
+        font-size: 22px;
+    }
+    
+}
+
 
 @media screen and (min-width: 1100px) {
     p{

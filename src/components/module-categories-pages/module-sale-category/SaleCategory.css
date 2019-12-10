@@ -1,11 +1,16 @@
 .saleCategoryFirstBlock__content{
     position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 32%;
+    top: auto;
+    right: 0;
+    bottom: 20px;
+    width: 65%;
     padding: 25px 35px 35px;
 
     background-color: rgba(255,255,255,0.9);
+}
+
+.categoryFirstBlockSaleCategory__img{
+    margin-left: -150px
 }
 
 .saleCategoryFirstBlock__button{
@@ -46,20 +51,22 @@
 
 .saleCategoryThreeBlocks{
     width: 100%;
-    height: 205px;
+    height: 630px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
 .saleCategoryThreeBlocks__block{
-    width: 323px;
+    width: unset;
 }
 
 .firstSmallSaleBlock{
     position: relative;
 
-    height: 100%;
+    width: 100%;
+    height: 215px;
 
     background: #f4f4f4;
 }
@@ -93,7 +100,8 @@
 .secondSmallSaleBlock{
     position: relative;
 
-    height: 100%;
+    height: 215px;
+    width: 100%;
 
     background: #71b54e;
     color: #ffffff;
@@ -108,10 +116,16 @@
     font-weight: 300;
 }
 
-.secondSmallSaleBlock__img{
-    position: absolute;
-    left: 20px;
-    top:100px;
+.secondSmallSaleBlock__imgConatiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSmallSaleBlock__imgConatiner--img{
+    height: 60px;
 }
 
 .secondSmallSaleBlock__info{
@@ -127,7 +141,7 @@
     position: relative;
 
     overflow: hidden;
-    height: 100%;
+    height: 215px;
 
     background: #fedd16;
     color: #333333;
@@ -160,5 +174,59 @@
     width: 100%;
 }
 
+@media screen and (min-width: 767px) {
+    .saleCategoryFirstBlock__content{
+        top: 40px;
+        right: 40px;
+        bottom: unset;
+        
+        width: 32%;
+        padding: 25px 35px 35px;
+    }
+
+    .categoryFirstBlockSaleCategory__img{
+        margin: 0;
+    }
+}
 
 
+@media screen and (min-width: 1200px) {
+    .saleCategoryThreeBlocks{
+        height: 205px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .saleCategoryThreeBlocks__block{
+        width: 323px;
+    }
+
+    .firstSmallSaleBlock{
+        height: 100%;
+    }
+
+    .secondSmallSaleBlock{
+        height: 100%;
+    }
+    
+    .secondSmallSaleBlock__imgConatiner--img{
+        position: absolute;
+        left: 20px;
+        top:100px;
+        height: unset;
+    }
+
+    .thirdSmallSaleBlock{
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .thirdSmallSaleBlock__img{
+        position: absolute;
+        top: 100px;
+        left:0;
+        
+        width: 100%;
+    }
+}
