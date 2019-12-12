@@ -19,7 +19,6 @@ function ProductInfoMain({
         <div className="productInfoMain">
             <div className="productInfoMain__title">
                 <p>{itemName}</p>
-                {/* <p>DUMMY TEXT</p> */}
             </div>
                 <ReviewsContainer itemRanking={itemRanking} itemReviews={itemReviews}/>
                 <div className="priceContainer">

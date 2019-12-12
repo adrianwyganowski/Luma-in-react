@@ -1,4 +1,9 @@
 .productPage{
-    width: 1250px;
+    width: 100%;
 }
 
+@media screen and (min-width: 1250px) {
+    .productPage{
+        width: 1250px;
+    } 
+}

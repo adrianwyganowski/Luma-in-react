@@ -1,5 +1,5 @@
 .productInfoMain{
-    width: 500px;
+    width: 40%;
 }
 
 .productInfoMain__title{
@@ -85,6 +85,7 @@
     width: 32px;
     height: 32px;
     padding: 0 9px;
+    margin-bottom: 10px;
 
     text-align: center;
 }

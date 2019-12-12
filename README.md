@@ -1,3 +1,31 @@
+# Magento 2 Luma theme in React
+
+Work in progress.
+
+In this project I am trying to create single page app looking like luma theme, using react. Until now I made:
+-  main page, all categories pages in mobile and desktop version,
+-  most of the catalog page (not working sidebar menu and products data are hard coded for every category of products)
+-  product page only in desktop version.
+
+In file structure of this app I borrow Magento 2 naming convetion.
+
+
+Screenshots:
+
+![Main page](https://i.imgur.com/JLh6IG6.png)
+
+![Main page 2](https://i.imgur.com/xccfu5P.png)
+
+![Product page](https://i.imgur.com/aqQlQIo.png)
+
+![Gear category page 1](https://i.imgur.com/cLkZMYy.png)
+
+![Gear category page 2](https://i.imgur.com/uv2WBJh.png)
+
+![Product catalog page](https://i.imgur.com/jTp2eWg.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -27,42 +55,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
