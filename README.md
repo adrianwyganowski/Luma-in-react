@@ -4,8 +4,11 @@ Work in progress.
 
 In this project I am trying to create single page app looking like luma theme, using react. Until now I made:
 -  main page, all categories pages in mobile and desktop version,
--  most of the catalog page (not working sidebar menu and products data are hard coded for every category of products)
--  product page only in desktop version.
+-  most of the catalog page (not working sidebar menu and products data are hard coded for every category of products),
+-  product page only in desktop version,
+-  photos for almost every product,
+-  dynamically generated name, reviews(stars and comments below in reviews label), price, available sizes, available colours in product page
+
 
 In file structure of this app I borrow Magento 2 naming convetion.
 

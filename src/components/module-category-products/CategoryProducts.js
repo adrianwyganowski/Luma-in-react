@@ -6,16 +6,7 @@ import CategoriesCompareAndWhishlist from "../module-categories-compare-and-wish
 import SidebarFilter from "../module-sidebarFilter/SidebarFilter"
 import ProductClothPreview from "../module-cloth-product-preview/ProductClothPreview"
 
-function CategoryProducts({
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,  
-    setItemNavigationPhotos,
-}) {
+function CategoryProducts({setDataObj}) {
     return(
         <main className="categoryProducts">
             {/* TO DO TAKE DATA FROM COMPONTNTS STATE */}
@@ -47,14 +38,7 @@ function CategoryProducts({
                 <div className="categoryProducts__products">
                     <ProductClothPreview 
                     
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
-                    setItemPrice={setItemPrice}
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours} 
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
 
                     imgSrc={require ("../web/images/product-id-1.jpg")} 
                     name ="Breathe-Easy Tank"
@@ -78,14 +62,7 @@ function CategoryProducts({
                     
                     <ProductClothPreview  
 
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
-                    setItemPrice={setItemPrice}
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours}  
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
 
                     imgSrc={require ("../web/images/product-id-2.jpg")} 
                     name ="Radiant Tee"
@@ -110,14 +87,7 @@ function CategoryProducts({
 
                     <ProductClothPreview  
 
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
-                    setItemPrice={setItemPrice}
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours} 
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
                     
                     imgSrc={require ("../web/images/product-id-3.jpg")} 
                     name ="Argus All-Weather Tank"
@@ -136,14 +106,7 @@ function CategoryProducts({
                     
                     <ProductClothPreview  
 
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews}
-                    setItemPrice={setItemPrice} 
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours}  
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
 
                     imgSrc={require ("../web/images/product-id-4.jpg")} 
                     name ="Hero Hoodie"
@@ -161,14 +124,7 @@ function CategoryProducts({
                     />
                     <ProductClothPreview 
                     
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
-                    setItemPrice={setItemPrice}
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours} 
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
 
                     imgSrc={require ("../web/images/product-id-13.jpg")} 
                     name ="Echo Fit Compression Short"
@@ -192,14 +148,7 @@ function CategoryProducts({
                 />
                 <ProductClothPreview 
 
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
-                    setItemPrice={setItemPrice}
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours} 
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
 
                     imgSrc={require ("../web/images/product-id-12.jpg")} 
                     name ="Gwen Drawstring Bike Short"
@@ -223,14 +172,7 @@ function CategoryProducts({
 
                 <ProductClothPreview 
 
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
-                    setItemPrice={setItemPrice}
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours} 
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
 
                     imgSrc={require ("../web/images/product-id-14.jpg")} 
                     name ="Fiona Fitness Short"
@@ -254,14 +196,7 @@ function CategoryProducts({
                 />
                 <ProductClothPreview 
 
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews} 
-                    setItemPrice={setItemPrice}
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours} 
-                    setItemPhotos={setItemPhotos}  
-                    setItemNavigationPhotos={setItemNavigationPhotos}
+                    setDataObj={setDataObj} 
 
                     imgSrc={require ("../web/images/product-id-15.jpg")} 
                     name ="Ida Workout Parachute Pant"

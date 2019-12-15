@@ -4,17 +4,7 @@ import BlocksPromo from "../module-blocks-promo/BlocksPromo"
 import CmsHeading from "../module-cms-heading/CmsHeading";
 import BlockProductList from "../module-block-product-list/BlockProductList"
 
-function MainPage({
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,
-    setItemNavigationPhotos,
-
-}){
+function MainPage({setDataObj}){
     
 
     return(
@@ -25,14 +15,7 @@ function MainPage({
                 paragraph="Here is what`s trending on Luma right now"
             />
             <BlockProductList 
-                setItemName={setItemName}
-                setItemRanking={setItemRanking}
-                setItemReviews={setItemReviews}
-                setItemPrice={setItemPrice}
-                setItemSizes={setItemSizes}
-                setItemColours={setItemColours}
-                setItemPhotos={setItemPhotos}    
-                setItemNavigationPhotos={setItemNavigationPhotos}
+            setDataObj={setDataObj}
             />
         </main>
     )

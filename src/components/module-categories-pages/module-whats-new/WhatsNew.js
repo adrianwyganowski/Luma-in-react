@@ -12,16 +12,7 @@ import CategoriesCompareAndWhishlist from "../../module-categories-compare-and-w
 import CmsHeading from "../../module-cms-heading/CmsHeading";
 import ProductClothPreview from "../../module-cloth-product-preview/ProductClothPreview"
 
-function WhatsNew({
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,                            
-    setItemPhotos,  
-    setItemNavigationPhotos,
-}){
+function WhatsNew({ setDataObj }){
 
     return(
     <main className="category"> 
@@ -92,14 +83,7 @@ function WhatsNew({
 
                     <ProductClothPreview 
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-13.jpg")} 
                         name ="Echo Fit Compression Short"
@@ -123,14 +107,7 @@ function WhatsNew({
                     />
                     <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-12.jpg")} 
                         name ="Gwen Drawstring Bike Short"
@@ -153,14 +130,7 @@ function WhatsNew({
                     />
                     <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-14.jpg")} 
                         name ="Fiona Fitness Short"
@@ -184,14 +154,7 @@ function WhatsNew({
                     />
                     <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-15.jpg")} 
                         name ="Ida Workout Parachute Pant"

@@ -31,7 +31,27 @@ function App() {
     let [itemPhotos , setItemPhotos]= useState({});
     let [itemNavigationPhotos , setItemNavigationPhotos]= useState({});
 
+    let setDataObj = {
+        setItemName: setItemName,
+        setItemRanking: setItemRanking,
+        setItemReviews: setItemReviews,
+        setItemPrice: setItemPrice,
+        setItemSizes: setItemSizes,
+        setItemColours: setItemColours,
+        setItemPhotos: setItemPhotos,
+        setItemNavigationPhotos: setItemNavigationPhotos        
+    }
 
+    let dataToDisplayObj ={
+        itemName: itemName,
+        itemRanking: itemRanking,
+        itemReviews: itemReviews,
+        itemPrice: itemPrice,
+        itemSizes: itemSizes,
+        itemColours: itemColours,
+        itemPhotos: itemPhotos,
+        itemNavigationPhotos: itemNavigationPhotos
+    }
 
     return (
         <div className="app">
@@ -40,119 +60,38 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={ () => 
                         <MainPage 
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}  
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj}
                         />} 
                     />
                     <Route path="/product" exact component={() =>
                         <ProductPage 
                             
-                            itemName={itemName}
-                            itemRanking={itemRanking}
-                            itemReviews={itemReviews}
-                            itemPrice={itemPrice}
-                            itemSizes={itemSizes}
-                            itemColours={itemColours}
-                            itemPhotos={itemPhotos}
-                            itemNavigationPhotos={itemNavigationPhotos}
+                            dataToDisplayObj={dataToDisplayObj}
                             
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}    
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}  
+                            setDataObj={setDataObj} 
                             
                         />}
                     />
                     <Route path="/what-is-new" exact component= {() =>
-                        <WhatsNew 
-
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}  
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}  
-                        />}
+                        <WhatsNew  setDataObj={setDataObj} />}
                     />
                     <Route path="/women" exact component = {() =>
-                        <WomenCategory
-
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours} 
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}  
-                        />}
+                        <WomenCategory setDataObj={setDataObj} />}
                     />
                     <Route path="/men" exact component= {() =>
-                        <MenCategory 
-
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}  
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}  
-                        />}
+                        <MenCategory setDataObj={setDataObj} />}
                     />
                     <Route path="/gear" exact component={() =>
-                        <GearCategory
-
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}  
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}  
-                        />}
+                        <GearCategory setDataObj={setDataObj}  />}
                     />
                     <Route path="/training" exact component={() =>
-                        <TrainingCategory
-
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}  
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}  
-                        />} 
+                        <TrainingCategory setDataObj={setDataObj}  />} 
                     />
                     <Route path="/sale" exact component={() =>
                         <SaleCategory />} 
                     />
                     <Route path="/category" component={() =>
-                        <CategoryProducts 
-                        
-                            setItemName={setItemName}
-                            setItemRanking={setItemRanking}  
-                            setItemReviews={setItemReviews}
-                            setItemPrice={setItemPrice} 
-                            setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}  
-                            setItemPhotos={setItemPhotos}    
-                            setItemNavigationPhotos={setItemNavigationPhotos}  
-                        />}
+                        <CategoryProducts setDataObj={setDataObj}  />}
                     />
                 </Switch>
                 <Footer />

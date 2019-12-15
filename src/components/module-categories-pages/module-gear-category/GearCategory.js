@@ -13,17 +13,7 @@ import CmsHeading from "../../module-cms-heading/CmsHeading";
 import ProductClothPreview from "../../module-cloth-product-preview/ProductClothPreview"
 import CategoryThreePromoBlocks from"../../module-category-three-promo-blocks/CategoryThreePromoBlocks"
 
-function GearCategory({
-    
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,  
-    setItemNavigationPhotos,
-}) {
+function GearCategory({setDataObj}) {
     return(
         <main className="category"> 
         {/* <BreadCrumbs />   */}
@@ -80,14 +70,7 @@ function GearCategory({
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}   
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-20.jpg")} 
                         name =" Sprite Yoga Companion Kit"
@@ -105,14 +88,7 @@ function GearCategory({
                     />
                     <ProductClothPreview  
                     
-                        setItemName={setItemName}
-                        setItemPrice={setItemPrice} 
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}   
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
                         
                         imgSrc={require ("../../web/images/product-id-7.jpg")} 
                         name ="Push It Messenger Bag"
@@ -130,14 +106,7 @@ function GearCategory({
                     />
                     <ProductClothPreview  
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}   
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
                         
                         imgSrc={require ("../../web/images/product-id-21.jpg")} 
                         name = "Affirm Water Bottle "
@@ -156,14 +125,7 @@ function GearCategory({
                         
                     <ProductClothPreview 
                     
-                        setItemName={setItemName}
-                        setItemPrice={setItemPrice} 
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}   
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
                         
                         imgSrc={require ("../../web/images/product-id-6.jpg")} 
                         name ="Fusion Backpack"

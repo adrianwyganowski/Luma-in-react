@@ -13,16 +13,7 @@ import CmsHeading from "../../module-cms-heading/CmsHeading";
 import ProductClothPreview from "../../module-cloth-product-preview/ProductClothPreview"
 import CategoryThreePromoBlocks from"../../module-category-three-promo-blocks/CategoryThreePromoBlocks"
 
-function MenCategory({
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,  
-    setItemNavigationPhotos,
-}) {
+function MenCategory({setDataObj}) {
     return(
         <main className="category"> 
         {/* <BreadCrumbs />   */}
@@ -99,14 +90,7 @@ function MenCategory({
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-18.jpg")} 
                         name ="Meteor Workout Short"
@@ -128,14 +112,7 @@ function MenCategory({
                     />
                     <ProductClothPreview 
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-19.jpg")} 
                         name ="Geo Insulated Jogging Pant"
@@ -157,14 +134,7 @@ function MenCategory({
                     />
                     <ProductClothPreview  
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
                         
                         imgSrc={require ("../../web/images/product-id-3.jpg")} 
                         name ="Argus All-Weather Tank"
@@ -183,14 +153,7 @@ function MenCategory({
                         
                         <ProductClothPreview  
                         
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews}
-                        setItemPrice={setItemPrice} 
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}  
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-4.jpg")} 
                         name ="Hero Hoodie"

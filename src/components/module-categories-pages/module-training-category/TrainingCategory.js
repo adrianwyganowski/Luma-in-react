@@ -12,17 +12,7 @@ import CategoriesCompareAndWhishlist from "../../module-categories-compare-and-w
 import CmsHeading from "../../module-cms-heading/CmsHeading";
 import ProductClothPreview from "../../module-cloth-product-preview/ProductClothPreview"
 
-function TrainingCategory({
-    
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,  
-    setItemNavigationPhotos,
-}) { 
+function TrainingCategory({setDataObj}) { 
     return(
     <main className="category"> 
         {/* <BreadCrumbs />   */}
@@ -67,14 +57,7 @@ function TrainingCategory({
                 <div className="trainingCategoryProductsPreview">
                     <ProductClothPreview 
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}  
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-22.jpg")} 
                         name =" Solo Power Circuit"
@@ -92,14 +75,7 @@ function TrainingCategory({
                     />
                     <ProductClothPreview  
                     
-                        setItemName={setItemName}
-                        setItemPrice={setItemPrice} 
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}  
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
                         
                         imgSrc={require ("../../web/images/product-id-23.jpg")} 
                         name ="Luma Yoga For Life"
@@ -117,14 +93,7 @@ function TrainingCategory({
                     />
                     <ProductClothPreview  
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours}  
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
                         
                         imgSrc={require ("../../web/images/product-id-24.jpg")} 
                         name = "LifeLong Fitness IV"

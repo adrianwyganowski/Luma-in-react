@@ -8,60 +8,25 @@ import RelatedProducts from "../module-related-products/RelatedProducts"
 
 
 function ProductPageMain({
-    itemName,
-    itemRanking,
-    itemReviews,
-    itemPrice,
-    itemSizes,
-    itemColours,
-    itemPhotos,
-    itemNavigationPhotos,
-
-
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,
-    setItemNavigationPhotos
-
+    dataToDisplayObj,
+    setDataObj
 }){
-    // let imgsPaths ={
-    //     0 : require ("../web/images/1-bg-img-id-1.jpg"),
-    //     1   : require ("../web/images/2-bg-img-id-1.jpg")
-    // }
-
-    // let navImgsPaths ={
-    //     0 : require ("../web/images/1-sm-img-id-1.jpg"),
-    //     1   : require ("../web/images/2-sm-img-id-1.jpg")
-    // }
 
     return(
         <div className="productPageMain">
             <div className="productPageMain__mainColumn">
-                <ProductMedia itemPhotos={itemPhotos} itemNavigationPhotos={itemNavigationPhotos} />
+                <ProductMedia itemPhotos={dataToDisplayObj.itemPhotos} itemNavigationPhotos={dataToDisplayObj.itemNavigationPhotos} />
                 <ProductInfoMain 
-                    itemName={itemName}
-                    itemRanking={itemRanking}
-                    itemReviews={itemReviews}
-                    itemPrice={itemPrice}
-                    itemSizes={itemSizes}
-                    itemColours={itemColours} 
+                    itemName={dataToDisplayObj.itemName}
+                    itemRanking={dataToDisplayObj.itemRanking}
+                    itemReviews={dataToDisplayObj.itemReviews}
+                    itemPrice={dataToDisplayObj.itemPrice}
+                    itemSizes={dataToDisplayObj.itemSizes}
+                    itemColours={dataToDisplayObj.itemColours} 
                 />
             </div>
-            <ProductDataItems itemReviews={itemReviews}  itemName={itemName}/>
-            <RelatedProducts 
-                    setItemName={setItemName}
-                    setItemRanking={setItemRanking}  
-                    setItemReviews={setItemReviews}
-                    setItemPrice={setItemPrice} 
-                    setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours}    
-                    setItemPhotos={setItemPhotos}      
-                    setItemNavigationPhotos={setItemNavigationPhotos}
-            />
+            <ProductDataItems itemReviews={dataToDisplayObj.itemReviews}  itemName={dataToDisplayObj.itemName}/>
+            <RelatedProducts setDataObj={setDataObj}/>
         </div>
     )
 }

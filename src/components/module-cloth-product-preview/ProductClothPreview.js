@@ -11,14 +11,7 @@ import chart from "../web/images/chart.png"
 
 function ProductClothPreview({ 
  
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,
-    setItemNavigationPhotos,
+    setDataObj,
     imgSrc,
     name,
     rating,
@@ -32,14 +25,14 @@ function ProductClothPreview({
     
     function sendDataToState(){
 
-        setItemName(name);
-        setItemRanking(rating)
-        setItemReviews(reviews)
-        setItemPrice(price)
-        setItemSizes(sizes)
-        setItemColours(colors)
-        setItemPhotos(imgsPaths)
-        setItemNavigationPhotos(itemNavigationPhotos)
+        setDataObj.setItemName(name);
+        setDataObj.setItemRanking(rating)
+        setDataObj.setItemReviews(reviews)
+        setDataObj.setItemPrice(price)
+        setDataObj.setItemSizes(sizes)
+        setDataObj.setItemColours(colors)
+        setDataObj.setItemPhotos(imgsPaths)
+        setDataObj.setItemNavigationPhotos(itemNavigationPhotos)
     
     }
 

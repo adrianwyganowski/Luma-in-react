@@ -3,30 +3,14 @@ import "./RelatedProducts.css"
 
 import RelatedProductPreview from "../module-related-products-preview/RelatedProductPreview"
 
-function RelatedProducts({
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,
-    setItemNavigationPhotos
-}) {
+function RelatedProducts({setDataObj}) {
     return(
         <main className="relatedProducts">
             <p className="relatedProducts_heading">Related Products</p>
             <div className="relatedProductPreviewContainer">
                 <RelatedProductPreview 
                 
-                setItemName={setItemName}
-                setItemRanking={setItemRanking}  
-                setItemReviews={setItemReviews}
-                setItemPrice={setItemPrice} 
-                setItemSizes={setItemSizes}  
-                setItemColours={setItemColours}  
-                setItemPhotos={setItemPhotos}
-                setItemNavigationPhotos={setItemNavigationPhotos}
+                setDataObj={setDataObj}
 
                 imgSrc={require ("../web/images/product-id-8.jpg")}
                 name ="Mimi All-Purpose Short"
@@ -52,14 +36,7 @@ function RelatedProducts({
                 />
                 <RelatedProductPreview 
                 
-                setItemName={setItemName}
-                setItemRanking={setItemRanking}  
-                setItemReviews={setItemReviews}
-                setItemPrice={setItemPrice} 
-                setItemSizes={setItemSizes}  
-                setItemColours={setItemColours}  
-                setItemPhotos={setItemPhotos}
-                setItemNavigationPhotos={setItemNavigationPhotos}
+                setDataObj={setDataObj}
 
                 imgSrc={require ("../web/images/product-id-9.jpg")}
                 name= "Gabrielle Micro Sleeve Top"
@@ -85,14 +62,7 @@ function RelatedProducts({
                 />
                 <RelatedProductPreview 
                 
-                setItemName={setItemName}
-                setItemRanking={setItemRanking}  
-                setItemReviews={setItemReviews}
-                setItemPrice={setItemPrice} 
-                setItemSizes={setItemSizes}  
-                setItemColours={setItemColours}  
-                setItemPhotos={setItemPhotos}
-                setItemNavigationPhotos={setItemNavigationPhotos}
+                setDataObj={setDataObj}
 
                 imgSrc={require ("../web/images/product-id-10.jpg")}
                 name="Ana Running Short"
@@ -118,14 +88,7 @@ function RelatedProducts({
                 />
                 <RelatedProductPreview 
                 
-                setItemName={setItemName}
-                setItemRanking={setItemRanking}  
-                setItemReviews={setItemReviews}
-                setItemPrice={setItemPrice} 
-                setItemSizes={setItemSizes}  
-                setItemColours={setItemColours}  
-                setItemPhotos={setItemPhotos}
-                setItemNavigationPhotos={setItemNavigationPhotos}
+                setDataObj={setDataObj}
 
                 imgSrc={require ("../web/images/product-id-11.jpg")}
                 name="Juliana Short-Sleeve Tee"

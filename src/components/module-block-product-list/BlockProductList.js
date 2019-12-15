@@ -4,31 +4,14 @@ import "./BlockProductList.css"
 import ProductClothPreview from "../module-cloth-product-preview/ProductClothPreview"
 
 
-function BlockProductList({
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,
-    setItemNavigationPhotos,
-
-}) {
+function BlockProductList({setDataObj}) {
 
     return(
         <div className="blockProductList">
             
             <ProductClothPreview 
             
-            setItemName={setItemName}
-            setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews} 
-            setItemPrice={setItemPrice}
-            setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}
-            setItemPhotos={setItemPhotos}    
-            setItemNavigationPhotos={setItemNavigationPhotos} 
+            setDataObj={setDataObj}
 
             imgSrc={require ("../web/images/product-id-1.jpg")} 
             name ="Breathe-Easy Tank"
@@ -52,14 +35,7 @@ function BlockProductList({
             
             <ProductClothPreview  
 
-            setItemName={setItemName}
-            setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews} 
-            setItemPrice={setItemPrice}
-            setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}
-            setItemPhotos={setItemPhotos}    
-            setItemNavigationPhotos={setItemNavigationPhotos}   
+            setDataObj={setDataObj}  
 
             imgSrc={require ("../web/images/product-id-2.jpg")} 
             name ="Radiant Tee"
@@ -84,14 +60,7 @@ function BlockProductList({
 
             <ProductClothPreview  
 
-            setItemName={setItemName}
-            setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews} 
-            setItemPrice={setItemPrice}
-            setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}            
-            setItemPhotos={setItemPhotos}    
-            setItemNavigationPhotos={setItemNavigationPhotos} 
+            setDataObj={setDataObj}
              
             imgSrc={require ("../web/images/product-id-3.jpg")} 
             name ="Argus All-Weather Tank"
@@ -110,14 +79,7 @@ function BlockProductList({
             
             <ProductClothPreview  
 
-            setItemName={setItemName}
-            setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews}
-            setItemPrice={setItemPrice} 
-            setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}
-            setItemPhotos={setItemPhotos}    
-            setItemNavigationPhotos={setItemNavigationPhotos}   
+            setDataObj={setDataObj}
 
             imgSrc={require ("../web/images/product-id-4.jpg")} 
             name ="Hero Hoodie"
@@ -136,14 +98,7 @@ function BlockProductList({
 
             <ProductClothPreview  
 
-            setItemName={setItemName}
-            setItemPrice={setItemPrice} 
-            setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews} 
-            setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}
-            setItemPhotos={setItemPhotos}    
-            setItemNavigationPhotos={setItemNavigationPhotos} 
+            setDataObj={setDataObj}
             
             imgSrc={require ("../web/images/product-id-5.jpg")} 
             name ="LifeLong Fitness IV"
@@ -162,14 +117,7 @@ function BlockProductList({
 
             <ProductClothPreview 
             
-            setItemName={setItemName}
-            setItemPrice={setItemPrice} 
-            setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews} 
-            setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}
-            setItemPhotos={setItemPhotos}    
-            setItemNavigationPhotos={setItemNavigationPhotos}  
+            setDataObj={setDataObj} 
 
             imgSrc={require ("../web/images/product-id-7.jpg")} 
             name ="Push It Messenger Bag"
@@ -194,14 +142,7 @@ function BlockProductList({
 
             <ProductClothPreview 
 
-            setItemName={setItemName}
-            setItemPrice={setItemPrice} 
-            setItemRanking={setItemRanking}  
-            setItemReviews={setItemReviews} 
-            setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}
-            setItemPhotos={setItemPhotos}    
-            setItemNavigationPhotos={setItemNavigationPhotos}  
+            setDataObj={setDataObj} 
 
             imgSrc={require ("../web/images/product-id-6.jpg")} 
             name ="Fusion Backpack"

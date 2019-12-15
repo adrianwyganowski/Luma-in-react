@@ -14,16 +14,7 @@ import CmsHeading from "../../module-cms-heading/CmsHeading";
 import ProductClothPreview from "../../module-cloth-product-preview/ProductClothPreview"
 import CategoryThreePromoBlocks from"../../module-category-three-promo-blocks/CategoryThreePromoBlocks"
 
-function WomenCategory({
-    setItemName,
-    setItemRanking,
-    setItemReviews,
-    setItemPrice,
-    setItemSizes,
-    setItemColours,
-    setItemPhotos,  
-    setItemNavigationPhotos,
-}){
+function WomenCategory({setDataObj}){
 
     return(
     <main className="category"> 
@@ -111,15 +102,7 @@ function WomenCategory({
                 <div className="categoryProductsPreview">
                     <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
-                        
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-16.jpg")} 
                         name ="Deirdre Relaxed-Fit Capri"
@@ -137,14 +120,7 @@ function WomenCategory({
                     />
                     <ProductClothPreview 
                     
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-1.jpg")} 
                         name ="Breathe-Easy Tank"
@@ -167,14 +143,7 @@ function WomenCategory({
                     />
                     <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-2.jpg")} 
                         name ="Radiant Tee"
@@ -192,14 +161,7 @@ function WomenCategory({
                     />
                     <ProductClothPreview 
 
-                        setItemName={setItemName}
-                        setItemRanking={setItemRanking}  
-                        setItemReviews={setItemReviews} 
-                        setItemPrice={setItemPrice}
-                        setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
-                        setItemPhotos={setItemPhotos}  
-                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        setDataObj={setDataObj} 
 
                         imgSrc={require ("../../web/images/product-id-17.jpg")} 
                         name ="Selene Yoga Hoodie"
