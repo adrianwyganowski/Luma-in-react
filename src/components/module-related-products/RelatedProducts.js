@@ -9,7 +9,9 @@ function RelatedProducts({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,
+    setItemPhotos,
+    setItemNavigationPhotos
 }) {
     return(
         <main className="relatedProducts">
@@ -23,6 +25,8 @@ function RelatedProducts({
                 setItemPrice={setItemPrice} 
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
+                setItemPhotos={setItemPhotos}
+                setItemNavigationPhotos={setItemNavigationPhotos}
 
                 imgSrc={require ("../web/images/product-id-8.jpg")}
                 name ="Mimi All-Purpose Short"
@@ -35,6 +39,15 @@ function RelatedProducts({
                 price="44.00"
                 sizes={["28","29"]}
                 colors={[["Gray", "#8f8f8f"],["Green" ,"#53a828"], ["White" , "#ffffff"]]}
+                imgsPaths ={{
+                    0 : require ("../web/images/1-bg-img-id-8.jpg"),
+                    1 : require ("../web/images/2-bg-img-id-8.jpg")
+                }}
+                itemNavigationPhotos={{
+                    0 : require ("../web/images/1-sm-img-id-8.jpg"),
+                    1 : require ("../web/images/2-sm-img-id-8.jpg")
+                }}
+                    
 
                 />
                 <RelatedProductPreview 
@@ -45,6 +58,8 @@ function RelatedProducts({
                 setItemPrice={setItemPrice} 
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
+                setItemPhotos={setItemPhotos}
+                setItemNavigationPhotos={setItemNavigationPhotos}
 
                 imgSrc={require ("../web/images/product-id-9.jpg")}
                 name= "Gabrielle Micro Sleeve Top"
@@ -58,6 +73,14 @@ function RelatedProducts({
                 price="28.00"
                 sizes={["XS","S","M","L","XL"]}
                 colors={[["Blue","#1857f7"],["Green" ,"#53a828"],["Red", "#ff0000"]]}
+                imgsPaths ={{
+                    0 : require ("../web/images/1-bg-img-id-9.jpg"),
+                    1 : require ("../web/images/2-bg-img-id-9.jpg")
+                }}
+                itemNavigationPhotos={{
+                    0 : require ("../web/images/1-sm-img-id-9.jpg"),
+                    1 : require ("../web/images/2-sm-img-id-9.jpg")
+                }}
 
                 />
                 <RelatedProductPreview 
@@ -68,6 +91,8 @@ function RelatedProducts({
                 setItemPrice={setItemPrice} 
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
+                setItemPhotos={setItemPhotos}
+                setItemNavigationPhotos={setItemNavigationPhotos}
 
                 imgSrc={require ("../web/images/product-id-10.jpg")}
                 name="Ana Running Short"
@@ -80,6 +105,14 @@ function RelatedProducts({
                 price="40.00"
                 sizes={["28","29"]}
                 colors={[["Black","#000000"],["Orange","#eb6703"],["white","#ffffff"]]}
+                imgsPaths ={{
+                    0 : require ("../web/images/1-bg-img-id-10.jpg"),
+                    1 : require ("../web/images/2-bg-img-id-10.jpg")
+                }}
+                itemNavigationPhotos={{
+                    0 : require ("../web/images/1-sm-img-id-10.jpg"),
+                    1 : require ("../web/images/2-sm-img-id-10.jpg")
+                }}
 
                 
                 />
@@ -91,6 +124,8 @@ function RelatedProducts({
                 setItemPrice={setItemPrice} 
                 setItemSizes={setItemSizes}  
                 setItemColours={setItemColours}  
+                setItemPhotos={setItemPhotos}
+                setItemNavigationPhotos={setItemNavigationPhotos}
 
                 imgSrc={require ("../web/images/product-id-11.jpg")}
                 name="Juliana Short-Sleeve Tee"
@@ -102,6 +137,14 @@ function RelatedProducts({
                 price="42.00"
                 sizes={["XS","S","M","L","XL"]}
                 colors={[["Black","#000000"],["White","#000000"],["Yellow","#ffd500"]]}
+                imgsPaths ={{
+                    0 : require ("../web/images/1-bg-img-id-11.jpg"),
+                    1 : require ("../web/images/2-bg-img-id-11.jpg")
+                }}
+                itemNavigationPhotos={{
+                    0 : require ("../web/images/1-sm-img-id-11.jpg"),
+                    1 : require ("../web/images/2-sm-img-id-11.jpg")
+                }}
                 
                 />
             </div>

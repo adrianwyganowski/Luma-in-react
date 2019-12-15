@@ -12,7 +12,9 @@ function CategoryProducts({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,
+    setItemPhotos,  
+    setItemNavigationPhotos,
 }) {
     return(
         <main className="categoryProducts">
@@ -51,6 +53,8 @@ function CategoryProducts({
                     setItemPrice={setItemPrice}
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours} 
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
 
                     imgSrc={require ("../web/images/product-id-1.jpg")} 
                     name ="Breathe-Easy Tank"
@@ -62,6 +66,14 @@ function CategoryProducts({
                     price ="34.00"
                     sizes = {["XS","S","M","L" ,"XL"]}
                     colors = {[["Purple" , "#ef3dff"] , ["White" , "#ffffff"] , ["Yellow" , "#ffd500"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-1.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-1.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-1.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-1.jpg")
+                        }}
                     />
                     
                     <ProductClothPreview  
@@ -72,6 +84,8 @@ function CategoryProducts({
                     setItemPrice={setItemPrice}
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours}  
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
 
                     imgSrc={require ("../web/images/product-id-2.jpg")} 
                     name ="Radiant Tee"
@@ -84,6 +98,14 @@ function CategoryProducts({
                     price ="22.00"
                     sizes = {["XS","S","M","L" ,"XL"]}
                     colors = {[["Blue" , "#1857f7"] , ["Orange" , "#eb6703"] , ["Purple" , "#ef3dff"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-2.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-2.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-2.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-2.jpg")
+                        }}
                     />
 
                     <ProductClothPreview  
@@ -94,12 +116,22 @@ function CategoryProducts({
                     setItemPrice={setItemPrice}
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours} 
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
                     
                     imgSrc={require ("../web/images/product-id-3.jpg")} 
                     name ="Argus All-Weather Tank"
                     price ="22.00"
                     sizes = {["XS","S","M","L" ,"XL"]}
                     colors = {[["Gray" , "#8f8f8f"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-3.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-3.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-3.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-3.jpg")
+                        }}
                     />
                     
                     <ProductClothPreview  
@@ -110,12 +142,22 @@ function CategoryProducts({
                     setItemPrice={setItemPrice} 
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours}  
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
 
                     imgSrc={require ("../web/images/product-id-4.jpg")} 
                     name ="Hero Hoodie"
                     price ="54.00"
                     sizes = {["XS","S","M","L" ,"XL"]}
                     colors = {[["Black" , "#000000"] , ["Gray" , "#8f8f8f"] , ["Green" , "##53a828"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-4.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-4.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-4.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-4.jpg")
+                        }}
                     />
                     <ProductClothPreview 
                     
@@ -125,6 +167,8 @@ function CategoryProducts({
                     setItemPrice={setItemPrice}
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours} 
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
 
                     imgSrc={require ("../web/images/product-id-13.jpg")} 
                     name ="Echo Fit Compression Short"
@@ -137,6 +181,14 @@ function CategoryProducts({
                     price ="24.00"
                     sizes = {["28","29","30","31" ,"32"]}
                     colors = {[["Black" , "#000000"] , ["Blue" , "#1857f7"] , ["Purple" , "#ef3dff"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-13.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-13.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-13.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-13.jpg")
+                        }}
                 />
                 <ProductClothPreview 
 
@@ -146,6 +198,8 @@ function CategoryProducts({
                     setItemPrice={setItemPrice}
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours} 
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
 
                     imgSrc={require ("../web/images/product-id-12.jpg")} 
                     name ="Gwen Drawstring Bike Short"
@@ -157,6 +211,14 @@ function CategoryProducts({
                     price ="50.00"
                     sizes = {["28","29","30","31" ,"32"]}
                     colors = {[["Blue" , "#1857f7"] , ["Gray" , "#8f8f8f"] , ["Orange" , "#eb6703"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-12.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-12.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-12.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-12.jpg")
+                        }}
                 />
 
                 <ProductClothPreview 
@@ -167,6 +229,8 @@ function CategoryProducts({
                     setItemPrice={setItemPrice}
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours} 
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
 
                     imgSrc={require ("../web/images/product-id-14.jpg")} 
                     name ="Fiona Fitness Short"
@@ -179,6 +243,14 @@ function CategoryProducts({
                     price ="29.00"
                     sizes = {["28","29","30","31" ,"32"]}
                     colors = {[["Black" , "#000000"] , ["Green" , "#53a828"] , ["Red" , "#ff0000"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-14.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-14.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-14.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-14.jpg")
+                        }}
                 />
                 <ProductClothPreview 
 
@@ -188,6 +260,8 @@ function CategoryProducts({
                     setItemPrice={setItemPrice}
                     setItemSizes={setItemSizes}  
                     setItemColours={setItemColours} 
+                    setItemPhotos={setItemPhotos}  
+                    setItemNavigationPhotos={setItemNavigationPhotos}
 
                     imgSrc={require ("../web/images/product-id-15.jpg")} 
                     name ="Ida Workout Parachute Pant"
@@ -200,6 +274,14 @@ function CategoryProducts({
                     price ="248.00"
                     sizes = {["28","29","30","31" ,"32"]}
                     colors = {[["Black" , "#000000"] , ["Blue" , "#1857f7"] , ["Purple" , "#ef3dff"]]}
+                    imgsPaths ={{
+                        0 : require ("../web/images/1-bg-img-id-15.jpg"),
+                        1 : require ("../web/images/2-bg-img-id-15.jpg")
+                        }}
+                    itemNavigationPhotos={{
+                        0 : require ("../web/images/1-sm-img-id-15.jpg"),
+                        1 : require ("../web/images/2-sm-img-id-15.jpg")
+                        }}
                 />
                 </div>
             </div>

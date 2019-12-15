@@ -19,7 +19,9 @@ function TrainingCategory({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,
+    setItemPhotos,  
+    setItemNavigationPhotos,
 }) { 
     return(
     <main className="category"> 
@@ -70,13 +72,23 @@ function TrainingCategory({
                         setItemReviews={setItemReviews} 
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}  
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-22.jpg")} 
                         name =" Solo Power Circuit"
                         price ="14.00"
                         sizes = {[]}
                         colors = {[]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-1.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-1.jpg")
+                            }}
                     />
                     <ProductClothPreview  
                     
@@ -85,13 +97,23 @@ function TrainingCategory({
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}  
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
                         
                         imgSrc={require ("../../web/images/product-id-23.jpg")} 
                         name ="Luma Yoga For Life"
                         price ="0.00"
                         sizes = {[]}
                         colors = {[]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-1.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-1.jpg")
+                            }}
                     />
                     <ProductClothPreview  
                     
@@ -100,13 +122,23 @@ function TrainingCategory({
                         setItemReviews={setItemReviews} 
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}  
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
                         
                         imgSrc={require ("../../web/images/product-id-24.jpg")} 
                         name = "LifeLong Fitness IV"
                         price ="14.00"
                         sizes = {[]}
                         colors = {[]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-1.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-1.jpg")
+                            }}
                     />
                 </div>
         

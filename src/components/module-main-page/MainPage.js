@@ -10,7 +10,11 @@ function MainPage({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours}){
+    setItemColours,
+    setItemPhotos,
+    setItemNavigationPhotos,
+
+}){
     
 
     return(
@@ -27,6 +31,8 @@ function MainPage({
                 setItemPrice={setItemPrice}
                 setItemSizes={setItemSizes}
                 setItemColours={setItemColours}
+                setItemPhotos={setItemPhotos}    
+                setItemNavigationPhotos={setItemNavigationPhotos}
             />
         </main>
     )

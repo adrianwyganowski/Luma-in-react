@@ -28,6 +28,10 @@ function App() {
     let [itemPrice , setItemPrice]= useState("");
     let [itemSizes , setItemSizes]= useState([]);
     let [itemColours , setItemColours]= useState([]);
+    let [itemPhotos , setItemPhotos]= useState({});
+    let [itemNavigationPhotos , setItemNavigationPhotos]= useState({});
+
+
 
     return (
         <div className="app">
@@ -41,7 +45,9 @@ function App() {
                             setItemReviews={setItemReviews}
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}      
+                            setItemColours={setItemColours}  
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}
                         />} 
                     />
                     <Route path="/product" exact component={() =>
@@ -53,13 +59,18 @@ function App() {
                             itemPrice={itemPrice}
                             itemSizes={itemSizes}
                             itemColours={itemColours}
+                            itemPhotos={itemPhotos}
+                            itemNavigationPhotos={itemNavigationPhotos}
                             
                             setItemName={setItemName}
                             setItemRanking={setItemRanking}  
                             setItemReviews={setItemReviews}
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
-                            setItemColours={setItemColours}          
+                            setItemColours={setItemColours}    
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}  
+                            
                         />}
                     />
                     <Route path="/what-is-new" exact component= {() =>
@@ -71,6 +82,8 @@ function App() {
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
                             setItemColours={setItemColours}  
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}  
                         />}
                     />
                     <Route path="/women" exact component = {() =>
@@ -82,6 +95,8 @@ function App() {
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
                             setItemColours={setItemColours} 
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}  
                         />}
                     />
                     <Route path="/men" exact component= {() =>
@@ -93,6 +108,8 @@ function App() {
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
                             setItemColours={setItemColours}  
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}  
                         />}
                     />
                     <Route path="/gear" exact component={() =>
@@ -104,6 +121,8 @@ function App() {
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
                             setItemColours={setItemColours}  
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}  
                         />}
                     />
                     <Route path="/training" exact component={() =>
@@ -115,6 +134,8 @@ function App() {
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
                             setItemColours={setItemColours}  
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}  
                         />} 
                     />
                     <Route path="/sale" exact component={() =>
@@ -129,6 +150,8 @@ function App() {
                             setItemPrice={setItemPrice} 
                             setItemSizes={setItemSizes}  
                             setItemColours={setItemColours}  
+                            setItemPhotos={setItemPhotos}    
+                            setItemNavigationPhotos={setItemNavigationPhotos}  
                         />}
                     />
                 </Switch>

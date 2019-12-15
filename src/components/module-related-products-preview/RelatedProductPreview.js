@@ -10,6 +10,8 @@ function RelatedProductPreview({
     setItemPrice,
     setItemSizes,
     setItemColours,
+    setItemPhotos,
+    setItemNavigationPhotos,
 
     imgSrc,
     name,
@@ -17,7 +19,9 @@ function RelatedProductPreview({
     reviews,
     price,
     sizes,
-    colors
+    colors,  
+    imgsPaths,
+    itemNavigationPhotos
 
     }) {
 
@@ -28,6 +32,8 @@ function RelatedProductPreview({
         setItemPrice(price)
         setItemSizes(sizes)
         setItemColours(colors)
+        setItemPhotos(imgsPaths)
+        setItemNavigationPhotos(itemNavigationPhotos)
     
         }
 

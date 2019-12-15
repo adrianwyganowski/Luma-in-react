@@ -10,7 +10,11 @@ function BlockProductList({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours}) {
+    setItemColours,
+    setItemPhotos,
+    setItemNavigationPhotos,
+
+}) {
 
     return(
         <div className="blockProductList">
@@ -22,7 +26,9 @@ function BlockProductList({
             setItemReviews={setItemReviews} 
             setItemPrice={setItemPrice}
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours} 
+            setItemColours={setItemColours}
+            setItemPhotos={setItemPhotos}    
+            setItemNavigationPhotos={setItemNavigationPhotos} 
 
             imgSrc={require ("../web/images/product-id-1.jpg")} 
             name ="Breathe-Easy Tank"
@@ -34,6 +40,14 @@ function BlockProductList({
             price ="34.00"
             sizes = {["XS","S","M","L" ,"XL"]}
             colors = {[["Purple" , "#ef3dff"] , ["White" , "#ffffff"] , ["Yellow" , "#ffd500"]]}
+            imgsPaths ={{
+                0 : require ("../web/images/1-bg-img-id-1.jpg"),
+                1 : require ("../web/images/2-bg-img-id-1.jpg")
+                }}
+            itemNavigationPhotos={{
+                0 : require ("../web/images/1-sm-img-id-1.jpg"),
+                1 : require ("../web/images/2-sm-img-id-1.jpg")
+                }}
             />
             
             <ProductClothPreview  
@@ -43,7 +57,9 @@ function BlockProductList({
             setItemReviews={setItemReviews} 
             setItemPrice={setItemPrice}
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}  
+            setItemColours={setItemColours}
+            setItemPhotos={setItemPhotos}    
+            setItemNavigationPhotos={setItemNavigationPhotos}   
 
             imgSrc={require ("../web/images/product-id-2.jpg")} 
             name ="Radiant Tee"
@@ -56,6 +72,14 @@ function BlockProductList({
             price ="22.00"
             sizes = {["XS","S","M","L" ,"XL"]}
             colors = {[["Blue" , "#1857f7"] , ["Orange" , "#eb6703"] , ["Purple" , "#ef3dff"]]}
+            imgsPaths ={{
+                0 : require ("../web/images/1-bg-img-id-2.jpg"),
+                1 : require ("../web/images/2-bg-img-id-2.jpg")
+                }}
+            itemNavigationPhotos={{
+                0 : require ("../web/images/1-sm-img-id-2.jpg"),
+                1 : require ("../web/images/2-sm-img-id-2.jpg")
+                }}
             />
 
             <ProductClothPreview  
@@ -65,13 +89,23 @@ function BlockProductList({
             setItemReviews={setItemReviews} 
             setItemPrice={setItemPrice}
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours} 
+            setItemColours={setItemColours}            
+            setItemPhotos={setItemPhotos}    
+            setItemNavigationPhotos={setItemNavigationPhotos} 
              
             imgSrc={require ("../web/images/product-id-3.jpg")} 
             name ="Argus All-Weather Tank"
             price ="22.00"
             sizes = {["XS","S","M","L" ,"XL"]}
             colors = {[["Gray" , "#8f8f8f"]]}
+            imgsPaths ={{
+                0 : require ("../web/images/1-bg-img-id-3.jpg"),
+                1 : require ("../web/images/2-bg-img-id-3.jpg")
+                }}
+            itemNavigationPhotos={{
+                0 : require ("../web/images/1-sm-img-id-3.jpg"),
+                1 : require ("../web/images/2-sm-img-id-3.jpg")
+                }}
             />
             
             <ProductClothPreview  
@@ -81,13 +115,23 @@ function BlockProductList({
             setItemReviews={setItemReviews}
             setItemPrice={setItemPrice} 
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours}  
+            setItemColours={setItemColours}
+            setItemPhotos={setItemPhotos}    
+            setItemNavigationPhotos={setItemNavigationPhotos}   
 
             imgSrc={require ("../web/images/product-id-4.jpg")} 
             name ="Hero Hoodie"
             price ="54.00"
             sizes = {["XS","S","M","L" ,"XL"]}
             colors = {[["Black" , "#000000"] , ["Gray" , "#8f8f8f"] , ["Green" , "##53a828"]]}
+            imgsPaths ={{
+                0 : require ("../web/images/1-bg-img-id-4.jpg"),
+                1 : require ("../web/images/2-bg-img-id-4.jpg")
+                }}
+            itemNavigationPhotos={{
+                0 : require ("../web/images/1-sm-img-id-4.jpg"),
+                1 : require ("../web/images/2-sm-img-id-4.jpg")
+                }}
             />
 
             <ProductClothPreview  
@@ -97,13 +141,23 @@ function BlockProductList({
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours} 
+            setItemColours={setItemColours}
+            setItemPhotos={setItemPhotos}    
+            setItemNavigationPhotos={setItemNavigationPhotos} 
             
             imgSrc={require ("../web/images/product-id-5.jpg")} 
             name ="LifeLong Fitness IV"
             price ="14.00"
             sizes = {[]}
             colors = {[]}
+            imgsPaths ={{
+                0 : require ("../web/images/1-bg-img-id-1.jpg"),
+                1 : require ("../web/images/2-bg-img-id-1.jpg")
+                }}
+            itemNavigationPhotos={{
+                0 : require ("../web/images/1-sm-img-id-1.jpg"),
+                1 : require ("../web/images/2-sm-img-id-1.jpg")
+                }}
            />
 
             <ProductClothPreview 
@@ -113,7 +167,9 @@ function BlockProductList({
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours} 
+            setItemColours={setItemColours}
+            setItemPhotos={setItemPhotos}    
+            setItemNavigationPhotos={setItemNavigationPhotos}  
 
             imgSrc={require ("../web/images/product-id-7.jpg")} 
             name ="Push It Messenger Bag"
@@ -126,6 +182,14 @@ function BlockProductList({
             price ="45.00"
             sizes = {[]}
             colors = {[]}
+            imgsPaths ={{
+                0 : require ("../web/images/1-bg-img-id-1.jpg"),
+                1 : require ("../web/images/2-bg-img-id-1.jpg")
+                }}
+            itemNavigationPhotos={{
+                0 : require ("../web/images/1-sm-img-id-1.jpg"),
+                1 : require ("../web/images/2-sm-img-id-1.jpg")
+                }}
             />
 
             <ProductClothPreview 
@@ -135,7 +199,9 @@ function BlockProductList({
             setItemRanking={setItemRanking}  
             setItemReviews={setItemReviews} 
             setItemSizes={setItemSizes}  
-            setItemColours={setItemColours} 
+            setItemColours={setItemColours}
+            setItemPhotos={setItemPhotos}    
+            setItemNavigationPhotos={setItemNavigationPhotos}  
 
             imgSrc={require ("../web/images/product-id-6.jpg")} 
             name ="Fusion Backpack"
@@ -148,6 +214,14 @@ function BlockProductList({
             price ="59.00"
             sizes = {[]}
             colors = {[]}
+            imgsPaths ={{
+                0 : require ("../web/images/1-bg-img-id-6.jpg"),
+                1 : require ("../web/images/2-bg-img-id-6.jpg")
+                }}
+            itemNavigationPhotos={{
+                0 : require ("../web/images/1-sm-img-id-6.jpg"),
+                1 : require ("../web/images/2-sm-img-id-6.jpg")
+                }}
             />
 
         </div>

@@ -19,7 +19,9 @@ function MenCategory({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,
+    setItemPhotos,  
+    setItemNavigationPhotos,
 }) {
     return(
         <main className="category"> 
@@ -103,6 +105,8 @@ function MenCategory({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-18.jpg")} 
                         name ="Meteor Workout Short"
@@ -113,6 +117,14 @@ function MenCategory({
                         price ="32.00"
                         sizes = {["32","33","34","36"]}
                         colors = {[["Black" , "#000000"] , ["Blue" , "#1857f7"] , ["Green" , "#53a828"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-18.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-18.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-18.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-18.jpg")
+                            }}
                     />
                     <ProductClothPreview 
                     
@@ -122,6 +134,8 @@ function MenCategory({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-19.jpg")} 
                         name ="Geo Insulated Jogging Pant"
@@ -132,6 +146,14 @@ function MenCategory({
                         price ="51.00"
                         sizes = {["32","33","34","36"]}
                         colors = {[["Blue" , "#1857f7"] , ["Green" , "#53a828"] , ["Red" , "#ff0000"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-19.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-19.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-19.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-19.jpg")
+                            }}
                     />
                     <ProductClothPreview  
                     
@@ -141,12 +163,22 @@ function MenCategory({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
                         
                         imgSrc={require ("../../web/images/product-id-3.jpg")} 
                         name ="Argus All-Weather Tank"
                         price ="22.00"
                         sizes = {["XS","S","M","L" ,"XL"]}
                         colors = {[["Gray" , "#8f8f8f"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-3.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-3.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-3.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-3.jpg")
+                            }}
                         />
                         
                         <ProductClothPreview  
@@ -157,12 +189,22 @@ function MenCategory({
                         setItemPrice={setItemPrice} 
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours}  
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-4.jpg")} 
                         name ="Hero Hoodie"
                         price ="54.00"
                         sizes = {["XS","S","M","L" ,"XL"]}
                         colors = {[["Black" , "#000000"] , ["Gray" , "#8f8f8f"] , ["Green" , "##53a828"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-4.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-4.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-4.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-4.jpg")
+                            }}
                         />
                 </div>
 

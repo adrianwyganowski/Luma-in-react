@@ -12,13 +12,17 @@ function ProductPage({
         itemPrice,
         itemSizes,
         itemColours,
+        itemPhotos,
+        itemNavigationPhotos,
 
         setItemName,
         setItemRanking,
         setItemReviews,
         setItemPrice,
         setItemSizes,
-        setItemColours
+        setItemColours,
+        setItemPhotos,
+        setItemNavigationPhotos,
 
     }) {
     return(
@@ -31,13 +35,17 @@ function ProductPage({
                 itemPrice={itemPrice}
                 itemSizes={itemSizes}
                 itemColours={itemColours} 
+                itemPhotos={itemPhotos}
+                itemNavigationPhotos={itemNavigationPhotos}
 
                 setItemName={setItemName}
                 setItemRanking={setItemRanking}  
                 setItemReviews={setItemReviews}
                 setItemPrice={setItemPrice} 
                 setItemSizes={setItemSizes}  
-                setItemColours={setItemColours}          
+                setItemColours={setItemColours}  
+                setItemPhotos={setItemPhotos}
+                setItemNavigationPhotos={setItemNavigationPhotos}
             />
         </div>
     )

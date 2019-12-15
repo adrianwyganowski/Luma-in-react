@@ -18,7 +18,9 @@ function WhatsNew({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,                            
+    setItemPhotos,  
+    setItemNavigationPhotos,
 }){
 
     return(
@@ -95,7 +97,9 @@ function WhatsNew({
                         setItemReviews={setItemReviews} 
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-13.jpg")} 
                         name ="Echo Fit Compression Short"
@@ -108,6 +112,14 @@ function WhatsNew({
                         price ="24.00"
                         sizes = {["28","29","30","31" ,"32"]}
                         colors = {[["Black" , "#000000"] , ["Blue" , "#1857f7"] , ["Purple" , "#ef3dff"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-13.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-13.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-13.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-13.jpg")
+                            }}
                     />
                     <ProductClothPreview 
 
@@ -117,6 +129,8 @@ function WhatsNew({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-12.jpg")} 
                         name ="Gwen Drawstring Bike Short"
@@ -128,6 +142,14 @@ function WhatsNew({
                         price ="50.00"
                         sizes = {["28","29","30","31" ,"32"]}
                         colors = {[["Blue" , "#1857f7"] , ["Gray" , "#8f8f8f"] , ["Orange" , "#eb6703"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-12.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-12.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-12.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-12.jpg")
+                            }}
                     />
                     <ProductClothPreview 
 
@@ -137,6 +159,8 @@ function WhatsNew({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-14.jpg")} 
                         name ="Fiona Fitness Short"
@@ -149,6 +173,14 @@ function WhatsNew({
                         price ="29.00"
                         sizes = {["28","29","30","31" ,"32"]}
                         colors = {[["Black" , "#000000"] , ["Green" , "#53a828"] , ["Red" , "#ff0000"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-14.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-14.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-14.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-14.jpg")
+                            }}
                     />
                     <ProductClothPreview 
 
@@ -158,6 +190,8 @@ function WhatsNew({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-15.jpg")} 
                         name ="Ida Workout Parachute Pant"
@@ -170,6 +204,14 @@ function WhatsNew({
                         price ="248.00"
                         sizes = {["28","29","30","31" ,"32"]}
                         colors = {[["Black" , "#000000"] , ["Blue" , "#1857f7"] , ["Purple" , "#ef3dff"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-15.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-15.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-15.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-15.jpg")
+                            }}
                     />
                 </div>
 

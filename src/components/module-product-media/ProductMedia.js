@@ -4,10 +4,10 @@ import "./ProductMedia.css"
 import { ReactComponent as LeftArrow } from "../web/images/left-arrow.svg";
 import { ReactComponent as RightArrow } from "../web/images/right-arrow.svg";
 
-function ProductMedia({imgsPaths, navImgsPaths}) { 
+function ProductMedia({itemPhotos, itemNavigationPhotos}) { 
     
-    let imgArr = Object.values(imgsPaths);
-    let navImgArr = Object.values(navImgsPaths);
+    let imgArr = Object.values(itemPhotos);
+    let navImgArr = Object.values(itemNavigationPhotos);
 
     function moveToNextImg(){
         let carusele = document.getElementsByClassName("imgsContainer__carousel")[0];

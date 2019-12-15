@@ -20,7 +20,9 @@ function GearCategory({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,
+    setItemPhotos,  
+    setItemNavigationPhotos,
 }) {
     return(
         <main className="category"> 
@@ -83,13 +85,23 @@ function GearCategory({
                         setItemReviews={setItemReviews} 
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}   
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-20.jpg")} 
                         name =" Sprite Yoga Companion Kit"
                         price ="61.00"
                         sizes = {[]}
                         colors = {[]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-1.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-1.jpg")
+                            }}
                     />
                     <ProductClothPreview  
                     
@@ -98,13 +110,23 @@ function GearCategory({
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}   
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
                         
                         imgSrc={require ("../../web/images/product-id-7.jpg")} 
                         name ="Push It Messenger Bag"
                         price ="45.00"
                         sizes = {[]}
                         colors = {[]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-1.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-1.jpg")
+                            }}
                     />
                     <ProductClothPreview  
                     
@@ -113,13 +135,23 @@ function GearCategory({
                         setItemReviews={setItemReviews} 
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}   
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
                         
                         imgSrc={require ("../../web/images/product-id-21.jpg")} 
                         name = "Affirm Water Bottle "
                         price ="7.00"
                         sizes = {[]}
                         colors = {[]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-1.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-1.jpg")
+                            }}
                     />
                         
                     <ProductClothPreview 
@@ -129,13 +161,23 @@ function GearCategory({
                         setItemRanking={setItemRanking}  
                         setItemReviews={setItemReviews} 
                         setItemSizes={setItemSizes}  
-                        setItemColours={setItemColours} 
+                        setItemColours={setItemColours}   
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
                         
                         imgSrc={require ("../../web/images/product-id-6.jpg")} 
                         name ="Fusion Backpack"
                         price ="59.00"
                         sizes = {[]}
                         colors = {[]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-6.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-6.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-6.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-6.jpg")
+                            }}
                     />
                 </div>
 

@@ -20,7 +20,9 @@ function WomenCategory({
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,
+    setItemPhotos,  
+    setItemNavigationPhotos,
 }){
 
     return(
@@ -115,12 +117,23 @@ function WomenCategory({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
+                        
 
                         imgSrc={require ("../../web/images/product-id-16.jpg")} 
                         name ="Deirdre Relaxed-Fit Capri"
                         price ="63.00"
                         sizes = {["28","29"]}
                         colors = {[["Blue" , "#1857f7"] , ["Gray" , "#8f8f8f"] , ["Green" , "#53a828"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-16.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-16.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-16.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-16.jpg")
+                            }}
                     />
                     <ProductClothPreview 
                     
@@ -130,6 +143,8 @@ function WomenCategory({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-1.jpg")} 
                         name ="Breathe-Easy Tank"
@@ -141,6 +156,14 @@ function WomenCategory({
                         price ="34.00"
                         sizes = {["XS","S","M","L" ,"XL"]}
                         colors = {[["Purple" , "#ef3dff"] , ["White" , "#ffffff"] , ["Yellow" , "#ffd500"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-1.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-1.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-1.jpg")
+                            }}
                     />
                     <ProductClothPreview 
 
@@ -150,12 +173,22 @@ function WomenCategory({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-2.jpg")} 
                         name ="Radiant Tee"
                         price ="22.00"
                         sizes = {["XS","S","M","L" ,"XL"]}
                         colors = {[["Blue" , "#1857f7"] , ["Orange" , "#eb6703"] , ["Purple" , "#ef3dff"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-2.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-2.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-2.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-2.jpg")
+                            }}
                     />
                     <ProductClothPreview 
 
@@ -165,6 +198,8 @@ function WomenCategory({
                         setItemPrice={setItemPrice}
                         setItemSizes={setItemSizes}  
                         setItemColours={setItemColours} 
+                        setItemPhotos={setItemPhotos}  
+                        setItemNavigationPhotos={setItemNavigationPhotos}
 
                         imgSrc={require ("../../web/images/product-id-17.jpg")} 
                         name ="Selene Yoga Hoodie"
@@ -172,9 +207,17 @@ function WomenCategory({
                         reviews= {[
                                {/* TO DO 3 rev */}
                                 ]}
-                        price ="248.00"
+                        price ="42.00"
                         sizes = {["28","29","30","31" ,"32"]}
                         colors = {[["Orange" , "#eb6703"] , ["Purple" , "#ef3dff"] , ["White" , "#ffffff"]]}
+                        imgsPaths ={{
+                            0 : require ("../../web/images/1-bg-img-id-17.jpg"),
+                            1 : require ("../../web/images/2-bg-img-id-17.jpg")
+                            }}
+                        itemNavigationPhotos={{
+                            0 : require ("../../web/images/1-sm-img-id-17.jpg"),
+                            1 : require ("../../web/images/2-sm-img-id-17.jpg")
+                            }}
                     />
                 </div>
 

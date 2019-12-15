@@ -14,6 +14,7 @@ function ProductInfoMain({
     itemPrice,
     itemSizes,
     itemColours    
+    
 }) {
     return(
         <div className="productInfoMain">

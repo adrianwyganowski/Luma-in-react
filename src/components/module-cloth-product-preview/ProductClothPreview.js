@@ -17,13 +17,17 @@ function ProductClothPreview({
     setItemPrice,
     setItemSizes,
     setItemColours,
+    setItemPhotos,
+    setItemNavigationPhotos,
     imgSrc,
     name,
     rating,
     reviews,
     price,
     sizes,
-    colors
+    colors,
+    imgsPaths,
+    itemNavigationPhotos
 }) {
     
     function sendDataToState(){
@@ -34,6 +38,8 @@ function ProductClothPreview({
         setItemPrice(price)
         setItemSizes(sizes)
         setItemColours(colors)
+        setItemPhotos(imgsPaths)
+        setItemNavigationPhotos(itemNavigationPhotos)
     
     }
 

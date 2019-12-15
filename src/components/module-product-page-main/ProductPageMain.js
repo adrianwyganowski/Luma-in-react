@@ -14,29 +14,34 @@ function ProductPageMain({
     itemPrice,
     itemSizes,
     itemColours,
+    itemPhotos,
+    itemNavigationPhotos,
+
 
     setItemName,
     setItemRanking,
     setItemReviews,
     setItemPrice,
     setItemSizes,
-    setItemColours
+    setItemColours,
+    setItemPhotos,
+    setItemNavigationPhotos
 
 }){
-    let imgsPaths ={
-        0 : require ("../web/images/1-bg-img-id-1.jpg"),
-        1   : require ("../web/images/2-bg-img-id-1.jpg")
-    }
+    // let imgsPaths ={
+    //     0 : require ("../web/images/1-bg-img-id-1.jpg"),
+    //     1   : require ("../web/images/2-bg-img-id-1.jpg")
+    // }
 
-    let navImgsPaths ={
-        0 : require ("../web/images/1-sm-img-id-1.jpg"),
-        1   : require ("../web/images/2-sm-img-id-1.jpg")
-    }
+    // let navImgsPaths ={
+    //     0 : require ("../web/images/1-sm-img-id-1.jpg"),
+    //     1   : require ("../web/images/2-sm-img-id-1.jpg")
+    // }
 
     return(
         <div className="productPageMain">
             <div className="productPageMain__mainColumn">
-                <ProductMedia imgsPaths={imgsPaths} navImgsPaths={navImgsPaths} />
+                <ProductMedia itemPhotos={itemPhotos} itemNavigationPhotos={itemNavigationPhotos} />
                 <ProductInfoMain 
                     itemName={itemName}
                     itemRanking={itemRanking}
@@ -53,7 +58,9 @@ function ProductPageMain({
                     setItemReviews={setItemReviews}
                     setItemPrice={setItemPrice} 
                     setItemSizes={setItemSizes}  
-                    setItemColours={setItemColours}          
+                    setItemColours={setItemColours}    
+                    setItemPhotos={setItemPhotos}      
+                    setItemNavigationPhotos={setItemNavigationPhotos}
             />
         </div>
     )
